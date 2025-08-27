@@ -53,12 +53,9 @@ function toggleAdmin() {
 
 // 포스트 로드
 function loadPosts() {
-    const savedPosts = localStorage.getItem('finflixPosts');
-    if (savedPosts) {
-        posts = JSON.parse(savedPosts);
-    } else {
-        // 우리가 작성한 콘텐츠 (최초 1회만 로드)
-        posts = [
+    // 구글 애드센스를 위해 항상 하드코딩된 콘텐츠 표시
+    // localStorage는 관리자가 추가한 글만 저장
+    const defaultPosts = [
             {
                 id: Date.now(),
                 title: '🚨 비트코인 12만 달러 돌파! 이제 시작이다',
@@ -1169,9 +1166,281 @@ function loadPosts() {
                 date: '2025-08-25T09:00:00.000Z',
                 readTime: 8,
                 image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 10,
+                title: '🎮 로블록스 주가 30% 폭락! "메타버스 거품 꺼지나"',
+                category: 'stock',
+                emoji: '🎮',
+                excerpt: '일일 활성 사용자 8800만 명 돌파했는데 왜 폭락? 수익성 우려에 투자자 이탈. 그래도 Z세대 점유율 50% 넘어',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🎮 <strong>현재 로블록스 주가: $39.5</strong>
+<span class="price-indicator price-down">📉 -30% (3개월)</span>
+</div>
+
+<h2>😱 로블록스 망했나? 아니다!</h2>
+
+<p><strong>숫자는 좋은데 주가는 왜?</strong> DAU(일일 활성 사용자) <strong>8,880만 명</strong> 역대 최고 찍었는데 주가는 30% 폭락했다.</p>
+
+<p>월가가 걱정하는 건? <strong>"언제 돈 벌어?"</strong> 이거 하나다.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">8,880만</span>
+    <span class="stat-label">DAU (역대 최고)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-$282M</span>
+    <span class="stat-label">분기 순손실</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">51%</span>
+    <span class="stat-label">Z세대 점유율</span>
+  </div>
+</div>
+
+<h3>💸 왜 적자인가?</h3>
+
+<ul>
+  <li><strong>개발자 수수료:</strong> 매출의 25% 개발자에게 지급</li>
+  <li><strong>인프라 비용:</strong> 9천만 명 동시접속 서버 유지비</li>
+  <li><strong>AI 투자:</strong> 생성형 AI 게임 제작 툴 개발</li>
+  <li><strong>안전 시스템:</strong> 미성년자 보호 시스템 구축</li>
+</ul>
+
+<h3>🚀 그래도 미래는 밝다</h3>
+
+<blockquote>
+"로블록스는 게임이 아니라 플랫폼이다. 유튜브처럼 될 것" - 아크 인베스트
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "적자지만 사용자는 폭증 중. 수익 모델만 찾으면 대박. 근데 그게 언제?"</p>
+</div>`,
+                date: '2025-08-09T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 11,
+                title: '💰 금 온스당 3000달러 간다! "연준 금리인하 + 중앙은행 매집"',
+                category: 'economy',
+                emoji: '💰',
+                excerpt: '2025년 금값 사상 최고 경신. 중국 중앙은행 5개월 연속 매입! 전문가 "안전자산 수요 폭발, 3000달러 돌파 임박"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💰 <strong>현재 금 가격: $2,735/oz</strong>
+<span class="price-indicator price-up">📈 +31% (연초 대비)</span>
+</div>
+
+<h2>🏆 금이 미쳤다! 역대 최고가 경신</h2>
+
+<p><strong>금이 날아간다!</strong> 온스당 <strong>$2,735</strong> 돌파하며 역대 최고가 갱신 중.</p>
+
+<p>중국 인민은행이 5개월 연속 금 사재기. 러시아도 가세했다.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$3,000</span>
+    <span class="stat-label">2025 목표가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">+31%</span>
+    <span class="stat-label">YTD 수익률</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1,040톤</span>
+    <span class="stat-label">중앙은행 매입량</span>
+  </div>
+</div>
+
+<h3>📈 왜 금이 뜨나?</h3>
+
+<ul>
+  <li><strong>연준 금리인하:</strong> 2025년 3번 인하 예정</li>
+  <li><strong>달러 약세:</strong> DXY 지수 102 → 98 하락</li>
+  <li><strong>지정학 리스크:</strong> 중동, 우크라이나 불안</li>
+  <li><strong>인플레 헤지:</strong> 실질금리 마이너스 전환</li>
+</ul>
+
+<blockquote>
+"금은 화폐가 아니라 보험이다. 불확실할 때 금을 사라" - 레이 달리오
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "중앙은행들이 달러 버리고 금 사재기 중. 3000달러는 시간문제"</p>
+</div>`,
+                date: '2025-08-08T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 12,
+                title: '🍎 애플 주가 250달러? "AI폰 출시로 슈퍼사이클 온다"',
+                category: 'stock',
+                emoji: '🍎',
+                excerpt: '아이폰 17 AI 기능 대폭 강화. 온디바이스 AI로 프라이버시 차별화! 웨드부시 "2025년 5억대 판매 예상"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🍎 <strong>현재 애플 주가: $237</strong>
+<span class="price-indicator price-up">📈 시총 3.68조 달러</span>
+</div>
+
+<h2>📱 애플 인텔리전스가 게임체인저</h2>
+
+<p><strong>드디어 AI 아이폰!</strong> 애플이 <strong>온디바이스 AI</strong>로 승부수 던졌다.</p>
+
+<p>ChatGPT 통합, 시리 2.0, 이미지 생성까지. 전부 폰 안에서 처리된다.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$250</span>
+    <span class="stat-label">목표 주가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">5억대</span>
+    <span class="stat-label">2025 판매 예상</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">27%</span>
+    <span class="stat-label">교체 주기 도래</span>
+  </div>
+</div>
+
+<h3>🤖 애플 AI가 다른 이유</h3>
+
+<ul>
+  <li><strong>프라이버시:</strong> 데이터 클라우드 안 보냄</li>
+  <li><strong>M4 칩:</strong> 뉴럴 엔진 2배 강화</li>
+  <li><strong>생태계:</strong> 맥, 아이패드 연동</li>
+  <li><strong>개발자:</strong> AI 앱스토어 생태계</li>
+</ul>
+
+<blockquote>
+"아이폰 17이 슈퍼사이클 트리거. 10억 명이 업그레이드 대기 중" - 웨드부시
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "AI 아이폰으로 5억대 팔면 주가 250달러. 삼성 긴장해야 될 듯"</p>
+</div>`,
+                date: '2025-08-07T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 13,
+                title: '🏦 리플(XRP) 10달러 간다? "SEC 소송 종결 임박"',
+                category: 'coin',
+                emoji: '⚡',
+                excerpt: 'SEC 의장 교체로 3년 소송 끝? 리플 CEO "곧 좋은 소식". 국제송금 시장 7조 달러 노린다!',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+⚡ <strong>현재 XRP 가격: $2.43</strong>
+<span class="price-indicator price-up">📈 +380% (6개월)</span>
+</div>
+
+<h2>🚀 리플 자유의 몸 되나?</h2>
+
+<p><strong>3년 지옥 끝!</strong> SEC 게리 겐슬러 의장 1월 퇴임 확정.</p>
+
+<p>트럼프가 약속한 <strong>"암호화폐 친화적 SEC"</strong> 현실화되면 XRP 날아간다.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$10</span>
+    <span class="stat-label">2025 목표가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$7T</span>
+    <span class="stat-label">송금 시장 규모</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">3초</span>
+    <span class="stat-label">송금 속도</span>
+  </div>
+</div>
+
+<h3>💸 왜 XRP인가?</h3>
+
+<ul>
+  <li><strong>속도:</strong> 3초 (비트코인 10분)</li>
+  <li><strong>수수료:</strong> $0.0002 (거의 무료)</li>
+  <li><strong>파트너:</strong> 300개 은행 제휴</li>
+  <li><strong>CBDC:</strong> 20개국 디지털화폐 협력</li>
+</ul>
+
+<blockquote>
+"SEC 소송 끝나면 XRP가 SWIFT 대체한다" - 브래드 갈링하우스 (리플 CEO)
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "3년 묶였던 XRP 곧 풀린다. 국제송금 혁명 일으키면 10달러는 기본"</p>
+</div>`,
+                date: '2025-08-06T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 14,
+                title: '🔥 카카오 5만원 간다? "AI 하이퍼클로바X 대박 조짐"',
+                category: 'stock',
+                emoji: '💬',
+                excerpt: '카카오브레인 하이퍼클로바X 본격 상용화. B2B AI 시장 진출! 네이버 협력으로 국내 AI 양강 구조',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💬 <strong>현재 카카오 주가: 38,500원</strong>
+<span class="price-indicator price-down">📉 52주 최저가 근접</span>
+</div>
+
+<h2>🤖 카카오 AI 역습 시작</h2>
+
+<p><strong>바닥 찍고 반등?</strong> 카카오가 <strong>하이퍼클로바X</strong>로 B2B AI 시장 도전장.</p>
+
+<p>카톡 4,700만 사용자 데이터로 학습한 한국형 AI. 삼성, LG 줄 섰다.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">50,000원</span>
+    <span class="stat-label">목표 주가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">4,700만</span>
+    <span class="stat-label">카톡 사용자</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">2조원</span>
+    <span class="stat-label">AI 투자 계획</span>
+  </div>
+</div>
+
+<h3>💡 카카오 AI 무기</h3>
+
+<ul>
+  <li><strong>코난:</strong> 코딩 AI (깃허브 코파일럿 대항마)</li>
+  <li><strong>칼로:</strong> 이미지 생성 AI</li>
+  <li><strong>톡 AI:</strong> 카톡 내 AI 어시스턴트</li>
+  <li><strong>B2B 솔루션:</strong> 기업용 AI 서비스</li>
+</ul>
+
+<blockquote>
+"카카오는 저평가 구간. AI 수익화 성공하면 5만원은 충분" - NH투자증권
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "38,500원은 바닥. AI로 제2 전성기 열면 5만원 간다"</p>
+</div>`,
+                date: '2025-08-05T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=400&fit=crop'
             }
         ];
-        savePosts();
+    
+    // localStorage에서 추가된 글 확인
+    const savedPosts = localStorage.getItem('finflixPosts');
+    if (savedPosts) {
+        const additionalPosts = JSON.parse(savedPosts);
+        // 기본 포스트와 추가 포스트 병합 (중복 제거)
+        const existingIds = new Set(defaultPosts.map(p => p.id));
+        const newPosts = additionalPosts.filter(p => !existingIds.has(p.id));
+        posts = [...defaultPosts, ...newPosts];
+    } else {
+        posts = defaultPosts;
     }
 }
 
