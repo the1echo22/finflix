@@ -1428,6 +1428,333 @@ function loadPosts() {
                 date: '2025-08-05T09:00:00.000Z',
                 readTime: 5,
                 image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 15,
+                title: '🚗 현대차 30만원? "전기차 판매 1위, 수소차 독점"',
+                category: 'stock',
+                emoji: '🚗',
+                excerpt: '아이오닉 9 예약 폭주! 미국 전기차 판매 테슬라 이어 2위. 수소차는 아예 독점. 목표주가 30만원 상향',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🚗 <strong>현재 현대차 주가: 218,000원</strong>
+<span class="price-indicator price-up">📈 +15% (3개월)</span>
+</div>
+
+<h2>⚡ 현대차 전기차 대박났다!</h2>
+
+<p><strong>테슬라 잡는다!</strong> 미국 전기차 시장 점유율 <strong>9.3%</strong>로 2위 등극.</p>
+
+<p>아이오닉 9 사전예약 첫날만 3만대. 제네시스 전동화도 성공적.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">300,000원</span>
+    <span class="stat-label">목표 주가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">9.3%</span>
+    <span class="stat-label">미국 EV 점유율</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">100만대</span>
+    <span class="stat-label">2025 EV 목표</span>
+  </div>
+</div>
+
+<h3>💎 현대차만의 무기</h3>
+
+<ul>
+  <li><strong>E-GMP:</strong> 18분 급속충전 (10→80%)</li>
+  <li><strong>수소차:</strong> 넥쏘 글로벌 1위 (점유율 60%)</li>
+  <li><strong>로보틱스:</strong> 보스턴 다이나믹스 인수</li>
+  <li><strong>UAM:</strong> 도심 항공 모빌리티 2028 상용화</li>
+</ul>
+
+<h3>🔋 전기차 라인업 완성</h3>
+
+<div class="chart-container">
+  <p>🚙 <strong>아이오닉 5:</strong> 월 1만대 판매 (미국)</p>
+  <p>🚙 <strong>아이오닉 6:</strong> 세단 전기차 1위</p>
+  <p>🚙 <strong>아이오닉 9:</strong> 대형 SUV (3열 7인승)</p>
+  <p>🚙 <strong>EV9:</strong> 기아 플래그십 SUV</p>
+</div>
+
+<blockquote>
+"현대차는 테슬라와 달리 완성차+전기차+수소차 다 잡았다" - 모건스탠리
+</blockquote>
+
+<h3>💰 실적도 탄탄</h3>
+
+<div class="highlight-box">
+  <ul>
+    <li>영업이익률 9.5% (업계 최고 수준)</li>
+    <li>현금 보유 70조원</li>
+    <li>배당 수익률 5.2%</li>
+    <li>자사주 매입 3조원</li>
+  </ul>
+</div>
+
+<p><strong>한 줄 정리:</strong> "전기차는 미국 2위, 수소차는 독점, 로봇까지. 30만원 간다"</p>
+</div>`,
+                date: '2025-08-04T09:00:00.000Z',
+                readTime: 6,
+                image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 16,
+                title: '📺 넷플릭스 1000달러? "광고 요금제 가입자 폭증"',
+                category: 'stock',
+                emoji: '📺',
+                excerpt: '광고 요금제 7000만 가입자 돌파! 게임, 라이브 스포츠 진출. 2025년 매출 500억 달러 전망',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+📺 <strong>현재 넷플릭스 주가: $718</strong>
+<span class="price-indicator price-up">📈 +83% (YTD)</span>
+</div>
+
+<h2>🎬 넷플릭스 광고가 대박쳤다!</h2>
+
+<p><strong>광고 요금제 미쳤다!</strong> 7,000만 가입자가 광고 보면서 넷플릭스 본다.</p>
+
+<p>월 6.99달러 광고 요금제가 전체 신규가입의 <strong>50% 차지</strong>. 광고 매출만 연 30억 달러.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$1,000</span>
+    <span class="stat-label">목표 주가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">2.8억명</span>
+    <span class="stat-label">전체 구독자</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$50B</span>
+    <span class="stat-label">2025 매출 전망</span>
+  </div>
+</div>
+
+<h3>🎮 넷플릭스 새로운 도전</h3>
+
+<ul>
+  <li><strong>게임:</strong> GTA 삼부작 독점 출시</li>
+  <li><strong>라이브:</strong> NFL, WWE 중계권 확보</li>
+  <li><strong>광고:</strong> 프라임타임 광고 단가 TV 추월</li>
+  <li><strong>AI:</strong> 개인 맞춤 콘텐츠 추천 고도화</li>
+</ul>
+
+<blockquote>
+"넷플릭스는 이제 스트리밍이 아니라 엔터테인먼트 플랫폼" - 골드만삭스
+</blockquote>
+
+<h3>📊 경쟁사는 망하는데?</h3>
+
+<div class="chart-container">
+  <p>❌ <strong>디즈니+:</strong> 적자 40억 달러</p>
+  <p>❌ <strong>워너:</strong> 맥스 가입자 이탈</p>
+  <p>❌ <strong>파라마운트+:</strong> 매각 추진</p>
+  <p>✅ <strong>넷플릭스:</strong> 영업이익률 28%</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "광고로 제2 전성기. 게임+스포츠까지 먹으면 1000달러 현실"</p>
+</div>`,
+                date: '2025-08-03T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 17,
+                title: '⚡ 도지코인 1달러? "머스크 X 결제 통합 확정"',
+                category: 'coin',
+                emoji: '🐕',
+                excerpt: 'X(트위터) 결제 시스템에 도지코인 통합! 머스크 "도지는 인민의 암호화폐". 테슬라 상품 구매도 가능',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🐕 <strong>현재 도지코인: $0.38</strong>
+<span class="price-indicator price-up">📈 +420% (6개월)</span>
+</div>
+
+<h2>🚀 도지코인 드디어 실사용!</h2>
+
+<p><strong>머스크가 진짜 했다!</strong> X(구 트위터)에서 도지코인으로 송금 가능해진다.</p>
+
+<p>월 활성 사용자 6억명이 도지 쓰면? <strong>가격 폭발 확정.</strong></p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$1.00</span>
+    <span class="stat-label">2025 목표가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">6억명</span>
+    <span class="stat-label">X 사용자</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$0.002</span>
+    <span class="stat-label">거래 수수료</span>
+  </div>
+</div>
+
+<h3>🎯 도지코인 사용처</h3>
+
+<ul>
+  <li><strong>X 결제:</strong> 송금, 팁, 구독료</li>
+  <li><strong>테슬라:</strong> 굿즈, 충전 요금</li>
+  <li><strong>스페이스X:</strong> 달 미션 "DOGE-1" 결제</li>
+  <li><strong>5만개 상점:</strong> 비트페이 통해 결제 가능</li>
+</ul>
+
+<h3>⚠️ 리스크도 있다</h3>
+
+<div class="chart-container" style="background: #fee2e2;">
+  <p>❌ 무한 발행 (인플레 코인)</p>
+  <p>❌ 개발자 부재 (밈코인 한계)</p>
+  <p>❌ 머스크 의존도 90%</p>
+  <p>❌ 변동성 극심 (하루 30% 등락)</p>
+</div>
+
+<blockquote>
+"도지는 농담으로 시작했지만 이제 진짜 화폐가 됐다" - 일론 머스크
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "머스크가 밀면 1달러 간다. 근데 머스크 트윗 하나에 반토막 날 수도"</p>
+</div>`,
+                date: '2025-08-02T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 18,
+                title: '💳 비자 카드 주가 350달러! "결제 독점 지위 굳건"',
+                category: 'stock',
+                emoji: '💳',
+                excerpt: '전세계 결제의 60% 처리! 핀테크 위협? 오히려 파트너십으로 성장. 암호화폐 결제도 비자가 처리',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💳 <strong>현재 비자 주가: $312</strong>
+<span class="price-indicator price-up">📈 영업이익률 67%</span>
+</div>
+
+<h2>💰 비자는 돈 찍는 기계</h2>
+
+<p><strong>결제의 제왕!</strong> 전세계 카드 결제의 <strong>60%를 비자가 처리</strong>한다.</p>
+
+<p>1초에 65,000건, 연간 15조 달러. 수수료만 0.15%씩 떼도 연 매출 350억 달러.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$350</span>
+    <span class="stat-label">목표 주가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">67%</span>
+    <span class="stat-label">영업이익률</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">15조$</span>
+    <span class="stat-label">연간 결제액</span>
+  </div>
+</div>
+
+<h3>🏆 비자가 망할 수 없는 이유</h3>
+
+<ul>
+  <li><strong>독점:</strong> 비자+마스터카드 = 시장 90%</li>
+  <li><strong>필수재:</strong> 결제 안 하고 살 수 없음</li>
+  <li><strong>핀테크:</strong> 적이 아니라 고객 (페이팔, 스퀘어 다 비자 씀)</li>
+  <li><strong>암호화폐:</strong> 비자가 크립토 결제도 처리</li>
+</ul>
+
+<h3>💎 현금 없는 사회 수혜주</h3>
+
+<div class="chart-container">
+  <p>🌏 <strong>아시아:</strong> 디지털 결제 연 30% 성장</p>
+  <p>🌍 <strong>아프리카:</strong> 모바일 결제 폭발적 증가</p>
+  <p>🌎 <strong>남미:</strong> 현금 사용 급감 중</p>
+</div>
+
+<blockquote>
+"비자는 21세기 금광. 돈이 움직이면 비자가 먹는다" - 워런 버핏
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "결제 독점 + 영업이익률 67% = 망할 수 없는 회사. 350달러 확정"</p>
+</div>`,
+                date: '2025-08-01T09:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 19,
+                title: '🏢 미국 상업용 부동산 폭락! "재택근무로 빌딩 텅텅"',
+                category: 'economy',
+                emoji: '🏢',
+                excerpt: '뉴욕 오피스 공실률 20% 돌파! 상업용 부동산 가격 40% 폭락. 지역은행 부실 우려. 그런데 한국은 왜 올라?',
+                content: `<div class="content-wrapper">
+<div class="highlight-box" style="background: linear-gradient(135deg, #fee2e2 0%, #ef4444 100%);">
+🏢 <strong>미국 오피스 공실률: 20.1%</strong>
+<span class="price-indicator price-down">📉 상업용 부동산 -40%</span>
+</div>
+
+<h2>😱 미국 오피스 빌딩 대참사</h2>
+
+<p><strong>재택근무가 부동산을 죽였다!</strong> 뉴욕 맨해튼 오피스 공실률 <strong>20% 돌파</strong>.</p>
+
+<p>샌프란시스코는 더 심각. 공실률 35%, 빌딩 가격 반토막 났다.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">20.1%</span>
+    <span class="stat-label">뉴욕 공실률</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-40%</span>
+    <span class="stat-label">빌딩 가격</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$1.5T</span>
+    <span class="stat-label">대출 만기</span>
+  </div>
+</div>
+
+<h3>💣 은행 위기 재점화?</h3>
+
+<ul>
+  <li><strong>지역은행:</strong> 상업용 부동산 대출 70% 보유</li>
+  <li><strong>만기 도래:</strong> 2025년 1.5조 달러 재융자 필요</li>
+  <li><strong>디폴트 급증:</strong> 연체율 11% (금융위기 수준)</li>
+  <li><strong>자산 매각:</strong> 블랙스톤도 손실 감수하고 처분</li>
+</ul>
+
+<h3>🇰🇷 한국은 정반대?</h3>
+
+<div class="chart-container">
+  <p>📈 <strong>강남:</strong> 오피스 임대료 10% 상승</p>
+  <p>📈 <strong>판교:</strong> 공실률 2% (역대 최저)</p>
+  <p>📈 <strong>을지로:</strong> 리모델링 후 완판</p>
+  <p>❓ <strong>이유:</strong> 출근 문화 + IT 기업 확장</p>
+</div>
+
+<h3>💰 투자 기회는?</h3>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #d4f4dd 0%, #86efac 100%);">
+  <p><strong>위기 = 기회</strong></p>
+  <ul>
+    <li>✅ 미국 리츠 바닥 매수</li>
+    <li>✅ 지역은행 공매도</li>
+    <li>✅ 주거용 전환 수혜주</li>
+    <li>✅ 한국 오피스 리츠 투자</li>
+  </ul>
+</div>
+
+<blockquote>
+"상업용 부동산 위기는 2008년보다 클 수도" - 제이미 다이먼 (JP모건 CEO)
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "미국 오피스는 공동묘지, 한국은 호황. 재택 vs 출근 문화 차이가 운명 갈랐다"</p>
+</div>`,
+                date: '2025-07-31T09:00:00.000Z',
+                readTime: 6,
+                image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop'
             }
         ];
     
