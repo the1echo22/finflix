@@ -41,15 +41,6 @@ User-agent: NaverBot
 Allow: /
 Crawl-delay: 0
 
-# Daum/Kakao Search Engine
-User-agent: Daumoa
-Allow: /
-Crawl-delay: 0
-
-# Zum Search Engine
-User-agent: ZumBot
-Allow: /
-Crawl-delay: 0
 
 # Bing Search Engine
 User-agent: Bingbot
