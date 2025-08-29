@@ -1564,67 +1564,149 @@ function loadPosts() {
             },
             {
                 id: Date.now() + 17,
-                title: '⚡ 도지코인 1달러? "머스크 X 결제 통합 확정"',
+                title: '🎺 트럼프 코인 $9.5 "74달러에서 -89% 폭락, 지금이 기회?"',
                 category: 'coin',
-                emoji: '🐕',
-                excerpt: 'X(트위터) 결제 시스템에 도지코인 통합! 머스크 "도지는 인민의 암호화폐". 테슬라 상품 구매도 가능',
+                emoji: '🇺🇸',
+                excerpt: '대통령 밈코인 TRUMP 현재 9.5달러! 1월 최고점 74달러에서 폭락했지만 8월 들어 거래량 폭증. 16달러 재도전 가능할까?',
                 content: `<div class="content-wrapper">
 <div class="highlight-box">
-🐕 <strong>현재 도지코인: $0.38</strong>
-<span class="price-indicator price-up">📈 +420% (6개월)</span>
+🇺🇸 <strong>현재 트럼프 코인: $9.50</strong>
+<span class="price-indicator price-down">📉 -89% (ATH 대비)</span>
 </div>
 
-<h2>🚀 도지코인 드디어 실사용!</h2>
+<h2>🎺 대통령 밈코인의 롤러코스터!</h2>
 
-<p><strong>머스크가 진짜 했다!</strong> X(구 트위터)에서 도지코인으로 송금 가능해진다.</p>
+<p><strong>취임식 날 74달러 찍고 지금 9.5달러?</strong> 트럼프 공식 코인(TRUMP)이 완전 과매도 구간이다.</p>
 
-<p>월 활성 사용자 6억명이 도지 쓰면? <strong>가격 폭발 확정.</strong></p>
+<p>1월 19일 역대 최고가 <strong>$74.27</strong> 이후 89% 하락. 근데 거래량은 오히려 늘고 있다? 🤔</p>
 
 <div class="stat-grid">
   <div class="stat-card">
-    <span class="stat-value">$1.00</span>
-    <span class="stat-label">2025 목표가</span>
+    <span class="stat-value">$74.27</span>
+    <span class="stat-label">역대 최고가 (1/19)</span>
   </div>
   <div class="stat-card">
-    <span class="stat-value">6억명</span>
-    <span class="stat-label">X 사용자</span>
+    <span class="stat-value">$9.50</span>
+    <span class="stat-label">현재 가격 (8/29)</span>
   </div>
   <div class="stat-card">
-    <span class="stat-value">$0.002</span>
-    <span class="stat-label">거래 수수료</span>
+    <span class="stat-value">$310M</span>
+    <span class="stat-label">24시간 거래량</span>
   </div>
 </div>
 
-<h3>🎯 도지코인 사용처</h3>
+<h3>🔥 왜 지금 주목해야 하나?</h3>
 
 <ul>
-  <li><strong>X 결제:</strong> 송금, 팁, 구독료</li>
-  <li><strong>테슬라:</strong> 굿즈, 충전 요금</li>
-  <li><strong>스페이스X:</strong> 달 미션 "DOGE-1" 결제</li>
-  <li><strong>5만개 상점:</strong> 비트페이 통해 결제 가능</li>
+  <li><strong>시총 56위:</strong> 밈코인 중 5위 (도지, 시바, 페페, WIF 다음)</li>
+  <li><strong>거래량 폭증:</strong> 24시간 3.1억 달러 (전일 대비 +13%)</li>
+  <li><strong>기술적 반등:</strong> 8.5달러 지지선 방어 성공</li>
+  <li><strong>정치 이벤트:</strong> 2025년 하반기 대선 캠페인 본격화</li>
 </ul>
 
-<h3>⚠️ 리스크도 있다</h3>
-
-<div class="chart-container" style="background: #fee2e2;">
-  <p>❌ 무한 발행 (인플레 코인)</p>
-  <p>❌ 개발자 부재 (밈코인 한계)</p>
-  <p>❌ 머스크 의존도 90%</p>
-  <p>❌ 변동성 극심 (하루 30% 등락)</p>
-</div>
-
 <blockquote>
-"도지는 농담으로 시작했지만 이제 진짜 화폐가 됐다" - 일론 머스크
+"74달러에서 9달러까지 떨어진 건 기회다. 바닥에서 사는 자가 천장에서 판다" - 크립토 트레이더
 </blockquote>
 
-<p><strong>한 줄 정리:</strong> "머스크가 밀면 1달러 간다. 근데 머스크 트윗 하나에 반토막 날 수도"</p>
+<h3>📊 TRUMP vs 다른 밈코인</h3>
+
+<div class="chart-container">
+  <p>🐕 <strong>DOGE:</strong> 연초 대비 +34%</p>
+  <p>🐸 <strong>PEPE:</strong> 연초 대비 +580%</p>  
+  <p>🎺 <strong>TRUMP:</strong> ATH 대비 -89% (반등 여력↑)</p>
+  <p>🐕 <strong>WIF:</strong> 연초 대비 +1200%</p>
+</div>
+
+<h3>💎 리스크 & 기회</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>⚠️ 리스크</h4>
+    <ul>
+      <li>정치적 이슈에 민감</li>
+      <li>유통량 20% (락업 해제 리스크)</li>
+      <li>밈코인 특성상 변동성 극심</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>🎯 기회</h4>
+    <ul>
+      <li>16달러 1차 저항 돌파 시 30달러 가능</li>
+      <li>대선 캠페인 시작되면 관심 폭발</li>
+      <li>솔라나 체인 = 빠른 거래, 낮은 수수료</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>한 줄 정리:</strong> "74달러→9달러 폭락은 끝. 대선 시즌 다가오면 최소 2배는 간다"</p>
 </div>`,
-                date: '2025-08-02T09:00:00.000Z',
+                date: '2025-08-29T09:00:00.000Z',
                 readTime: 5,
-                image: 'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=800&h=400&fit=crop'
+                image: 'https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=800&h=400&fit=crop'
             },
             {
                 id: Date.now() + 18,
+                title: '🏦 제2 금융권 파킹통장 "연 5% 찾았다"',
+                category: 'economy',
+                emoji: '💰',
+                excerpt: '시중은행 2%대인데 저축은행은 5%! 예금자보호 5천만원까지 안전. MZ세대 파킹통장 대이동',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🏦 <strong>저축은행 정기예금 금리</strong>
+<span class="price-indicator price-up">📈 연 5.0~5.5%</span>
+</div>
+
+<h2>💰 파킹통장 금리 전쟁!</h2>
+
+<p><strong>시중은행은 2%인데 저축은행은 5%?</strong> MZ세대가 제2금융권으로 대이동 중이다.</p>
+
+<p>예금자보호 5천만원까지는 <strong>100% 안전</strong>. 똑같이 안전한데 금리는 2배!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">5.5%</span>
+    <span class="stat-label">저축은행 최고금리</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">2.8%</span>
+    <span class="stat-label">시중은행 평균</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">5천만원</span>
+    <span class="stat-label">예금자보호 한도</span>
+  </div>
+</div>
+
+<h3>🏆 고금리 파킹통장 TOP</h3>
+
+<ul>
+  <li><strong>SBI저축은행:</strong> 연 5.5% (3개월)</li>
+  <li><strong>OK저축은행:</strong> 연 5.3% (6개월)</li>
+  <li><strong>웰컴저축은행:</strong> 연 5.2% (1년)</li>
+  <li><strong>애큐온저축은행:</strong> 연 5.0% (특판)</li>
+</ul>
+
+<blockquote>
+"금리 2% 차이? 1억 넣으면 연 200만원 차이다. 저축은행 무시하지 마라" - 재테크 유튜버
+</blockquote>
+
+<h3>⚠️ 주의사항</h3>
+
+<div class="chart-container" style="background: #fef3c7;">
+  <p>⚡ 5천만원 초과 금액은 보호 안 됨</p>
+  <p>⚡ 중도해지 시 우대금리 없음</p>
+  <p>⚡ 특판 상품은 가입 제한 있음</p>
+  <p>⚡ 온라인/모바일 전용 상품 많음</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "5천만원까지는 저축은행이 정답. 2% vs 5% 고민할 이유 없다"</p>
+</div>`,
+                date: '2025-08-02T09:00:00.000Z',
+                readTime: 4,
+                image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 19,
                 title: '💳 비자 카드 주가 350달러! "결제 독점 지위 굳건"',
                 category: 'stock',
                 emoji: '💳',
