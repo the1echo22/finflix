@@ -2026,6 +2026,9 @@ function loadPosts() {
     } else {
         posts = defaultPosts;
     }
+    
+    // 날짜순 정렬 (최신순)
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 // 포스트 저장
@@ -2042,6 +2045,9 @@ function renderPosts() {
     const filteredPosts = currentCategory === 'all' 
         ? posts 
         : posts.filter(post => post.category === currentCategory);
+    
+    // 날짜순 정렬 (최신순)
+    filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     if (filteredPosts.length === 0) {
         grid.innerHTML = `
