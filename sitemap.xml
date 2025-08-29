@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://finflix.org/</loc>
+    <loc>https://www.finflix.org/</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://finflix.org/about.html</loc>
+    <loc>https://www.finflix.org/about.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finflix.org/contact.html</loc>
+    <loc>https://www.finflix.org/contact.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/privacy.html</loc>
+    <loc>https://www.finflix.org/privacy.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://finflix.org/terms.html</loc>
+    <loc>https://www.finflix.org/terms.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -34,19 +34,19 @@
   
   <!-- Category Pages -->
   <url>
-    <loc>https://finflix.org/#stock</loc>
+    <loc>https://www.finflix.org/#stock</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://finflix.org/#crypto</loc>
+    <loc>https://www.finflix.org/#crypto</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://finflix.org/#real-estate</loc>
+    <loc>https://www.finflix.org/#real-estate</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -54,121 +54,121 @@
   
   <!-- Blog Posts (20 hardcoded posts) -->
   <url>
-    <loc>https://finflix.org/post/bitcoin-100k-dream</loc>
+    <loc>https://www.finflix.org/post/bitcoin-100k-dream</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/samsung-stock-analysis</loc>
+    <loc>https://www.finflix.org/post/samsung-stock-analysis</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/gangnam-apartment-bubble</loc>
+    <loc>https://www.finflix.org/post/gangnam-apartment-bubble</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/ethereum-merge-effect</loc>
+    <loc>https://www.finflix.org/post/ethereum-merge-effect</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/tesla-korea-market</loc>
+    <loc>https://www.finflix.org/post/tesla-korea-market</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/mz-generation-investment</loc>
+    <loc>https://www.finflix.org/post/mz-generation-investment</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/defi-revolution-2024</loc>
+    <loc>https://www.finflix.org/post/defi-revolution-2024</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/nvidia-ai-boom</loc>
+    <loc>https://www.finflix.org/post/nvidia-ai-boom</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/seoul-officetel-investment</loc>
+    <loc>https://www.finflix.org/post/seoul-officetel-investment</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/stablecoin-guide</loc>
+    <loc>https://www.finflix.org/post/stablecoin-guide</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/kakao-stock-deep-dive</loc>
+    <loc>https://www.finflix.org/post/kakao-stock-deep-dive</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/apartment-tax-reform</loc>
+    <loc>https://www.finflix.org/post/apartment-tax-reform</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/meme-coin-warning</loc>
+    <loc>https://www.finflix.org/post/meme-coin-warning</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/apple-korea-strategy</loc>
+    <loc>https://www.finflix.org/post/apple-korea-strategy</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/first-home-buyer-guide</loc>
+    <loc>https://www.finflix.org/post/first-home-buyer-guide</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/cbdc-korea-launch</loc>
+    <loc>https://www.finflix.org/post/cbdc-korea-launch</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/lg-energy-battery-war</loc>
+    <loc>https://www.finflix.org/post/lg-energy-battery-war</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/busan-real-estate-future</loc>
+    <loc>https://www.finflix.org/post/busan-real-estate-future</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/altcoin-season-2025</loc>
+    <loc>https://www.finflix.org/post/altcoin-season-2025</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finflix.org/post/hyundai-ev-revolution</loc>
+    <loc>https://www.finflix.org/post/hyundai-ev-revolution</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
