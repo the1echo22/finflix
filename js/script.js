@@ -1837,6 +1837,181 @@ function loadPosts() {
                 date: '2025-08-29T10:00:00.000Z',
                 readTime: 5,
                 image: 'https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 22,
+                title: '💼 에릭 트럼프 WLFI "9월 1일 언락! 15억 달러 IPO 간다"',
+                category: 'coin',
+                emoji: '🏛️',
+                excerpt: '트럼프 아들들의 DeFi 프로젝트 월드 리버티 파이낸셜! 4억 달러 벌어들인 WLFI 토큰 9월 1일 거래 시작. 상장사 만들어 15억 달러 조달?',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🏛️ <strong>World Liberty Financial (WLFI)</strong>
+<span class="price-indicator price-up">📈 9/1 거래 개시</span>
+</div>
+
+<h2>💸 트럼프 패밀리 4억 달러 챙겼다!</h2>
+
+<p><strong>에릭 트럼프 "Web3 대사"로 등극!</strong> 아버지는 대통령, 아들은 크립토 재벌?</p>
+
+<p>8월 26일 발표: <strong>"9월 1일부터 WLFI 20% 언락"</strong> 락업 풀리면 가격 어디까지?</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$412M</span>
+    <span class="stat-label">트럼프家 수익</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$1.5B</span>
+    <span class="stat-label">IPO 목표 금액</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">9/1</span>
+    <span class="stat-label">거래 시작일</span>
+  </div>
+</div>
+
+<h3>🚀 월드 리버티 파이낸셜 뭐가 다른데?</h3>
+
+<ul>
+  <li><strong>대통령 아들이 운영:</strong> 에릭 & 돈 주니어 직접 경영</li>
+  <li><strong>상장사 전환:</strong> 나스닥 상장 추진 중</li>
+  <li><strong>DeFi + TradFi:</strong> 전통 금융과 디파이 융합</li>
+  <li><strong>스테이블코인 USD1:</strong> 자체 달러 스테이블 출시</li>
+</ul>
+
+<blockquote>
+"아빠는 미국을 크립토 수도로, 우린 월스트리트를 블록체인으로" - 에릭 트럼프
+</blockquote>
+
+<h3>📊 WLFI 토큰 언락 일정</h3>
+
+<div class="chart-container">
+  <p>🔓 <strong>9월 1일:</strong> 20% 즉시 언락</p>
+  <p>🔒 <strong>80%:</strong> 추후 공지 (베스팅)</p>
+  <p>💰 <strong>현재 홀더:</strong> 20,000명+</p>
+  <p>📈 <strong>예상 상장가:</strong> $0.50~$1.00</p>
+</div>
+
+<h3>⚠️ 리스크 vs 🎯 기회</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>위험 요소</h4>
+    <ul>
+      <li>정치적 리스크 극심</li>
+      <li>언락 시 덤핑 우려</li>
+      <li>SEC 규제 불확실</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>투자 포인트</h4>
+    <ul>
+      <li>트럼프 브랜드 파워</li>
+      <li>나스닥 상장 가능성</li>
+      <li>15억 달러 자금 조달</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>한 줄 정리:</strong> "트럼프 아들 코인 9/1 거래 시작. 정치+크립토 콜라보는 처음이라 도박 각"</p>
+</div>`,
+                date: '2025-08-29T11:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 23,
+                title: '🎌 미카미 유아 코인 "340만 달러→10만 달러 -97% 폭망"',
+                category: 'coin',
+                emoji: '💔',
+                excerpt: '일본 AV 레전드 미카미 유아의 MIKAMI 코인 완전 폭망! 5월 출시 후 -97% 하락. 시총 10만 달러로 쪼그라든 연예인 코인의 비극',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💔 <strong>MIKAMI 코인 현재 시총: $109K</strong>
+<span class="price-indicator price-down">📉 -97% (출시 대비)</span>
+</div>
+
+<h2>🗾 AV 여신의 코인이 망했다?!</h2>
+
+<p><strong>340만 달러 모금 → 10만 달러 시총</strong> 역대급 러그풀인가, 단순 실패인가?</p>
+
+<p>5월 8일 출시 <strong>5시간 만에 -80% 폭락</strong>. 17,000명 투자자들 지금 어디에...</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">-97%</span>
+    <span class="stat-label">최고점 대비</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$0.10</span>
+    <span class="stat-label">현재가 (8/29)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$109K</span>
+    <span class="stat-label">시가총액</span>
+  </div>
+</div>
+
+<h3>😱 대체 뭐가 잘못됐나?</h3>
+
+<ul>
+  <li><strong>출시 5시간 만에 붕괴:</strong> $0.828 → $0.10 (-88%)</li>
+  <li><strong>고래 없었다:</strong> 큰손 투자자 0명, 개미만 17,000명</li>
+  <li><strong>유동성 부족:</strong> 15%만 유동성 풀에 배정</li>
+  <li><strong>50% 락업:</strong> 2069년까지 락업 (44년... 진심?)</li>
+</ul>
+
+<blockquote>
+"연예인 코인은 팬심으로 산다. 근데 팬들이 다 털렸다" - 솔라나 트레이더
+</blockquote>
+
+<h3>📊 연예인 코인 비교</h3>
+
+<div class="chart-container">
+  <p>🎺 <strong>TRUMP:</strong> 시총 17억 달러 (성공)</p>
+  <p>🎤 <strong>이기 아잘레아:</strong> 시총 2억 달러 (성공)</p>
+  <p>🗾 <strong>MIKAMI:</strong> 시총 10만 달러 (대실패)</p>
+  <p>⚽ <strong>호날두 코인:</strong> 러그풀 논란</p>
+</div>
+
+<h3>🔥 지금이 기회? 아니면 쓰레기?</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>⚠️ 위험 신호</h4>
+    <ul>
+      <li>거래량 거의 0</li>
+      <li>커뮤니티 죽음</li>
+      <li>개발팀 잠적</li>
+      <li>상장 거래소 없음</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>🎲 도박 포인트</h4>
+    <ul>
+      <li>10만불이면 혼자 펌핑 가능</li>
+      <li>미카미 유아 은퇴 전 인기</li>
+      <li>일본 크립토 붐 가능성</li>
+      <li>밈코인 부활 사이클</li>
+    </ul>
+  </div>
+</div>
+
+<h3>💬 커뮤니티 반응</h3>
+
+<div class="chart-container" style="background: #fee2e2;">
+  <p>"340만 달러 어디 갔냐" - 프리세일 투자자</p>
+  <p>"AV는 봤는데 수익은 못 봤다" - 솔라나 홀더</p>
+  <p>"2069년 언락ㅋㅋㅋ 손자 줄 코인" - 크립토 트위터</p>
+  <p>"차라리 영상이나 더 찍어..." - 팬</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "AV 레전드도 코인은 못 살림. 10만불 시총이면 이미 죽은 코인"</p>
+</div>`,
+                date: '2025-08-29T12:00:00.000Z',
+                readTime: 6,
+                image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop'
             }
         ];
     
