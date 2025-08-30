@@ -1,16 +1,106 @@
 # FinFlix Robots.txt
+# https://www.finflix.org/
+# Last Updated: 2025-08-30
+
+# Default - Allow all legitimate crawlers
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
+Allow: /post/*
+Allow: /*.css$
+Allow: /*.js$
+Allow: /images/*
 
 # Crawl-delay (seconds)
 Crawl-delay: 1
 
-# Sitemap location
+# Sitemap locations
+Sitemap: https://www.finflix.org/sitemap.xml
 Sitemap: https://finflix.org/sitemap.xml
 
-# Block bad bots
+# Google Search Engine
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google News
+User-agent: Googlebot-News
+Allow: /
+Crawl-delay: 0
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+Crawl-delay: 0
+
+# Google AdSense
+User-agent: Mediapartners-Google
+Allow: /
+
+# Google AdsBot (for ads quality)
+User-agent: AdsBot-Google
+Allow: /
+
+# Naver Search Engine (Korean)
+User-agent: Yeti
+Allow: /
+Crawl-delay: 0
+
+User-agent: NaverBot
+Allow: /
+Crawl-delay: 0
+
+# Daum Search Engine (Korean)
+User-agent: Daumoa
+Allow: /
+Crawl-delay: 0
+
+# Bing Search Engine
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Yahoo Search Engine
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# WhatsApp
+User-agent: WhatsApp
+Allow: /
+
+# Telegram
+User-agent: TelegramBot
+Allow: /
+
+# Apple (Siri, Apple News)
+User-agent: Applebot
+Allow: /
+Crawl-delay: 0
+
+# Block bad/aggressive bots
 User-agent: AhrefsBot
 Disallow: /
 
@@ -23,26 +113,24 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-# Allow Google AdSense
-User-agent: Mediapartners-Google
+User-agent: PetalBot
+Disallow: /
+
+User-agent: GPTBot
 Allow: /
 
-# Allow Google Bot
-User-agent: Googlebot
+User-agent: ChatGPT-User
 Allow: /
-Crawl-delay: 0
 
-# Naver Search Engine
-User-agent: Yeti
+User-agent: CCBot
 Allow: /
-Crawl-delay: 0
 
-User-agent: NaverBot
-Allow: /
-Crawl-delay: 0
+# Block SEO analysis tools (optional - remove if you want to allow)
+User-agent: Screaming Frog SEO Spider
+Disallow: /
 
+User-agent: SEOkicks
+Disallow: /
 
-# Bing Search Engine
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0
+User-agent: sistrix
+Disallow: /

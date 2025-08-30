@@ -4,6 +4,96 @@ let isAdmin = false;
 let editingPostId = null;
 let currentCategory = 'all';
 
+// SEO 메타 태그 동적 업데이트 함수
+function updateMetaTags(post) {
+    if (!post) return;
+    
+    // 기본 메타 태그 업데이트
+    document.title = `${post.title} | FinFlix - MZ 금융 투자 블로그`;
+    
+    // 메타 설명 업데이트
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.content = post.excerpt;
+    }
+    
+    // Open Graph 태그 업데이트
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+        ogTitle.content = post.title;
+    }
+    
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) {
+        ogDescription.content = post.excerpt;
+    }
+    
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage && post.image) {
+        ogImage.content = post.image;
+    }
+    
+    // Twitter Card 태그 업데이트
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) {
+        twitterTitle.content = post.title;
+    }
+    
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescription) {
+        twitterDescription.content = post.excerpt;
+    }
+    
+    const twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage && post.image) {
+        twitterImage.content = post.image;
+    }
+    
+    // 구조화 데이터 업데이트
+    updateStructuredData(post);
+}
+
+// 구조화 데이터 업데이트 함수
+function updateStructuredData(post) {
+    const existingScript = document.querySelector('script[type="application/ld+json"][data-post="true"]');
+    if (existingScript) {
+        existingScript.remove();
+    }
+    
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "alternativeHeadline": post.excerpt.substring(0, 60),
+        "image": post.image,
+        "datePublished": post.date,
+        "dateModified": post.date,
+        "author": {
+            "@type": "Organization",
+            "name": "FinFlix"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "FinFlix",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.finflix.org/images/logo.png"
+            }
+        },
+        "description": post.excerpt,
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://www.finflix.org/post/${post.id}`
+        }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-post', 'true');
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+}
+
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
     // 메인 페이지에서만 블로그 기능 초기화
@@ -2012,6 +2102,559 @@ function loadPosts() {
                 date: '2025-08-29T12:00:00.000Z',
                 readTime: 6,
                 image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 24,
+                title: '🏦 잭슨홀 쇼크! 파월 "금리인하 전면 재검토"',
+                category: 'economy',
+                emoji: '🎯',
+                excerpt: '8월 22일 잭슨홀 미팅 파월 마지막 연설! 트럼프 빅컷(0.5%p) 압박 vs 연준 독립성 충돌. 한은 딜레마 "환율 vs 경기부양"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🎯 <strong>2025년 8월 22일 잭슨홀 미팅</strong>
+<span class="price-indicator">파월 의장 임기 마지막 연설</span>
+</div>
+
+<h2>🏔️ 잭슨홀의 운명의 날</h2>
+
+<p><strong>8월 22일 오전 10시</strong> (한국시간 오후 11시), 와이오밍 잭슨홀에서 파월의 마지막 춤이 시작된다.</p>
+
+<p>트럼프 대통령의 <strong>"해고 압박"</strong> vs 연준의 <strong>"독립성 사수"</strong> 대충돌!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">4.25~4.50%</span>
+    <span class="stat-label">현재 기준금리</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">0.50%p</span>
+    <span class="stat-label">트럼프 요구 빅컷</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">0.25%p</span>
+    <span class="stat-label">시장 예상 베이비스텝</span>
+  </div>
+</div>
+
+<h3>🔥 트럼프의 연준 압박 작전</h3>
+
+<blockquote>
+"9월 0.5%p 빅컷으로 시작해야 한다" - 스콧 베센트 재무장관
+</blockquote>
+
+<p>블룸버그 인터뷰에서 <strong>재무장관이 직접 빅컷 요구!</strong> 연준 독립성 역사상 최악의 정치 개입.</p>
+
+<ul>
+  <li><strong>트럼프 압박:</strong> "금리 안 내리면 파월 해고"</li>
+  <li><strong>베센트 주장:</strong> "경제 위축 막으려면 빅컷 필수"</li>
+  <li><strong>월가 반응:</strong> "연준 독립성 훼손 우려"</li>
+</ul>
+
+<h3>📊 시장 예상 시나리오</h3>
+
+<div class="chart-container">
+  <p><strong>시나리오 1 (70%):</strong> 0.25%p 인하 - 연준 독립성 지키기</p>
+  <p><strong>시나리오 2 (20%):</strong> 0.50%p 빅컷 - 트럼프에 굴복</p>
+  <p><strong>시나리오 3 (10%):</strong> 동결 - 인플레이션 재점화 우려</p>
+</div>
+
+<h3>🇰🇷 한국은행의 딜레마</h3>
+
+<p><strong>2.50%</strong> 현재 한은 기준금리. 8월 회의에서 어떤 선택?</p>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>💱 금리 인하시 위험</h4>
+    <ul>
+      <li>원달러 1500원 돌파 가능</li>
+      <li>외국인 자금 이탈</li>
+      <li>수입 물가 상승</li>
+      <li>가계부채 재점화</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>📈 금리 인하 필요성</h4>
+    <ul>
+      <li>건설업 부진 심각</li>
+      <li>내수 경기 침체</li>
+      <li>0.8% 성장률 위기</li>
+      <li>청년 실업률 급증</li>
+    </ul>
+  </div>
+</div>
+
+<h3>💬 전문가 전망</h3>
+
+<div class="chart-container" style="background: #f0f9ff;">
+  <p><strong>씨티그룹:</strong> "한은 1월 추가 인하 불가피"</p>
+  <p><strong>골드만삭스:</strong> "연준 따라 인하 지연될 것"</p>
+  <p><strong>모건스탠리:</strong> "환율 1450원까지 가능"</p>
+  <p><strong>JPM:</strong> "한미 금리차 역전 우려"</p>
+</div>
+
+<h3>🎲 투자 전략</h3>
+
+<ul>
+  <li><strong>빅컷 베팅:</strong> 나스닥 롱, 달러 숏</li>
+  <li><strong>베이비스텝:</strong> 금 매수, 채권 중립</li>
+  <li><strong>동결 시:</strong> 달러 강세, 주식 하락</li>
+</ul>
+
+<p><strong>한 줄 정리:</strong> "파월의 마지막 잭슨홀, 트럼프 압박 vs 연준 독립성 대결. 한은은 환율 때문에 꼼짝 못해"</p>
+</div>`,
+                date: '2025-08-30T09:00:00.000Z',
+                readTime: 7,
+                image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 25,
+                title: '🇨🇳 중국 디플레이션 공포! "부동산 -25% 추가 하락"',
+                category: 'economy',
+                emoji: '💥',
+                excerpt: '중국 경제성장률 4.4% 목표 미달! 부동산 18조 달러 증발, 공실 8천만채. 30년 국채 1.93% 일본보다 낮아. 한국 수출 직격탄!',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💥 <strong>중국 2025년 성장률 전망: 4.4%</strong>
+<span class="price-indicator price-down">📉 시진핑 목표 5% 미달</span>
+</div>
+
+<h2>🏚️ 중국 부동산 대붕괴 진행중</h2>
+
+<p><strong>18조 달러 증발!</strong> 에버그란데 파산 이후 3년, 아직도 바닥 안 보여.</p>
+
+<p>미국 2008년 금융위기보다 더 큰 규모. <strong>8천만채 공실</strong> = 미국 전체 주택의 절반!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">8천만채</span>
+    <span class="stat-label">빈 집 (11월 기준)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-25%</span>
+    <span class="stat-label">추가 하락 전망</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">18조 달러</span>
+    <span class="stat-label">증발한 자산</span>
+  </div>
+</div>
+
+<h3>🌀 일본식 디플레이션 경고</h3>
+
+<p><strong>충격!</strong> 중국 30년 국채 수익률 <strong>1.93%</strong> vs 일본 <strong>2.3%</strong></p>
+
+<ul>
+  <li><strong>생산자물가:</strong> 26개월 연속 하락</li>
+  <li><strong>소비자물가:</strong> 겨우 0.2% (디플레 직전)</li>
+  <li><strong>10년 국채:</strong> 20년 만에 2% 붕괴</li>
+  <li><strong>청년실업:</strong> 실제 30% 추정</li>
+</ul>
+
+<blockquote>
+"중국이 1990년대 일본의 길을 걷고 있다" - 폴 크루그먼
+</blockquote>
+
+<h3>📊 정부 대응책</h3>
+
+<div class="chart-container">
+  <p>💰 <strong>1.4조 달러</strong> 경기부양책 발표</p>
+  <p>💴 <strong>3조 위안</strong> 특별 국채 발행</p>
+  <p>📈 <strong>재정적자 4%</strong>로 확대 (GDP 대비)</p>
+  <p>🏦 <strong>지방정부 부채</strong> 13조 위안 스왑</p>
+</div>
+
+<h3>🏘️ 부동산 시장 현황</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>😱 암울한 현실</h4>
+    <ul>
+      <li>가계자산 70%가 부동산</li>
+      <li>골드만: 추가 20-25% 하락</li>
+      <li>베이징 아파트 -40% 폭락</li>
+      <li>건설사 90% 부도 위기</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>💊 정부 대책</h4>
+    <ul>
+      <li>주택 구매 규제 전면 철폐</li>
+      <li>대출 금리 역대 최저</li>
+      <li>1선 도시 구매 보조금</li>
+      <li>국유기업 재고 매입</li>
+    </ul>
+  </div>
+</div>
+
+<h3>🇰🇷 한국 경제 영향</h3>
+
+<p><strong>비상!</strong> 대중국 수출 의존도 20%, 직격탄 불가피</p>
+
+<div class="chart-container" style="background: #fef2f2;">
+  <p>🔋 <strong>배터리:</strong> 중국 수요 급감 -30%</p>
+  <p>🚗 <strong>전기차:</strong> BYD와 경쟁 격화</p>
+  <p>💾 <strong>반도체:</strong> 중국 자급률 상승 위협</p>
+  <p>🛍️ <strong>화장품:</strong> 중국 소비 침체 직격</p>
+</div>
+
+<h3>📈 글로벌 시장 전망</h3>
+
+<ul>
+  <li><strong>원자재:</strong> 구리, 철광석 약세 지속</li>
+  <li><strong>신흥국:</strong> 중국發 쇼크 전염 우려</li>
+  <li><strong>달러:</strong> 안전자산 선호로 강세</li>
+  <li><strong>금:</strong> 디플레이션 헷지 수요 증가</li>
+</ul>
+
+<h3>💬 전문가 의견</h3>
+
+<div class="chart-container" style="background: #f0f9ff;">
+  <p>"중국 디플레이션은 글로벌 경제 암초" - IMF</p>
+  <p>"부동산 없이 중국 회복 불가능" - 블룸버그</p>
+  <p>"2025년 중국 경제 하드랜딩 가능" - BofA</p>
+  <p>"한국 수출 최악 시나리오 대비해야" - KDI</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "중국 부동산 18조 달러 증발, 일본식 장기침체 진입. 한국 수출 비상등!"</p>
+</div>`,
+                date: '2025-08-30T10:00:00.000Z',
+                readTime: 8,
+                image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 26,
+                title: '💬 TON 코인 $2.44 "듀로프 체포 후 회복세, 텔레그램 10억 유저 파워"',
+                category: 'coin',
+                emoji: '💎',
+                excerpt: '텔레그램 CEO 파벨 듀로프 프랑스 체포! TON -18% 폭락 후 회복. 10억 유저 생태계 vs 정부 규제 충돌. 지금이 매수 기회?',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💎 <strong>TON 현재 가격: $2.44</strong>
+<span class="price-indicator">듀로프 체포 충격 후 회복 중</span>
+</div>
+
+<h2>🚨 텔레그램 CEO 체포 충격!</h2>
+
+<p><strong>8월 24일 토요일 밤</strong>, 파벨 듀로프가 프랑스 르부르제 공항에서 체포됐다!</p>
+
+<p>텔레그램에서 <strong>아동 성착취물, 마약 거래, 테러 조장</strong> 방조 혐의. 보석금 <strong>500만 유로</strong>에 석방.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">-18%</span>
+    <span class="stat-label">체포 직후 폭락</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$2.44</span>
+    <span class="stat-label">현재 가격</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">10억명</span>
+    <span class="stat-label">텔레그램 유저</span>
+  </div>
+</div>
+
+<h3>📉 가격 충격과 회복</h3>
+
+<ul>
+  <li><strong>체포 전:</strong> $6.80</li>
+  <li><strong>바닥:</strong> $5.38 (-18%)</li>
+  <li><strong>현재:</strong> $2.44 (회복 진행중)</li>
+  <li><strong>시총:</strong> 60억 달러</li>
+</ul>
+
+<blockquote>
+"TON의 가치는 텔레그램과의 연결에 실질적으로 의존한다" - 갤럭시 디지털
+</blockquote>
+
+<h3>🔥 왜 회복하고 있나?</h3>
+
+<p><strong>놀랍게도</strong> 체포에도 불구하고 TON 생태계는 건재하다!</p>
+
+<div class="chart-container">
+  <p>📱 <strong>10억 유저:</strong> 세계 최대 메신저 생태계</p>
+  <p>💰 <strong>스테이블코인:</strong> USDT 공급량 회복세</p>
+  <p>🎮 <strong>탭투언:</strong> 햄스터 컴뱃 등 게임 인기</p>
+  <p>🔗 <strong>독립성:</strong> 텔레그램과 별개 운영 가능</p>
+</div>
+
+<h3>⚖️ 규제 리스크 vs 기회</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>🚫 위험 요소</h4>
+    <ul>
+      <li>프랑스 정부 공격 가능성</li>
+      <li>텔레그램 의존도 높음</li>
+      <li>듀로프 없는 TON?</li>
+      <li>규제 불확실성</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>💎 기회 요소</h4>
+    <ul>
+      <li>10억 유저 파워</li>
+      <li>Web3 최대 생태계</li>
+      <li>미니앱 혁명</li>
+      <li>과매도 구간</li>
+    </ul>
+  </div>
+</div>
+
+<h3>📊 전문가 의견</h3>
+
+<div class="chart-container" style="background: #f0f9ff;">
+  <p>"정부가 TON 블록체인을 직접 공격하기는 어렵다" - 암호화폐 전문가</p>
+  <p>"텔레그램 연결고리가 약해지면 TON 가치 급락" - JP모건</p>
+  <p>"듀로프 체포는 오히려 탈중앙화 필요성 증명" - 비탈릭</p>
+</div>
+
+<h3>💰 투자 전략</h3>
+
+<ul>
+  <li><strong>단기:</strong> 변동성 활용 스윙 트레이딩</li>
+  <li><strong>중기:</strong> $2 지지선 확인 후 진입</li>
+  <li><strong>장기:</strong> 규제 명확해질 때까지 관망</li>
+</ul>
+
+<p><strong>한 줄 정리:</strong> "듀로프 체포 충격에도 TON 회복세. 10억 유저의 힘 vs 정부 규제의 대결!"</p>
+</div>`,
+                date: '2025-08-30T11:00:00.000Z',
+                readTime: 6,
+                image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 27,
+                title: '🚀 앱토스(APT) $4.46 "블랙록 BUIDL 상륙! 기관 러시 시작"',
+                category: 'coin',
+                emoji: '🏛️',
+                excerpt: '앱토스 TVL 5.38억 달러 돌파! 블랙록 BUIDL, 프랭클린템플턴 참여. 2025년 말 $20 목표가. 수이(SUI)와 함께 Move 언어 양강!',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🏛️ <strong>APT 현재 가격: $4.46</strong>
+<span class="price-indicator price-up">📈 기관 자금 유입 중</span>
+</div>
+
+<h2>🎯 블랙록이 앱토스를 선택했다!</h2>
+
+<p><strong>충격!</strong> 세계 최대 자산운용사 블랙록의 <strong>BUIDL 펀드</strong>가 앱토스에 상륙!</p>
+
+<p>프랭클린템플턴 <strong>BENJI</strong>까지 가세. 토큰화 자산 <strong>5.38억 달러</strong> 돌파!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$4.46</span>
+    <span class="stat-label">현재 가격</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$538M</span>
+    <span class="stat-label">TVL (3위)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$20</span>
+    <span class="stat-label">2025년 목표가</span>
+  </div>
+</div>
+
+<h3>🏦 기관들이 앱토스를 선택한 이유</h3>
+
+<ul>
+  <li><strong>속도:</strong> 16만 TPS (솔라나보다 빠름)</li>
+  <li><strong>안정성:</strong> 다운타임 제로</li>
+  <li><strong>Move 언어:</strong> 페이스북 출신 개발</li>
+  <li><strong>파트너십:</strong> 구글, MS, NBC 협력</li>
+</ul>
+
+<blockquote>
+"앱토스는 기관 진입을 위한 완벽한 인프라" - 블랙록 디지털자산 팀
+</blockquote>
+
+<h3>💎 Move 언어 생태계 급성장</h3>
+
+<div class="chart-container">
+  <p>⚡ <strong>앱토스 vs 수이:</strong> Move 양강 구도</p>
+  <p>📊 <strong>TVL 성장:</strong> 6개월 만에 300% 증가</p>
+  <p>🎮 <strong>게임:</strong> AAA급 Web3 게임 대거 진입</p>
+  <p>💰 <strong>DeFi:</strong> Thala, Aries 등 신규 프로토콜</p>
+</div>
+
+<h3>📈 가격 전망</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>📉 약세 시나리오</h4>
+    <ul>
+      <li>최저: $3.80</li>
+      <li>토큰 언락 압력</li>
+      <li>경쟁 체인 부상</li>
+      <li>시장 조정</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>📈 강세 시나리오</h4>
+    <ul>
+      <li>목표: $20.68</li>
+      <li>기관 자금 지속 유입</li>
+      <li>RWA 시장 주도</li>
+      <li>Move 생태계 확장</li>
+    </ul>
+  </div>
+</div>
+
+<h3>⚠️ 8월 16일 토큰 언락</h3>
+
+<p><strong>주의!</strong> 5천만 달러 규모 APT 언락 예정. 단기 매도압 가능성.</p>
+
+<div class="chart-container" style="background: #fef2f2;">
+  <p>🔓 <strong>언락 물량:</strong> 1,100만 APT</p>
+  <p>💵 <strong>시장 가치:</strong> 약 5천만 달러</p>
+  <p>📉 <strong>예상 영향:</strong> 단기 5-10% 조정</p>
+</div>
+
+<h3>💬 커뮤니티 반응</h3>
+
+<div class="chart-container" style="background: #f0f9ff;">
+  <p>"블랙록 진입 = 기관 인증 완료" - 크립토 트위터</p>
+  <p>"Move가 Rust를 이길 수 있을까?" - 개발자 커뮤니티</p>
+  <p>"수이 vs 앱토스, 둘 다 사라" - 고래 투자자</p>
+</div>
+
+<h3>🎯 투자 포인트</h3>
+
+<ul>
+  <li><strong>진입가:</strong> $4.00-4.20 (언락 후 조정)</li>
+  <li><strong>1차 목표:</strong> $6.50</li>
+  <li><strong>2차 목표:</strong> $10.00</li>
+  <li><strong>장기 목표:</strong> $20.68 (2025년 말)</li>
+</ul>
+
+<p><strong>한 줄 정리:</strong> "블랙록이 선택한 앱토스! 기관 머니 유입으로 $20 간다"</p>
+</div>`,
+                date: '2025-08-30T12:00:00.000Z',
+                readTime: 7,
+                image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 28,
+                title: '🐸 PEPE "밈코인 3위 등극! 시바·도지 추월 노린다"',
+                category: 'coin',
+                emoji: '🐸',
+                excerpt: 'PEPE 시총 3위 밈코인 등극! 2025년 말 $0.000011 목표. 하지만 -30% 덤핑 경고도? 비트코인 3조 달러 시대 최대 수혜자!',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🐸 <strong>PEPE 가격: $0.0000023</strong>
+<span class="price-indicator">밈코인 시총 3위</span>
+</div>
+
+<h2>🏆 개구리가 개를 이긴다?</h2>
+
+<p><strong>PEPE</strong>가 드디어 밈코인 <strong>빅3</strong>에 진입했다!</p>
+
+<p>도지, 시바 다음 3위. 하지만 일부는 <strong>-30% 폭락</strong> 경고. 진실은?</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">3위</span>
+    <span class="stat-label">밈코인 시총 순위</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">20x</span>
+    <span class="stat-label">강세장 목표</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-30%</span>
+    <span class="stat-label">약세 경고</span>
+  </div>
+</div>
+
+<h3>📊 밈코인 파워 랭킹</h3>
+
+<div class="chart-container">
+  <p>🐕 <strong>DOGE:</strong> 시총 1위 (영원한 왕)</p>
+  <p>🐕‍🦺 <strong>SHIB:</strong> 시총 2위 (도전자)</p>
+  <p>🐸 <strong>PEPE:</strong> 시총 3위 (신흥 강자)</p>
+  <p>🎩 <strong>WIF:</strong> 솔라나 밈 1위</p>
+  <p>🦴 <strong>BONK:</strong> 솔라나 OG</p>
+</div>
+
+<h3>💹 가격 시나리오 분석</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>🐻 약세론 (-30%)</h4>
+    <ul>
+      <li>PayFi 알트코인으로 자금 이동</li>
+      <li>밈코인 거래량 급감</li>
+      <li>고래들 익절 시작</li>
+      <li>신규 밈코인 등장</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>🐂 강세론 (20x)</h4>
+    <ul>
+      <li>비트코인 3조 달러 돌파 시</li>
+      <li>리테일 FOMO 재점화</li>
+      <li>바이낸스 홍보 강화</li>
+      <li>커뮤니티 파워 최강</li>
+    </ul>
+  </div>
+</div>
+
+<h3>🚀 LILPEPE 위협?</h3>
+
+<p><strong>신규 도전자!</strong> Little Pepe(LILPEPE) 프리세일 <strong>2,230만 달러</strong> 돌파!</p>
+
+<ul>
+  <li><strong>레이어2 밈코인:</strong> 가스비 절감</li>
+  <li><strong>1000% 성장:</strong> Q4 2025 목표</li>
+  <li><strong>PEPE 킬러?:</strong> 아직은 미지수</li>
+</ul>
+
+<blockquote>
+"PEPE는 이제 시작. 도지코인 시총까지 간다" - 밈코인 고래
+</blockquote>
+
+<h3>📈 2025년 말 가격 전망</h3>
+
+<div class="chart-container" style="background: #f0f9ff;">
+  <p><strong>보수적:</strong> $0.0000046 (2배)</p>
+  <p><strong>중립적:</strong> $0.0000058 (2.5배)</p>
+  <p><strong>낙관적:</strong> $0.000011 (5배)</p>
+  <p><strong>문라이트:</strong> $0.00005 (20배)</p>
+</div>
+
+<h3>⚡ vs 경쟁 밈코인</h3>
+
+<div class="chart-container">
+  <p>🐸 <strong>PEPE:</strong> 순수 밈, 최강 커뮤니티</p>
+  <p>🎩 <strong>WIF:</strong> 솔라나 속도, $1 돌파</p>
+  <p>🦴 <strong>BONK:</strong> 솔라나 OG, NFT 연계</p>
+  <p>🐧 <strong>PENGU:</strong> 푸지펭귄 IP 파워</p>
+</div>
+
+<h3>💬 커뮤니티 센티먼트</h3>
+
+<div class="chart-container" style="background: #dcfce7;">
+  <p>"페페는 문화다. 가격은 부차적" - PEPE 홀더</p>
+  <p>"도지 시총 1/10만 가도 10배" - 분석가</p>
+  <p>"밈코인 슈퍼사이클 온다" - CT 인플루언서</p>
+  <p>"또 러그풀 당할 각오하고 사라" - 비관론자</p>
+</div>
+
+<h3>🎲 매매 전략</h3>
+
+<ul>
+  <li><strong>적립식:</strong> 매주 소액 분할 매수</li>
+  <li><strong>스윙:</strong> 10-20% 등락 활용</li>
+  <li><strong>홀드:</strong> 강세장까지 존버</li>
+  <li><strong>헷지:</strong> PEPE + 경쟁 밈코인 분산</li>
+</ul>
+
+<p><strong>한 줄 정리:</strong> "PEPE 밈코인 3위 등극! 20배 vs -30%, 도박판 시작!"</p>
+</div>`,
+                date: '2025-08-30T13:00:00.000Z',
+                readTime: 8,
+                image: 'https://images.unsplash.com/photo-1621504450150-419d8aa2f6e6?w=800&h=400&fit=crop'
             }
         ];
     
