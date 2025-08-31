@@ -2655,6 +2655,206 @@ function loadPosts() {
                 date: '2025-08-30T13:00:00.000Z',
                 readTime: 8,
                 image: 'https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 26,
+                title: '🏦 한은 금리 동결 막전막후! "환율 1400원 vs 부동산 폭주"',
+                category: 'economy',
+                emoji: '💸',
+                excerpt: '한은 8월 금통위 D-3! 환율 1400원 공포 vs 부동산 또 폭등? 이창용 "미국 눈치 그만" vs 정부 "제발 내려줘"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💸 <strong>원달러 환율: 1,385원</strong> (8월 31일 기준)
+<span class="price-indicator price-down">📉 1400원 턱밑 위기</span>
+</div>
+
+<h2>🎰 한은의 도박: 금리 내리면 환율 터진다</h2>
+
+<p><strong>D-3!</strong> 9월 3일 한은 금통위. 이창용 총재 최대 고민의 순간.</p>
+
+<p>금리 내리면 <strong>환율 1400원</strong> 폭탄, 안 내리면 <strong>경기 침체</strong> 지옥.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">3.50%</span>
+    <span class="stat-label">현재 기준금리</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1,385원</span>
+    <span class="stat-label">원달러 환율</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">110조원</span>
+    <span class="stat-label">가계부채</span>
+  </div>
+</div>
+
+<h3>💥 팩트체크: 왜 지금 난리?</h3>
+
+<ul>
+  <li><strong>미국:</strong> 파월 9월 인하 확정 분위기</li>
+  <li><strong>일본:</strong> 엔화 강세로 원화만 약세</li>
+  <li><strong>중국:</strong> 위안화도 버티는데 원화만...</li>
+  <li><strong>한국:</strong> 무역수지 적자 + 외국인 이탈</li>
+</ul>
+
+<blockquote>
+"환율 1400원 넘으면 수입물가 10% 오른다" - KB경영연구소
+</blockquote>
+
+<h3>🏠 부동산은 또 다른 이야기</h3>
+
+<div class="chart-container">
+  <p>🔴 <strong>강남 재건축:</strong> 금리 0.25% 내려도 10% 뛴다</p>
+  <p>🔴 <strong>빌라 전세:</strong> 이미 바닥, 반등 대기중</p>
+  <p>🔴 <strong>신축 아파트:</strong> 분양가 상한제 풀면 폭등</p>
+</div>
+
+<h3>😱 이창용의 3가지 시나리오</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>시나리오 1: 동결 (60%)</h4>
+    <ul>
+      <li>환율 방어 우선</li>
+      <li>부동산 진정</li>
+      <li>경기 침체 감수</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>시나리오 2: 인하 (30%)</h4>
+    <ul>
+      <li>경기 부양 승부수</li>
+      <li>환율 1400원 감수</li>
+      <li>부동산 재점화 위험</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>시나리오 3 (10%):</strong> 인상?! 절대 없다. 이미 경기 죽어가는데...</p>
+
+<h3>💬 MZ가 알아야 할 TMI</h3>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 100%);">
+  <p>🍕 <strong>피자값:</strong> 환율 1400원 = 라지 3만원 시대</p>
+  <p>☕ <strong>스벅:</strong> 아메리카노 6천원 돌파</p>
+  <p>📱 <strong>아이폰:</strong> 프로맥스 200만원 예상</p>
+  <p>✈️ <strong>해외여행:</strong> 일본 10만원 = 10만엔 안됨</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "9월 3일 한은 동결 60% vs 인하 30%. 원화 죽거나 경기 죽거나 양자택일"</p>
+</div>`,
+                date: '2025-08-31T10:00:00.000Z',
+                readTime: 5,
+                image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 27,
+                title: '💴 엔캐리 청산 쓰나미! "닛케이 -12% 블랙먼데이"',
+                category: 'economy',
+                emoji: '🌊',
+                excerpt: '일본은행 금리 인상 시그널! 10년간 쌓인 엔캐리 10조 달러 대탈출. 코스피 동반 폭락 -8.7% "외국인 18조 팔았다"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box" style="background: linear-gradient(135deg, #fee2e2 0%, #dc2626 100%);">
+🌊 <strong>달러/엔: 142엔</strong> (150엔→142엔 급락)
+<span class="price-indicator price-down">📉 엔화 초강세 전환!</span>
+</div>
+
+<h2>🔥 엔캐리 트레이드 대청산의 밤</h2>
+
+<p><strong>드디어 터졌다!</strong> 일본은행 우에다 총재 <strong>"추가 금리인상"</strong> 한마디에 글로벌 시장 패닉.</p>
+
+<p>10년간 제로금리로 빌린 엔화 10조 달러가 한꺼번에 빠져나간다!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">-12.4%</span>
+    <span class="stat-label">닛케이 하루 폭락</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">10조$</span>
+    <span class="stat-label">엔캐리 규모</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-8.7%</span>
+    <span class="stat-label">코스피 동반 하락</span>
+  </div>
+</div>
+
+<h3>🎭 엔캐리 트레이드가 뭔데?</h3>
+
+<div class="chart-container" style="background: #f8fafc;">
+  <p>1️⃣ <strong>일본에서 0% 금리로 엔화 대출</strong></p>
+  <p>2️⃣ <strong>미국 주식, 한국 부동산에 투자</strong></p>
+  <p>3️⃣ <strong>수익 챙기고 엔화로 갚기</strong></p>
+  <p>💥 <strong>BUT! 엔화 오르면? 손실 폭탄!</strong></p>
+</div>
+
+<blockquote>
+"142엔까지 가면 마진콜 쓰나미 온다" - 노무라증권
+</blockquote>
+
+<h3>😱 한국 직격탄: 외국인 18조 매도</h3>
+
+<ul>
+  <li><strong>삼성전자:</strong> -10.3% (하루 시총 40조 증발)</li>
+  <li><strong>SK하이닉스:</strong> -9.8%</li>
+  <li><strong>네이버:</strong> -11.2%</li>
+  <li><strong>카카오:</strong> -8.5%</li>
+</ul>
+
+<h3>📊 왜 한국이 더 맞나?</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>🇰🇷 한국 취약점</h4>
+    <ul>
+      <li>외국인 비중 35%</li>
+      <li>엔캐리 자금 많음</li>
+      <li>환율 방어력 약함</li>
+      <li>반도체 의존도 높음</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>🇯🇵 일본은 버틴다</h4>
+    <ul>
+      <li>자국 투자자 80%</li>
+      <li>일은행 시장 개입</li>
+      <li>엔화 강세 = 수입 이득</li>
+      <li>관광 수입 증가</li>
+    </ul>
+  </div>
+</div>
+
+<h3>🎲 앞으로 시나리오</h3>
+
+<div class="highlight-box">
+  <p>📈 <strong>V자 반등 (40%):</strong> 일은행 개입, 단기 조정 끝</p>
+  <p>📉 <strong>추가 하락 (40%):</strong> 130엔까지, 코스피 2300</p>
+  <p>💀 <strong>대폭락 (20%):</strong> 120엔 돌파, 글로벌 금융위기</p>
+</div>
+
+<h3>💡 MZ 생존 전략</h3>
+
+<ul>
+  <li>🛡️ <strong>현금 비중 50% 유지</strong></li>
+  <li>💰 <strong>달러 일부 엔화 전환 고려</strong></li>
+  <li>📊 <strong>레버리지 투자 절대 금지</strong></li>
+  <li>🎯 <strong>2400 이하에서 분할 매수</strong></li>
+</ul>
+
+<div class="chart-container" style="background: linear-gradient(135deg, #dbeafe 0%, #3b82f6 100%);">
+  <h4>🚨 실시간 체크 포인트</h4>
+  <p>✓ 달러/엔 140엔 붕괴시 추가 폭락</p>
+  <p>✓ VIX 40 돌파시 패닉 셀링</p>
+  <p>✓ 코스피 2300 깨지면 2000 간다</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "엔캐리 10조 달러 대탈출! 142엔 깨지면 블랙 먼데이. 현금이 왕이다"</p>
+</div>`,
+                date: '2025-08-31T11:00:00.000Z',
+                readTime: 6,
+                image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=400&fit=crop'
             }
         ];
     
