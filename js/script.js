@@ -2855,6 +2855,263 @@ function loadPosts() {
                 date: '2025-08-31T11:00:00.000Z',
                 readTime: 6,
                 image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 29,
+                title: '💰 KB금융 10만원 돌파! "배당 수익률 7% 시대 열렸다"',
+                category: 'stock',
+                emoji: '🏦',
+                excerpt: 'KB금융 주당 5천원 배당 현실화! 10만원 돌파 후 12만원 목표. MZ세대 배당주 투자 1위 "월 100만원 배당 가능"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🏦 <strong>KB금융 주가: 103,900원</strong>
+<span class="price-indicator price-up">📈 52주 신고가 경신!</span>
+</div>
+
+<h2>💸 배당 수익률 7% 시대 도래</h2>
+
+<p><strong>KB금융</strong>이 드디어 <strong>10만원 시대</strong>를 열었다! 주당 배당금 5천원 시대가 온다.</p>
+
+<p>2025년 예상 배당 수익률 <strong>7.2%</strong>. 예금금리의 2배, 부동산 월세의 3배!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">5,000원</span>
+    <span class="stat-label">2025년 예상 배당</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">7.2%</span>
+    <span class="stat-label">배당 수익률</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">40%</span>
+    <span class="stat-label">주주환원율</span>
+  </div>
+</div>
+
+<h3>📊 왜 KB금융인가?</h3>
+
+<ul>
+  <li><strong>순이익 5조원 돌파:</strong> 역대 최대 실적 경신</li>
+  <li><strong>분기배당 실시:</strong> 3개월마다 현금 입금</li>
+  <li><strong>자사주 매입:</strong> 5천억원 추가 소각</li>
+  <li><strong>ROE 15% 달성:</strong> 국내 은행 1위</li>
+</ul>
+
+<blockquote>
+"KB금융은 한국의 JP모건이 될 것" - 이재용 KB금융 회장
+</blockquote>
+
+<h3>💎 MZ 배당투자 시뮬레이션</h3>
+
+<div class="chart-container" style="background: #f8fafc;">
+  <p>💰 <strong>1억원 투자시:</strong> 연 720만원 (월 60만원)</p>
+  <p>💰 <strong>2억원 투자시:</strong> 연 1,440만원 (월 120만원)</p>
+  <p>💰 <strong>5억원 투자시:</strong> 연 3,600만원 (월 300만원)</p>
+  <p>🎯 <strong>월 100만원 배당:</strong> 1.7억원 투자 필요</p>
+</div>
+
+<h3>🏆 경쟁사 비교</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>KB금융 우위</h4>
+    <ul>
+      <li>배당수익률: 7.2%</li>
+      <li>분기배당 실시</li>
+      <li>해외사업 25%</li>
+      <li>디지털 1위</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>타 금융주</h4>
+    <ul>
+      <li>신한: 5.8%</li>
+      <li>하나: 5.2%</li>
+      <li>우리: 4.5%</li>
+      <li>기업은행: 6.1%</li>
+    </ul>
+  </div>
+</div>
+
+<h3>📈 목표주가 상향</h3>
+
+<ul>
+  <li><strong>NH투자:</strong> 12만원 (상향)</li>
+  <li><strong>삼성증권:</strong> 11.5만원</li>
+  <li><strong>미래에셋:</strong> 13만원</li>
+  <li><strong>JP모건:</strong> 125,000원</li>
+</ul>
+
+<h3>🚀 2025년 촉매제</h3>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 100%);">
+  <p>✅ <strong>금리인하:</strong> 순이익 10% 추가 상승</p>
+  <p>✅ <strong>배당 확대:</strong> 주당 6천원 가능</p>
+  <p>✅ <strong>해외진출:</strong> 베트남 1위 은행 목표</p>
+  <p>✅ <strong>핀테크:</strong> 케이뱅크 IPO 대박</p>
+</div>
+
+<h3>⚠️ 리스크 체크</h3>
+
+<ul>
+  <li>🔴 <strong>부동산 PF 부실:</strong> 3조원 잠재 리스크</li>
+  <li>🔴 <strong>가계부채 증가:</strong> 연체율 상승 우려</li>
+  <li>🔴 <strong>규제 강화:</strong> DSR 규제 영향</li>
+</ul>
+
+<h3>💡 투자 전략</h3>
+
+<div class="chart-container">
+  <p>🎯 <strong>목표가:</strong> 12만원 (15% 상승여력)</p>
+  <p>📍 <strong>매수 타이밍:</strong> 10만원 이하 분할매수</p>
+  <p>⏰ <strong>보유기간:</strong> 최소 3년 (배당 재투자)</p>
+  <p>💰 <strong>포트폴리오:</strong> 전체의 15-20% 비중</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "KB금융 배당 7% 시대! 10만원 돌파 후 12만원 go. 월 100만원 배당 꿈이 아니다"</p>
+</div>`,
+                date: '2025-09-01T09:00:00.000Z',
+                readTime: 7,
+                image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 30,
+                title: '🎌 애니메코인(ANIME) "일본 오타쿠 3조원 시장 정조준"',
+                category: 'coin',
+                emoji: '🗾',
+                excerpt: 'ANIME $0.016 아즈키 NFT 연계! 일본 애니 시장 3조원 + Web3 융합. 바이낸스 상장 후 100배 목표 "넷플릭스 of 애니메"',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+🎌 <strong>ANIME 가격: $0.0158</strong>
+<span class="price-indicator">시총 400위 다크호스</span>
+</div>
+
+<h2>🚀 오타쿠 경제 + 크립토 = 대박 공식</h2>
+
+<p><strong>애니메코인(ANIME)</strong>이 일본 애니메이션 시장 <strong>3조원</strong>을 블록체인으로 혁신한다!</p>
+
+<p>아즈키 NFT 팀이 만든 정통 Web3 프로젝트. <strong>100억 토큰</strong> 중 50.5% 커뮤니티 배분!</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$0.0158</span>
+    <span class="stat-label">현재 가격</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">8,700만$</span>
+    <span class="stat-label">시가총액</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1,670만$</span>
+    <span class="stat-label">24시간 거래량</span>
+  </div>
+</div>
+
+<h3>🎭 왜 애니메코인인가?</h3>
+
+<ul>
+  <li><strong>아즈키 백그라운드:</strong> NFT 시총 10위권 블루칩</li>
+  <li><strong>이더리움 + 아비트럼:</strong> 듀얼 체인 전략</li>
+  <li><strong>GameSquare 파트너십:</strong> 250만 달러 투자 확정</li>
+  <li><strong>2025년 1월 런칭:</strong> 초기 진입 기회</li>
+</ul>
+
+<blockquote>
+"애니메이션은 일본의 원유다. ANIME는 그 원유를 Web3로 정제한다" - 아즈키 창업자
+</blockquote>
+
+<h3>💎 토크노믹스 분석</h3>
+
+<div class="chart-container" style="background: #f8fafc;">
+  <p>👥 <strong>커뮤니티:</strong> 50.5% (5.05억 토큰)</p>
+  <p>🏛️ <strong>재단:</strong> 15% (락업 2년)</p>
+  <p>💰 <strong>투자자:</strong> 10% (베스팅 18개월)</p>
+  <p>🎮 <strong>에코시스템:</strong> 24.5%</p>
+</div>
+
+<h3>🏆 경쟁 프로젝트 비교</h3>
+
+<div class="risk-reward-box">
+  <div class="risk-section">
+    <h4>ANIME 장점</h4>
+    <ul>
+      <li>아즈키 NFT 연계</li>
+      <li>일본 시장 특화</li>
+      <li>바이낸스 상장</li>
+      <li>커뮤니티 50.5%</li>
+    </ul>
+  </div>
+  <div class="reward-section">
+    <h4>경쟁 코인</h4>
+    <ul>
+      <li>APE: 시총 10억$ (과대평가)</li>
+      <li>SAND: 게임 특화</li>
+      <li>MANA: 메타버스</li>
+      <li>AXS: P2E 한정</li>
+    </ul>
+  </div>
+</div>
+
+<h3>📊 가격 시나리오</h3>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #dbeafe 0%, #3b82f6 100%);">
+  <p>🎯 <strong>3개월:</strong> $0.05 (3배)</p>
+  <p>🚀 <strong>6개월:</strong> $0.15 (10배)</p>
+  <p>🌙 <strong>1년:</strong> $0.50 (30배)</p>
+  <p>💎 <strong>강세장:</strong> $1.50 (100배)</p>
+</div>
+
+<h3>🔥 2025년 로드맵</h3>
+
+<ul>
+  <li><strong>Q1:</strong> 메인넷 런칭 + DEX 상장</li>
+  <li><strong>Q2:</strong> 애니메 스트리밍 dApp</li>
+  <li><strong>Q3:</strong> 일본 거래소 상장</li>
+  <li><strong>Q4:</strong> 넷플릭스 파트너십(?)</li>
+</ul>
+
+<h3>💬 핵심 파트너십</h3>
+
+<div class="chart-container">
+  <p>🎮 <strong>GameSquare:</strong> 250만 달러 전략 투자</p>
+  <p>🖼️ <strong>아즈키 NFT:</strong> 홀더 10만명</p>
+  <p>⛓️ <strong>Arbitrum:</strong> L2 독점 지원</p>
+  <p>🏢 <strong>바이낸스:</strong> 런치풀 상장 확정</p>
+</div>
+
+<h3>⚠️ 리스크 요인</h3>
+
+<ul>
+  <li>🔴 <strong>초기 프로젝트:</strong> 실제 프로덕트 미완성</li>
+  <li>🔴 <strong>규제 리스크:</strong> 일본 암호화폐 규제</li>
+  <li>🔴 <strong>경쟁 심화:</strong> 대형 IP 진입 가능</li>
+  <li>🔴 <strong>베어마켓:</strong> 알트코인 90% 하락 가능</li>
+</ul>
+
+<h3>🎯 투자 전략</h3>
+
+<div class="highlight-box">
+  <p>💰 <strong>진입가:</strong> $0.01-0.02 (현재 적정)</p>
+  <p>📈 <strong>1차 목표:</strong> $0.05 (부분 익절)</p>
+  <p>🎯 <strong>최종 목표:</strong> $0.50+ (80% 익절)</p>
+  <p>⚖️ <strong>포지션:</strong> 전체 포트폴리오 3-5%</p>
+</div>
+
+<h3>💡 MZ 투자 팁</h3>
+
+<ul>
+  <li>✅ <strong>소액 분산:</strong> 100만원 이하 투자</li>
+  <li>✅ <strong>장기 홀딩:</strong> 최소 6개월 보유</li>
+  <li>✅ <strong>커뮤니티 참여:</strong> 에어드랍 기회</li>
+  <li>✅ <strong>손절 원칙:</strong> -30%에서 반드시 손절</li>
+</ul>
+
+<p><strong>한 줄 정리:</strong> "ANIME 일본 오타쿠 3조원 시장 혁신! 아즈키 NFT × Web3 = 100배 문샷 가능"</p>
+</div>`,
+                date: '2025-09-01T10:00:00.000Z',
+                readTime: 8,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc31?w=800&h=400&fit=crop'
             }
         ];
     
