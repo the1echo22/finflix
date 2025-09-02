@@ -3504,7 +3504,7 @@ function renderPosts() {
         const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
 
         return `
-            <div class="blog-card" onclick="viewPost(${post.id})">
+            <div class="blog-card" onclick="viewPost('${post.id}')">
                 <div class="card-visual" style="background: ${randomGradient}">
                     ${post.image ? `<img loading="lazy" src="${post.image}" alt="${post.title}" />` : ''}
                     <div class="emoji-overlay">
@@ -3523,8 +3523,8 @@ function renderPosts() {
                         <span class="read-time">${getReadTimeEmoji(post.readTime || 5)}</span>
                         ${isAdmin ? `
                             <div class="card-actions">
-                                <button class="edit-btn" onclick="event.stopPropagation(); editPost(${post.id})">수정</button>
-                                <button class="delete-btn" onclick="event.stopPropagation(); deletePost(${post.id})">삭제</button>
+                                <button class="edit-btn" onclick="event.stopPropagation(); editPost('${post.id}')">수정</button>
+                                <button class="delete-btn" onclick="event.stopPropagation(); deletePost('${post.id}')">삭제</button>
                             </div>
                         ` : `
                             <div class="card-arrow">→</div>
