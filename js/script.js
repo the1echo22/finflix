@@ -2857,7 +2857,281 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=400&fit=crop'
             },
             {
+                id: Date.now() + 28,
+                title: '🍎 애플카드 한국 상륙! "카뱅과 연내 출시 확정"',
+                category: 'economy',
+                emoji: '💳',
+                excerpt: '애플페이 6개월 만에 대박! 애플카드까지 들어온다. 캐시백 3% 폭탄, 연회비 0원. 삼성카드 "이거 실화냐?" 현대카드 비상!',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+💳 <strong>D-90 애플카드 한국 상륙!</strong>
+<span class="price-indicator price-up">🎯 2025년 12월 정식 출시</span>
+</div>
+
+<h2>🚨 파.격.발.표! 애플×카뱅 역대급 콜라보</h2>
+
+<p>야 이거 <strong>진짜 대박이다!</strong></p>
+
+<p>애플이 드디어 <strong>한국에 애플카드</strong> 들고 온다! 카카오뱅크랑 손잡고 12월에 출시한댄다.</p>
+
+<p>3월에 애플페이 들어온 지 겨우 6개월 만에 <strong>월 사용자 500만명</strong> 돌파했는데, 이제 애플카드까지? 이건 뭐... 게임 끝났다 ㅋㅋㅋ</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">3%</span>
+    <span class="stat-label">애플 결제 캐시백</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">2%</span>
+    <span class="stat-label">애플페이 캐시백</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1%</span>
+    <span class="stat-label">일반 결제 캐시백</span>
+  </div>
+</div>
+
+<h3>🎁 미친 혜택들 보고 가실게요</h3>
+
+<blockquote>
+"연회비? 그런 거 없음ㅋㅋ 평생 0원이야" - 팀 쿡
+</blockquote>
+
+<div class="chart-container">
+  <p><strong>🍎 애플 스토어:</strong> 3% 즉시 캐시백 (아이폰 사면 4만원 바로 적립)</p>
+  <p><strong>📱 애플페이:</strong> 2% 캐시백 (스벅, 올영, GS25 다 됨)</p>
+  <p><strong>💳 일반 결제:</strong> 1% 캐시백 (해외결제 수수료 0%)</p>
+  <p><strong>🎯 특별 혜택:</strong> 애플 뮤직/TV+ 3개월 무료</p>
+</div>
+
+<h3>😱 한국 카드사들 "멘붕" 실시간</h3>
+
+<p><strong>현대카드:</strong> "우리도 더 블랙 프리미엄 있는데..." (연회비 15만원 ㅋㅋ)</p>
+<p><strong>삼성카드:</strong> "갤럭시 카드 만들어야 하나?" (이미 늦음)</p>
+<p><strong>신한카드:</strong> "애플이랑 제휴하자!" (카뱅이 선점함 ㅠ)</p>
+
+<h3>💸 카카오뱅크 주가 "로켓" 예약</h3>
+
+<div class="highlight-box">
+  <h4>📈 카뱅 예상 시나리오</h4>
+  <ul>
+    <li>MAU 2000만 돌파 (현재 1700만)</li>
+    <li>신규 고객 300만명 유입</li>
+    <li>카드 사업 매출 5배 성장</li>
+    <li>주가 목표가 상향 (7만원→10만원)</li>
+  </ul>
+</div>
+
+<h3>🤔 근데 이거 왜 지금 나온거임?</h3>
+
+<ol>
+  <li><strong>애플페이 대성공:</strong> 6개월 만에 500만 유저 (예상의 2배)</li>
+  <li><strong>Z세대 장악:</strong> 20대 아이폰 점유율 65% 독점</li>
+  <li><strong>금융당국 규제 완화:</strong> 빅테크 금융 진출 허용</li>
+  <li><strong>골드만삭스 철수:</strong> 미국에서 손실 누적으로 한국 시장 노림</li>
+</ol>
+
+<h3>🎯 MZ가 꼭 알아야 할 "꿀팁"</h3>
+
+<div class="chart-container">
+  <p><strong>💡 Tip 1:</strong> 12월 출시 때 "선착순 10만명" 특별 혜택 있을 듯</p>
+  <p><strong>💡 Tip 2:</strong> 카뱅 계좌 미리 만들어두면 우선 발급 가능성↑</p>
+  <p><strong>💡 Tip 3:</strong> 애플 제품 살 계획 있으면 12월까지 기다려라</p>
+  <p><strong>💡 Tip 4:</strong> 해외직구족은 무조건 만들어야 함 (수수료 0%)</p>
+</div>
+
+<h3>⚡ vs 경쟁사 비교 (팩트체크)</h3>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">애플카드</span>
+    <span class="stat-label">연회비 0원<br>캐시백 3%</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">현대카드M</span>
+    <span class="stat-label">연회비 3만원<br>포인트 1%</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">삼성 taptap</span>
+    <span class="stat-label">연회비 1.5만원<br>할인 2%</span>
+  </div>
+</div>
+
+<blockquote>
+💬 <strong>"이제 지갑에 카드 1장만 있으면 됨. 그게 애플카드야"</strong> - 카뱅 이용자 예상 댓글
+</blockquote>
+
+<h3>🚀 투자 포인트 정리</h3>
+
+<div class="highlight-box">
+  <p><strong>🔥 핫한 종목들:</strong></p>
+  <ul>
+    <li><strong>카카오뱅크(323410):</strong> 목표가 10만원 (현재 5.8만)</li>
+    <li><strong>카카오(035720):</strong> 금융 부문 재평가 기대</li>
+    <li><strong>비씨카드:</strong> 상장 시 대박 예상 (제휴 가능성)</li>
+  </ul>
+  <p style="color: #ef4444;">⚠️ 카드사 주식은 단기 조정 예상 (현대차, 신한지주 등)</p>
+</div>
+
+<p><strong>한 줄 정리:</strong> "애플카드 = 게임체인저. 12월 출시 전에 카뱅 계좌부터 만들어라. 카드업계 판 완전히 바뀐다!"</p>
+</div>`,
+                date: '2025-09-02T09:00:00.000Z',
+                readTime: 7,
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop'
+            },
+            {
                 id: Date.now() + 29,
+                title: '🛢️ 유가 60달러 붕괴! "사우디 항복 선언" OPEC+ 감산 포기',
+                category: 'economy',
+                emoji: '⛽',
+                excerpt: 'WTI 62달러 추락! 사우디 "더는 못 버텨" 감산 철회. 중국 원유 수입 -15% 쇼크. 주유소 리터당 1400원 시대 온다?',
+                content: `<div class="content-wrapper">
+<div class="highlight-box">
+⛽ <strong>WTI 원유: $62.45 (-18%)</strong>
+<span class="price-indicator price-down">📉 6개월 만에 최저가</span>
+</div>
+
+<h2>💥 빅뉴스! OPEC+ "감산 포기" 백기투항</h2>
+
+<p>야 이거 <strong>진짜 터졌다!</strong></p>
+
+<p>국제유가가 <strong>60달러대로 폭락</strong>했어! 사우디가 드디어 "더 이상 못 버티겠다" 하고 감산 포기 선언했대.</p>
+
+<p>WTI 기준 <strong>$62.45</strong>... 작년 이맘때 100달러 넘었는데 -40% 떨어진 거야 ㄷㄷ</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">$62.45</span>
+    <span class="stat-label">WTI 현재가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-40%</span>
+    <span class="stat-label">연초 대비</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">$55</span>
+    <span class="stat-label">골드만삭스 전망</span>
+  </div>
+</div>
+
+<h3>🇸🇦 사우디 "재정적자 못 버텨" 항복</h3>
+
+<blockquote>
+"감산? 이제 그만! 시장 점유율 뺏기느니 차라리 치킨게임 하겠다" - 압둘아지즈 빈 살만 (사우디 에너지장관)
+</blockquote>
+
+<p>사우디가 <strong>하루 200만 배럴</strong> 증산 결정! 이거 뭐... 유가 50달러 간다는 소리잖아?</p>
+
+<div class="chart-container">
+  <p><strong>📊 OPEC+ 감산 포기 이유:</strong></p>
+  <p>✓ 미국 셰일오일 역대 최대 생산 (하루 1340만 배럴)</p>
+  <p>✓ 러시아 몰래 할당량 초과 생산 (제재 회피 자금 필요)</p>
+  <p>✓ 이란도 제재 무시하고 중국에 덤핑 판매</p>
+  <p>✓ 베네수엘라, 리비아 생산 재개</p>
+</div>
+
+<h3>🇨🇳 중국發 "수요 쇼크" 설상가상</h3>
+
+<div class="highlight-box">
+  <h4>😱 중국 경제 지표 "충격"</h4>
+  <ul>
+    <li>원유 수입 -15% (8월 전년비)</li>
+    <li>경제성장률 4.6% (목표 5% 미달)</li>
+    <li>전기차 보급으로 휘발유 수요 -20%</li>
+    <li>부동산 불황으로 경유 수요 급감</li>
+  </ul>
+</div>
+
+<p>중국이 세계 원유의 <strong>15%를 소비</strong>하는데, 여기서 수요가 줄면? 게임 끝이지 뭐...</p>
+
+<h3>⛽ 한국 "주유소 전쟁" 시작됐다</h3>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <span class="stat-value">1,680원</span>
+    <span class="stat-label">현재 휘발유(리터)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1,400원</span>
+    <span class="stat-label">연말 예상가</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">-300원</span>
+    <span class="stat-label">예상 하락폭</span>
+  </div>
+</div>
+
+<p><strong>알뜰주유소</strong>는 벌써 1,500원대 진입! GS칼텍스, SK에너지도 할인 전쟁 돌입했어.</p>
+
+<h3>📈 수혜주 vs 피해주 정리</h3>
+
+<div class="chart-container">
+  <p><strong>🚀 오를 주식 (수혜):</strong></p>
+  <p>✓ <strong>항공사:</strong> 대한항공, 아시아나 (유류비 -30%)</p>
+  <p>✓ <strong>해운:</strong> HMM, 팬오션 (벙커유 가격 하락)</p>
+  <p>✓ <strong>화학:</strong> LG화학, 롯데케미칼 (나프타 원가↓)</p>
+  <p>✓ <strong>타이어:</strong> 한국타이어, 넥센 (합성고무 원가↓)</p>
+</div>
+
+<div class="chart-container" style="background: #fee2e2;">
+  <p><strong>📉 떨어질 주식 (피해):</strong></p>
+  <p>✓ <strong>정유:</strong> S-Oil, SK이노베이션 (정제마진 붕괴)</p>
+  <p>✓ <strong>조선:</strong> 삼성중공업, 대우조선 (해양플랜트 주문↓)</p>
+  <p>✓ <strong>건설:</strong> 현대건설, GS건설 (중동 프로젝트 취소)</p>
+</div>
+
+<h3>🤯 "리터당 1,200원" 시대 올까?</h3>
+
+<p>전문가들 예측이 더 충격적이야:</p>
+
+<blockquote>
+💬 <strong>"WTI 50달러 뚫리면 휘발유 1,200원도 가능. 2015년 재현될 것"</strong> - 김현수 에너지경제연구원
+</blockquote>
+
+<div class="highlight-box">
+  <h4>🎯 MZ 체크포인트</h4>
+  <ul>
+    <li><strong>자동차 구매:</strong> 휘발유차 다시 인기 (전기차 메리트↓)</li>
+    <li><strong>여행 계획:</strong> 항공료 인하 예상 (유럽 50만원대 가능)</li>
+    <li><strong>물가:</strong> 택배비, 배달비 인하 기대</li>
+    <li><strong>투자:</strong> 정유주 손절, 항공/화학주 매수 타이밍</li>
+  </ul>
+</div>
+
+<h3>⚡ 그런데... 진짜 문제는?</h3>
+
+<div class="chart-container">
+  <p><strong>😰 저유가 = 디플레이션 신호:</strong></p>
+  <p>✓ 글로벌 경기침체 우려 확산</p>
+  <p>✓ 중국 부동산 버블 붕괴 가속</p>
+  <p>✓ 유럽 제조업 PMI 8개월 연속 하락</p>
+  <p>✓ "수요가 없어서" 유가가 떨어지는 것</p>
+</div>
+
+<h3>🎬 결론: 뭘 해야 하나?</h3>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);">
+  <h4>💡 Action Plan</h4>
+  <ol>
+    <li><strong>정유주 보유자:</strong> 손절 or 비중 축소</li>
+    <li><strong>현금 보유자:</strong> 항공/화학주 분할 매수</li>
+    <li><strong>차량 구매 예정:</strong> 3개월 기다려 (할인 예상)</li>
+    <li><strong>해외여행:</strong> 연말 항공권 미리 예약</li>
+  </ol>
+</div>
+
+<blockquote>
+🔥 <strong>"유가 60달러 = 경제 비상등. 디플레이션 온다는 신호탄이야. 현금이 왕이 되는 시대 준비해"</strong>
+</blockquote>
+
+<p><strong>한 줄 정리:</strong> "유가 폭락은 양날의 검! 주유비는 싸지지만 경기침체 신호. 정유주 빼고 소비주로 갈아타라"</p>
+</div>`,
+                date: '2025-09-02T10:00:00.000Z',
+                readTime: 8,
+                image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&h=400&fit=crop'
+            },
+            {
+                id: Date.now() + 30,
                 title: '💰 KB금융 10만원 돌파! "배당 수익률 7% 시대 열렸다"',
                 category: 'stock',
                 emoji: '🏦',
