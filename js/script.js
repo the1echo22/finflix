@@ -307,7 +307,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 1,
+                id: 'nvidia-blackwell-chip',
                 title: '엔비디아 시총 3.7조 달러 돌파! "블랙웰 칩 품귀현상"',
                 category: 'stock',
                 emoji: '🚀',
@@ -386,7 +386,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1593380090147-a2192b72f9ae?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 2,
+                id: 'ethereum-10k-trump',
                 title: '이더리움 1만 달러 간다? "트럼프 암호화폐 전략자산 지정"',
                 category: 'coin',
                 emoji: '💎',
@@ -468,7 +468,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 3,
+                id: 'winners-coin-800-percent',
                 title: '위너즈 코인 바닥 찍었다? "800% 반등 예측"',
                 category: 'coin',
                 emoji: '🏆',
@@ -564,7 +564,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 4,
+                id: 'solana-298-dollars',
                 title: '솔라나 298달러 간다! "2025년 새로운 ATH 전망"',
                 category: 'coin',
                 emoji: '☀️',
@@ -648,7 +648,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1620541250720-cb7f1c13047f?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 5,
+                id: 'tesla-714-target',
                 title: '테슬라 714달러 목표가? "머스크 퇴진 시 -25% 경고"',
                 category: 'stock',
                 emoji: '🚗',
@@ -741,7 +741,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 6,
+                id: 'samsung-tesla-ai-chip',
                 title: '🚨 삼성전자 테슬라 22.8조 수주! "AI 반도체 대반격 시작"',
                 category: 'stock',
                 emoji: '📱',
@@ -860,7 +860,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 7,
+                id: 'seoul-apartment-15-billion',
                 title: '🏠 서울 아파트 10채 중 3채가 15억 넘었다 "마용성 MZ 몰린다"',
                 category: 'economy',
                 emoji: '🏠',
@@ -1008,7 +1008,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1624811532681-e58a7e25f273?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 8,
+                id: 'hanmi-pharm-glp1',
                 title: '💊 한미약품 44만원 간다? "GLP-1 삼중작용제 체중 -40% 성공"',
                 category: 'stock',
                 emoji: '💊',
@@ -1145,7 +1145,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1585241936939-be4099591252?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 9,
+                id: 'bitcoin-crash-30k-warning',
                 title: '🚨 비트코인 12만 달러에서 3만 달러로? "역대급 대폭락 온다"',
                 category: 'hot',
                 emoji: '⚠️',
@@ -1308,7 +1308,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 10,
+                id: 'roblox-metaverse-crash',
                 title: '🎮 로블록스 주가 30% 폭락! "메타버스 거품 꺼지나"',
                 category: 'stock',
                 emoji: '🎮',
@@ -1362,7 +1362,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1610795224311-d002f8516119?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 11,
+                id: 'gold-3000-dollars',
                 title: '💰 금 온스당 3000달러 간다! "연준 금리인하 + 중앙은행 매집"',
                 category: 'economy',
                 emoji: '💰',
@@ -1414,7 +1414,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1593380090147-a2192b72f9ae?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 12,
+                id: 'apple-250-ai-phone',
                 title: '🍎 애플 주가 250달러? "AI폰 출시로 슈퍼사이클 온다"',
                 category: 'stock',
                 emoji: '🍎',
@@ -1466,7 +1466,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 13,
+                id: 'ripple-xrp-10-dollars',
                 title: '🏦 리플(XRP) 10달러 간다? "SEC 소송 종결 임박"',
                 category: 'coin',
                 emoji: '⚡',
@@ -1518,7 +1518,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 14,
+                id: 'kakao-50k-hyperclova',
                 title: '🔥 카카오 5만원 간다? "AI 하이퍼클로바X 대박 조짐"',
                 category: 'stock',
                 emoji: '💬',
@@ -1570,7 +1570,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1610397962076-02407a169a5b?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 15,
+                id: 'hyundai-300k-ev',
                 title: '🚗 현대차 30만원? "전기차 판매 1위, 수소차 독점"',
                 category: 'stock',
                 emoji: '🚗',
@@ -1642,7 +1642,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 16,
+                id: 'netflix-1000-dollars',
                 title: '📺 넷플릭스 1000달러? "광고 요금제 가입자 폭증"',
                 category: 'stock',
                 emoji: '📺',
@@ -1703,7 +1703,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 17,
+                id: 'dogecoin-1-dollar-musk',
                 title: '⚡ 도지코인 1달러? "머스크 X 결제 통합 확정"',
                 category: 'coin',
                 emoji: '🐕',
@@ -1764,7 +1764,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 18,
+                id: 'visa-350-dollars',
                 title: '💳 비자 카드 주가 350달러! "결제 독점 지위 굳건"',
                 category: 'stock',
                 emoji: '💳',
@@ -1824,7 +1824,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 19,
+                id: 'us-commercial-real-estate',
                 title: '🏢 미국 상업용 부동산 폭락! "재택근무로 빌딩 텅텅"',
                 category: 'economy',
                 emoji: '🏢',
@@ -1897,7 +1897,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 21,
+                id: 'trump-coin-opportunity',
                 title: '🎺 트럼프 코인 $9.5 "74달러에서 -89% 폭락, 지금이 기회?"',
                 category: 'coin',
                 emoji: '🇺🇸',
@@ -1979,7 +1979,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1609726494499-27d3e942456c?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 22,
+                id: 'eric-trump-wlfi-unlock',
                 title: '💼 에릭 트럼프 WLFI "9월 1일 언락! 15억 달러 IPO 간다"',
                 category: 'coin',
                 emoji: '🏛️',
@@ -2061,7 +2061,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1622186477895-f2af6a0f5a97?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 23,
+                id: 'mikami-yua-coin-collapse',
                 title: '🎌 미카미 유아 코인 "340만 달러→10만 달러 -97% 폭망"',
                 category: 'coin',
                 emoji: '💔',
@@ -2154,7 +2154,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 24,
+                id: 'jackson-hole-powell-rate-cut',
                 title: '🏦 잭슨홀 쇼크! 파월 "금리인하 전면 재검토"',
                 category: 'economy',
                 emoji: '🎯',
@@ -2257,7 +2257,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 25,
+                id: 'china-deflation-real-estate',
                 title: '🇨🇳 중국 디플레이션 공포! "부동산 -25% 추가 하락"',
                 category: 'economy',
                 emoji: '💥',
@@ -2372,7 +2372,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1565191999001-551c187427bb?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 26,
+                id: 'ton-durov-arrest-recovery',
                 title: '💬 TON 코인 $2.44 "듀로프 체포 후 회복세, 텔레그램 10억 유저 파워"',
                 category: 'coin',
                 emoji: '💎',
@@ -2474,7 +2474,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 27,
+                id: 'aptos-blackrock-buidl',
                 title: '🚀 앱토스(APT) $4.46 "블랙록 BUIDL 상륙! 기관 러시 시작"',
                 category: 'coin',
                 emoji: '🏛️',
@@ -2585,7 +2585,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 28,
+                id: 'pepe-memecoin-top3',
                 title: '🐸 PEPE "밈코인 3위 등극! 시바·도지 추월 노린다"',
                 category: 'coin',
                 emoji: '🐸',
@@ -2707,7 +2707,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 26,
+                id: 'bok-rate-freeze-dilemma',
                 title: '🏦 한은 금리 동결 막전막후! "환율 1400원 vs 부동산 폭주"',
                 category: 'economy',
                 emoji: '💸',
@@ -2799,7 +2799,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 27,
+                id: 'yen-carry-trade-unwinding',
                 title: '💴 엔캐리 청산 쓰나미! "닛케이 -12% 블랙먼데이"',
                 category: 'economy',
                 emoji: '🌊',
@@ -2907,7 +2907,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 28,
+                id: 'apple-card-korea-kabank',
                 title: '🍎 애플카드 한국 상륙! "카뱅과 연내 출시 확정"',
                 category: 'economy',
                 emoji: '💳',
@@ -3030,7 +3030,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 29,
+                id: 'oil-price-60-saudi-surrender',
                 title: '🛢️ 유가 60달러 붕괴! "사우디 항복 선언" OPEC+ 감산 포기',
                 category: 'economy',
                 emoji: '⛽',
@@ -3181,7 +3181,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 30,
+                id: 'kb-financial-100k-dividend',
                 title: '💰 KB금융 10만원 돌파! "배당 수익률 7% 시대 열렸다"',
                 category: 'stock',
                 emoji: '🏦',
@@ -3300,7 +3300,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
             },
             {
-                id: Date.now() + 30,
+                id: 'anime-coin-otaku-market',
                 title: '🎌 애니메코인(ANIME) "일본 오타쿠 3조원 시장 정조준"',
                 category: 'coin',
                 emoji: '🗾',
@@ -3615,7 +3615,7 @@ function viewPost(id) {
         const post = posts.find(p => p.id === id);
         if (post) {
             // 개별 기사 페이지로 이동
-            window.location.href = `/${post.id}.html`;
+            window.location.href = `/${id}.html`;
         }
     } else {
         // 관리자 모드에서는 기존 모달 방식 유지
