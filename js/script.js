@@ -147,56 +147,6 @@ function loadPosts() {
     // localStorage는 관리자가 추가한 글만 저장
     const defaultPosts = [
             {
-                id: 'oil-price-60-collapse',
-                title: '🛢️ 국제유가 60달러 붕괴 시나리오! 석유주 대폭락 경고',
-                category: 'economy',  
-                emoji: '📉',
-                excerpt: '중국 경제둔화와 전기차 급성장으로 석유 수요 정점 통과! 브렌트유 60달러 하락 시 SK이노베이션 -40%, S-Oil -35% 예상. 2025년 에너지 대전환 가속화',
-                content: `<div class="content-wrapper">
-<div class="highlight-box">
-📊 <strong>현재 브렌트유 가격: $74.23</strong> (2025년 9월 기준)
-<span class="price-indicator price-down">📉 -12% (3개월간)</span>
-</div>
-
-<h2>🚨 석유 수요 피크아웃! 60달러 붕괴 현실화</h2>
-
-<p>국제 유가가 <strong>구조적 하락세</strong>에 진입했다!</p>
-
-<p>골드만삭스는 2025년 말 브렌트유 60달러 전망을 발표하며 석유산업 대변화를 예고했다.</p>
-
-<blockquote>
-💡 <strong>Pro Tip:</strong> "석유 시대의 종말은 이미 시작됐다. 다음 10년은 에너지 대전환의 골든타임. 전통 에너지는 점진적 매도, 신에너지는 적극적 매수!"
-</blockquote>
-</div>`,
-                date: '2025-09-01T16:00:00.000Z',
-                readTime: 9,
-                image: 'https://images.unsplash.com/photo-1615999948620-9e077b80b9b1?w=800&h=400&fit=crop'
-            },
-            {
-                id: 'apple-card-korea',
-                title: '🍎 애플카드 한국 상륙 임박! 삼성카드 독주 체제 종료',
-                category: 'economy',
-                emoji: '💳',
-                excerpt: '2025년 하반기 애플카드 한국 출시 예정! 현대카드와 파트너십, 혁신적 캐시백 시스템으로 국내 카드업계 판도 변화 예상. 월 100만원 사용 시 연 15만원 혜택!',
-                content: `<div class="content-wrapper">
-<div class="highlight-box">
-🏦 <strong>애플카드 한국 출시:</strong> 2025년 9월 예정
-<span class="price-indicator price-up">📈 현대카드 파트너십 확정</span>
-</div>
-
-<h2>🚀 애플카드가 한국에 온다!</h2>
-
-<p>드디어 <strong>애플카드(Apple Card)</strong>가 한국 시장에 상륙한다!</p>
-
-<blockquote>
-💡 <strong>Pro Tip:</strong> "애플 생태계 유저라면 필수! 기존 주력카드는 유지하되, 애플 제품 구매와 애플페이 결제는 애플카드로 갈아탈 것"
-</blockquote>
-</div>`,
-                date: '2025-09-01T14:00:00.000Z',
-                readTime: 7,
-                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop'
-            },
-            {
                 id: 'bitcoin-120k-crash-30k',
                 title: '🚨 비트코인 12만 달러 돌파! 이제 시작이다',
                 category: 'coin',
@@ -2907,7 +2857,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=400&fit=crop'
             },
             {
-                id: 'apple-card-korea-kabank',
+                id: 'apple-card-korea',
                 title: '🍎 애플카드 한국 상륙! "카뱅과 연내 출시 확정"',
                 category: 'economy',
                 emoji: '💳',
@@ -3030,7 +2980,7 @@ function loadPosts() {
                 image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop'
             },
             {
-                id: 'oil-price-60-saudi-surrender',
+                id: 'oil-price-60-collapse',
                 title: '🛢️ 유가 60달러 붕괴! "사우디 항복 선언" OPEC+ 감산 포기',
                 category: 'economy',
                 emoji: '⛽',
