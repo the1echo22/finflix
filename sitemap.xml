@@ -4,31 +4,31 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Main Pages -->
   <url>
-    <loc>https://www.finflix.org/</loc>
+    <loc>https://finflix.org/</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/about.html</loc>
+    <loc>https://finflix.org/about.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/contact.html</loc>
+    <loc>https://finflix.org/contact.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/privacy.html</loc>
+    <loc>https://finflix.org/privacy.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/terms.html</loc>
+    <loc>https://finflix.org/terms.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -36,7 +36,7 @@
   
   <!-- Blog Posts -->
   <url>
-    <loc>https://www.finflix.org/oil-price-60-saudi-surrender.html</loc>
+    <loc>https://finflix.org/oil-price-60-saudi-surrender.html</loc>
     <lastmod>2025-09-02T10:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -51,7 +51,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/apple-card-korea-kabank.html</loc>
+    <loc>https://finflix.org/apple-card-korea-kabank.html</loc>
     <lastmod>2025-09-02T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -66,7 +66,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/oil-price-60-collapse.html</loc>
+    <loc>https://finflix.org/oil-price-60-collapse.html</loc>
     <lastmod>2025-09-01T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -81,7 +81,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/apple-card-korea.html</loc>
+    <loc>https://finflix.org/apple-card-korea.html</loc>
     <lastmod>2025-09-01T14:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -96,7 +96,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/anime-coin-otaku-market.html</loc>
+    <loc>https://finflix.org/anime-coin-otaku-market.html</loc>
     <lastmod>2025-09-01T10:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -111,7 +111,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/kb-financial-100k-dividend.html</loc>
+    <loc>https://finflix.org/kb-financial-100k-dividend.html</loc>
     <lastmod>2025-09-01T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -126,7 +126,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/yen-carry-trade-unwinding.html</loc>
+    <loc>https://finflix.org/yen-carry-trade-unwinding.html</loc>
     <lastmod>2025-08-31T11:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -141,7 +141,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/bok-rate-freeze-dilemma.html</loc>
+    <loc>https://finflix.org/bok-rate-freeze-dilemma.html</loc>
     <lastmod>2025-08-31T10:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -156,7 +156,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/pepe-memecoin-top3.html</loc>
+    <loc>https://finflix.org/pepe-memecoin-top3.html</loc>
     <lastmod>2025-08-30T13:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -171,7 +171,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/aptos-blackrock-buidl.html</loc>
+    <loc>https://finflix.org/aptos-blackrock-buidl.html</loc>
     <lastmod>2025-08-30T12:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -186,7 +186,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/ton-durov-arrest-recovery.html</loc>
+    <loc>https://finflix.org/ton-durov-arrest-recovery.html</loc>
     <lastmod>2025-08-30T11:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -201,7 +201,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/china-deflation-real-estate.html</loc>
+    <loc>https://finflix.org/china-deflation-real-estate.html</loc>
     <lastmod>2025-08-30T10:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -216,7 +216,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/jackson-hole-powell-rate-cut.html</loc>
+    <loc>https://finflix.org/jackson-hole-powell-rate-cut.html</loc>
     <lastmod>2025-08-30T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -231,7 +231,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/mikami-yua-coin-collapse.html</loc>
+    <loc>https://finflix.org/mikami-yua-coin-collapse.html</loc>
     <lastmod>2025-08-29T12:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -246,7 +246,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/eric-trump-wlfi-unlock.html</loc>
+    <loc>https://finflix.org/eric-trump-wlfi-unlock.html</loc>
     <lastmod>2025-08-29T11:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -261,7 +261,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/trump-coin-opportunity.html</loc>
+    <loc>https://finflix.org/trump-coin-opportunity.html</loc>
     <lastmod>2025-08-29T10:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -276,121 +276,121 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.finflix.org/bitcoin-crash-30k-warning.html</loc>
+    <loc>https://finflix.org/bitcoin-crash-30k-warning.html</loc>
     <lastmod>2025-08-25T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/bitcoin-120k-crash-30k.html</loc>
+    <loc>https://finflix.org/bitcoin-120k-crash-30k.html</loc>
     <lastmod>2025-08-18T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/nvidia-blackwell-chip.html</loc>
+    <loc>https://finflix.org/nvidia-blackwell-chip.html</loc>
     <lastmod>2025-08-17T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/ethereum-10k-trump.html</loc>
+    <loc>https://finflix.org/ethereum-10k-trump.html</loc>
     <lastmod>2025-08-16T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/winners-coin-800-percent.html</loc>
+    <loc>https://finflix.org/winners-coin-800-percent.html</loc>
     <lastmod>2025-08-15T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/solana-298-dollars.html</loc>
+    <loc>https://finflix.org/solana-298-dollars.html</loc>
     <lastmod>2025-08-14T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/tesla-714-target.html</loc>
+    <loc>https://finflix.org/tesla-714-target.html</loc>
     <lastmod>2025-08-13T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/samsung-tesla-ai-chip.html</loc>
+    <loc>https://finflix.org/samsung-tesla-ai-chip.html</loc>
     <lastmod>2025-08-12T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/seoul-apartment-15-billion.html</loc>
+    <loc>https://finflix.org/seoul-apartment-15-billion.html</loc>
     <lastmod>2025-08-11T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/hanmi-pharm-glp1.html</loc>
+    <loc>https://finflix.org/hanmi-pharm-glp1.html</loc>
     <lastmod>2025-08-10T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/roblox-metaverse-crash.html</loc>
+    <loc>https://finflix.org/roblox-metaverse-crash.html</loc>
     <lastmod>2025-08-09T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/gold-3000-dollars.html</loc>
+    <loc>https://finflix.org/gold-3000-dollars.html</loc>
     <lastmod>2025-08-08T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/apple-250-ai-phone.html</loc>
+    <loc>https://finflix.org/apple-250-ai-phone.html</loc>
     <lastmod>2025-08-07T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/ripple-xrp-10-dollars.html</loc>
+    <loc>https://finflix.org/ripple-xrp-10-dollars.html</loc>
     <lastmod>2025-08-06T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/kakao-50k-hyperclova.html</loc>
+    <loc>https://finflix.org/kakao-50k-hyperclova.html</loc>
     <lastmod>2025-08-05T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/hyundai-300k-ev.html</loc>
+    <loc>https://finflix.org/hyundai-300k-ev.html</loc>
     <lastmod>2025-08-04T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/netflix-1000-dollars.html</loc>
+    <loc>https://finflix.org/netflix-1000-dollars.html</loc>
     <lastmod>2025-08-03T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/dogecoin-1-dollar-musk.html</loc>
+    <loc>https://finflix.org/dogecoin-1-dollar-musk.html</loc>
     <lastmod>2025-08-02T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/visa-350-dollars.html</loc>
+    <loc>https://finflix.org/visa-350-dollars.html</loc>
     <lastmod>2025-08-01T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finflix.org/us-commercial-real-estate.html</loc>
+    <loc>https://finflix.org/us-commercial-real-estate.html</loc>
     <lastmod>2025-07-31T09:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -1,6 +1,6 @@
 # FinFlix Robots.txt
-# https://www.finflix.org/
-# Last Updated: 2025-08-30
+# https://finflix.org/
+# Last Updated: 2025-09-03
 
 # Default - Allow all legitimate crawlers
 User-agent: *
@@ -18,8 +18,7 @@ Allow: /images/*
 # Crawl-delay (seconds)
 Crawl-delay: 1
 
-# Sitemap locations
-Sitemap: https://www.finflix.org/sitemap.xml
+# Sitemap location
 Sitemap: https://finflix.org/sitemap.xml
 
 # Google Search Engine
