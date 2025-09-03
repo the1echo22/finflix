@@ -2,396 +2,245 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Main Pages -->
+  
+  <!-- Homepage (both versions for clarity) -->
   <url>
     <loc>https://finflix.org/</loc>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>always</changefreq>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Pages -->
   <url>
     <loc>https://finflix.org/about.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://finflix.org/contact.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://finflix.org/privacy.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://finflix.org/terms.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   
-  <!-- Blog Posts -->
+  <!-- Blog Posts (Updated Articles) -->
   <url>
-    <loc>https://finflix.org/oil-price-60-saudi-surrender.html</loc>
-    <lastmod>2025-09-02T10:00:00.000Z</lastmod>
+    <loc>https://finflix.org/ripple-xrp-10-dollars.html</loc>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-09-02T10:00:00.000Z</news:publication_date>
-      <news:title>🛢️ 유가 60달러 붕괴! "사우디 항복 선언" OPEC+ 감산 포기</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
   </url>
   <url>
-    <loc>https://finflix.org/apple-card-korea-kabank.html</loc>
-    <lastmod>2025-09-02T09:00:00.000Z</lastmod>
+    <loc>https://finflix.org/kakao-50k-hyperclova.html</loc>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-09-02T09:00:00.000Z</news:publication_date>
-      <news:title>🍎 애플카드 한국 상륙! "카뱅과 연내 출시 확정"</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
+  </url>
+  <url>
+    <loc>https://finflix.org/apple-250-ai-phone.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/netflix-1000-dollars.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/roblox-metaverse-crash.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://finflix.org/oil-price-60-collapse.html</loc>
-    <lastmod>2025-09-01T16:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-09-01T16:00:00.000Z</news:publication_date>
-      <news:title>🛢️ 국제유가 60달러 붕괴 시나리오! 석유주 대폭락 경고</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
   </url>
   <url>
     <loc>https://finflix.org/apple-card-korea.html</loc>
-    <lastmod>2025-09-01T14:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-09-01T14:00:00.000Z</news:publication_date>
-      <news:title>🍎 애플카드 한국 상륙 임박! 삼성카드 독주 체제 종료</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
   </url>
+  <url>
+    <loc>https://finflix.org/visa-350-dollars.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/dogecoin-1-dollar-musk.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/gold-3000-dollars.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Other Blog Posts -->
   <url>
     <loc>https://finflix.org/anime-coin-otaku-market.html</loc>
-    <lastmod>2025-09-01T10:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-09-01T10:00:00.000Z</news:publication_date>
-      <news:title>🎌 애니메코인(ANIME) "일본 오타쿠 3조원 시장 정조준"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/kb-financial-100k-dividend.html</loc>
-    <lastmod>2025-09-01T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-09-01T09:00:00.000Z</news:publication_date>
-      <news:title>💰 KB금융 10만원 돌파! "배당 수익률 7% 시대 열렸다"</news:title>
-      <news:keywords>주식, 투자, 증권, 주가</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/yen-carry-trade-unwinding.html</loc>
-    <lastmod>2025-08-31T11:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-31T11:00:00.000Z</news:publication_date>
-      <news:title>💴 엔캐리 청산 쓰나미! "닛케이 -12% 블랙먼데이"</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/bok-rate-freeze-dilemma.html</loc>
-    <lastmod>2025-08-31T10:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-31T10:00:00.000Z</news:publication_date>
-      <news:title>🏦 한은 금리 동결 막전막후! "환율 1400원 vs 부동산 폭주"</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/pepe-memecoin-top3.html</loc>
-    <lastmod>2025-08-30T13:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-30T13:00:00.000Z</news:publication_date>
-      <news:title>🐸 PEPE "밈코인 3위 등극! 시바·도지 추월 노린다"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
   </url>
   <url>
     <loc>https://finflix.org/aptos-blackrock-buidl.html</loc>
-    <lastmod>2025-08-30T12:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-30T12:00:00.000Z</news:publication_date>
-      <news:title>🚀 앱토스(APT) $4.46 "블랙록 BUIDL 상륙! 기관 러시 시작"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/ton-durov-arrest-recovery.html</loc>
-    <lastmod>2025-08-30T11:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-30T11:00:00.000Z</news:publication_date>
-      <news:title>💬 TON 코인 $2.44 "듀로프 체포 후 회복세, 텔레그램 10억 유저 파워"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/china-deflation-real-estate.html</loc>
-    <lastmod>2025-08-30T10:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-30T10:00:00.000Z</news:publication_date>
-      <news:title>🇨🇳 중국 디플레이션 공포! "부동산 -25% 추가 하락"</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/jackson-hole-powell-rate-cut.html</loc>
-    <lastmod>2025-08-30T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-30T09:00:00.000Z</news:publication_date>
-      <news:title>🏦 잭슨홀 쇼크! 파월 "금리인하 전면 재검토"</news:title>
-      <news:keywords>경제, 금융, 투자, 시장</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/mikami-yua-coin-collapse.html</loc>
-    <lastmod>2025-08-29T12:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-29T12:00:00.000Z</news:publication_date>
-      <news:title>🎌 미카미 유아 코인 "340만 달러→10만 달러 -97% 폭망"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/eric-trump-wlfi-unlock.html</loc>
-    <lastmod>2025-08-29T11:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-29T11:00:00.000Z</news:publication_date>
-      <news:title>💼 에릭 트럼프 WLFI "9월 1일 언락! 15억 달러 IPO 간다"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/trump-coin-opportunity.html</loc>
-    <lastmod>2025-08-29T10:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <news:news>
-      <news:publication>
-        <news:name>FinFlix</news:name>
-        <news:language>ko</news:language>
-      </news:publication>
-      <news:publication_date>2025-08-29T10:00:00.000Z</news:publication_date>
-      <news:title>🎺 트럼프 코인 $9.5 "74달러에서 -89% 폭락, 지금이 기회?"</news:title>
-      <news:keywords>암호화폐, 투자, 블록체인, 코인</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://finflix.org/bitcoin-crash-30k-warning.html</loc>
-    <lastmod>2025-08-25T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://finflix.org/bitcoin-120k-crash-30k.html</loc>
-    <lastmod>2025-08-18T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finflix.org/nvidia-blackwell-chip.html</loc>
-    <lastmod>2025-08-17T09:00:00.000Z</lastmod>
+    <loc>https://finflix.org/bitcoin-crash-30k-warning.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/bok-rate-freeze-dilemma.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/china-deflation-real-estate.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/eric-trump-wlfi-unlock.html</loc>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://finflix.org/ethereum-10k-trump.html</loc>
-    <lastmod>2025-08-16T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/winners-coin-800-percent.html</loc>
-    <lastmod>2025-08-15T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/solana-298-dollars.html</loc>
-    <lastmod>2025-08-14T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/tesla-714-target.html</loc>
-    <lastmod>2025-08-13T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/samsung-tesla-ai-chip.html</loc>
-    <lastmod>2025-08-12T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/seoul-apartment-15-billion.html</loc>
-    <lastmod>2025-08-11T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://finflix.org/hanmi-pharm-glp1.html</loc>
-    <lastmod>2025-08-10T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/roblox-metaverse-crash.html</loc>
-    <lastmod>2025-08-09T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/gold-3000-dollars.html</loc>
-    <lastmod>2025-08-08T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/apple-250-ai-phone.html</loc>
-    <lastmod>2025-08-07T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/ripple-xrp-10-dollars.html</loc>
-    <lastmod>2025-08-06T09:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://finflix.org/kakao-50k-hyperclova.html</loc>
-    <lastmod>2025-08-05T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://finflix.org/hyundai-300k-ev.html</loc>
-    <lastmod>2025-08-04T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finflix.org/netflix-1000-dollars.html</loc>
-    <lastmod>2025-08-03T09:00:00.000Z</lastmod>
+    <loc>https://finflix.org/jackson-hole-powell-rate-cut.html</loc>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finflix.org/dogecoin-1-dollar-musk.html</loc>
-    <lastmod>2025-08-02T09:00:00.000Z</lastmod>
+    <loc>https://finflix.org/kb-financial-100k-dividend.html</loc>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finflix.org/visa-350-dollars.html</loc>
-    <lastmod>2025-08-01T09:00:00.000Z</lastmod>
+    <loc>https://finflix.org/mikami-yua-coin-collapse.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/nvidia-blackwell-chip.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/pepe-memecoin-top3.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/samsung-tesla-ai-chip.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/seoul-apartment-15-billion.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/solana-298-dollars.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/tesla-714-target.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/ton-durov-arrest-recovery.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/trump-coin-opportunity.html</loc>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://finflix.org/us-commercial-real-estate.html</loc>
-    <lastmod>2025-07-31T09:00:00.000Z</lastmod>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/winners-coin-800-percent.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/yen-carry-trade-unwinding.html</loc>
+    <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
