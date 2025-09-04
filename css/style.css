@@ -273,35 +273,49 @@ nav {
 
 .blog-card {
     background: white;
-    border-radius: 24px;
-    overflow: hidden;
+    border-radius: 20px;
+    overflow: visible;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     color: inherit;
     display: block;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-.blog-card::before {
-    content: '';
+.card-gradient-border {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--gradient-1);
-    transform: scaleX(0);
-    transition: transform 0.3s;
+    inset: -2px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #ffc857 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
 }
 
-.blog-card:hover::before {
-    transform: scaleX(1);
+.blog-card:hover .card-gradient-border {
+    opacity: 1;
+    animation: gradient-rotate 3s linear infinite;
+}
+
+@keyframes gradient-rotate {
+    0% { background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #ffc857 100%); }
+    25% { background: linear-gradient(135deg, #764ba2 0%, #f093fb 25%, #f5576c 50%, #ffc857 75%, #667eea 100%); }
+    50% { background: linear-gradient(135deg, #f093fb 0%, #f5576c 25%, #ffc857 50%, #667eea 75%, #764ba2 100%); }
+    75% { background: linear-gradient(135deg, #f5576c 0%, #ffc857 25%, #667eea 50%, #764ba2 75%, #f093fb 100%); }
+    100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #ffc857 100%); }
 }
 
 .blog-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transform: translateY(-12px) scale(1.03) rotateX(2deg);
+    box-shadow: 
+        0 30px 60px -15px rgba(139, 92, 246, 0.3),
+        0 25px 35px -20px rgba(0, 0, 0, 0.2);
 }
 
 .card-visual {
@@ -797,6 +811,203 @@ nav {
 
 .page-content li {
     margin-bottom: 0.5rem;
+}
+
+/* 블로그 카드 이미지 및 콘텐츠 스타일 */
+.blog-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    filter: brightness(0.95);
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.15) rotate(2deg);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        transparent 50%, 
+        rgba(0, 0, 0, 0.8) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.blog-category-badge {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-category-badge.stock {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.blog-category-badge.economy {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+}
+
+.blog-category-badge.coin {
+    background: linear-gradient(135deg, #ffc857, #ff9a00);
+    color: white;
+}
+
+.blog-category-badge.education {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+}
+
+.blog-content {
+    padding: 1.8rem;
+    position: relative;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.blog-emoji {
+    font-size: 2.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.blog-emoji.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.meta-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    font-weight: 600;
+}
+
+.read-time {
+    font-size: 0.8rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.blog-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #1f2937;
+    transition: all 0.3s;
+}
+
+.blog-card:hover .blog-title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-excerpt {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #f3f4f6;
+}
+
+.hover-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #8b5cf6;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.blog-card:hover .hover-indicator {
+    gap: 1rem;
+    color: #7c3aed;
+}
+
+.hover-indicator svg {
+    transition: transform 0.3s;
+}
+
+.blog-card:hover .hover-indicator svg {
+    transform: translateX(5px);
+}
+
+.engagement-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.engagement-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 /* 푸터 */

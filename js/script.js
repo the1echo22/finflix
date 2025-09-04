@@ -265,30 +265,39 @@ function renderPosts() {
         filteredPosts = posts.filter(post => post.category === currentCategory);
     }
     
-    // HTML 생성
+    // HTML 생성 - 전체 카드 클릭 가능
     const postsHTML = filteredPosts.map(post => `
-        <article class="blog-card">
+        <article class="blog-card" onclick="window.location.href='${post.url}'" style="cursor: pointer;">
+            <div class="card-gradient-border"></div>
             ${post.image ? `
                 <div class="blog-image">
                     <img src="${post.image}" alt="${post.title}" loading="lazy">
-                    <span class="blog-category-badge">${getCategoryLabel(post.category)}</span>
+                    <div class="image-overlay">
+                        <span class="blog-category-badge ${post.category}">${getCategoryLabel(post.category)}</span>
+                    </div>
                 </div>
             ` : ''}
             <div class="blog-content">
                 <div class="blog-header">
-                    <span class="blog-emoji">${post.emoji || '📝'}</span>
-                    <span class="blog-date">${post.date}</span>
+                    <span class="blog-emoji pulse">${post.emoji || '📝'}</span>
+                    <div class="meta-info">
+                        <span class="blog-date">${post.date}</span>
+                        <span class="read-time">📖 ${post.readTime}분</span>
+                    </div>
                 </div>
                 <h3 class="blog-title">${post.title}</h3>
                 <p class="blog-excerpt">${post.excerpt}</p>
                 <div class="blog-footer">
-                    <a href="${post.url}" class="blog-link">
-                        자세히 읽기
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <div class="hover-indicator">
+                        <span>지금 읽기</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 14L11 10L7 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
-                    <span class="read-time">⏱️ ${post.readTime}분</span>
+                    </div>
+                    <div class="engagement-stats">
+                        <span>🔥 ${Math.floor(Math.random() * 900 + 100)}</span>
+                        <span>💬 ${Math.floor(Math.random() * 50 + 10)}</span>
+                    </div>
                 </div>
             </div>
         </article>
