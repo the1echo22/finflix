@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>경제 뉴스 & 분석 | FinFlix - 금리, 인플레이션, 글로벌 경제 동향</title>
+    <meta name="description" content="금리 인하, 인플레이션, 부동산, 글로벌 경제 동향 분석. MZ세대를 위한 쉽고 재밌는 경제 뉴스와 인사이트를 제공합니다.">
+    <meta name="keywords" content="경제, 금리, 인플레이션, 부동산, 연준, FOMC, 경제지표, 경기침체, 금융위기">
+    <meta name="author" content="FinFlix">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://finflix.org/category-economy.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="경제 뉴스 & 분석 | FinFlix">
+    <meta property="og:description" content="MZ세대를 위한 경제 뉴스. 복잡한 경제 이슈를 쉽게 풀어드립니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finflix.org/category-economy.html">
+    <meta property="og:image" content="https://finflix.org/images/economy-category.jpg">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="경제 뉴스 & 분석 | FinFlix">
+    <meta name="twitter:description" content="MZ세대를 위한 경제 뉴스와 분석">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVC19M0KJY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QVC19M0KJY');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8922945057527557"
+     crossorigin="anonymous"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "경제 뉴스 & 분석",
+      "description": "FinFlix 경제 카테고리 - 경제 뉴스와 분석 관련 모든 기사",
+      "url": "https://finflix.org/category-economy.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "FinFlix",
+        "url": "https://finflix.org"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://finflix.org"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "경제",
+            "item": "https://finflix.org/category-economy.html"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .category-hero {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .category-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .category-hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .category-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-card .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
+        
+        .subcategory-pill {
+            padding: 0.6rem 1.5rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 25px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .subcategory-pill:hover,
+        .subcategory-pill.active {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .guide-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .guide-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .guide-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .guide-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .guide-card a {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .guide-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .economic-indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.9);
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+        
+        .indicator-item {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .indicator-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .indicator-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .indicator-change {
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+        }
+        
+        .indicator-up {
+            color: #10b981;
+        }
+        
+        .indicator-down {
+            color: #ef4444;
+        }
+        
+        @media (max-width: 768px) {
+            .category-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .category-hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 배경 장식 -->
+    <div class="bg-decoration one"></div>
+    <div class="bg-decoration two"></div>
+    <div class="bg-decoration three"></div>
+
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <a href="/" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/category-stock.html">주식</a></li>
+                <li><a href="/category-crypto.html">암호화폐</a></li>
+                <li><a href="/category-economy.html" class="active">경제</a></li>
+                <li><a href="/about.html">소개</a></li>
+                <li><a href="/contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 카테고리 히어로 섹션 -->
+    <section class="category-hero">
+        <h1>🌏 글로벌 경제 인사이트</h1>
+        <p>금리부터 부동산까지, 경제가 우리 삶에 미치는 영향을 쉽게 설명합니다</p>
+    </section>
+
+    <!-- 주요 경제지표 (시뮬레이션) -->
+    <div class="content-section">
+        <div class="economic-indicators">
+            <div class="indicator-item">
+                <div class="indicator-label">🇺🇸 미국 기준금리</div>
+                <div class="indicator-value">5.50%</div>
+                <div class="indicator-change indicator-down">인하 예상</div>
+            </div>
+            <div class="indicator-item">
+                <div class="indicator-label">📊 미국 CPI</div>
+                <div class="indicator-value">3.2%</div>
+                <div class="indicator-change indicator-down">↓ 0.3%p</div>
+            </div>
+            <div class="indicator-item">
+                <div class="indicator-label">🇰🇷 한국 기준금리</div>
+                <div class="indicator-value">3.50%</div>
+                <div class="indicator-change">동결</div>
+            </div>
+            <div class="indicator-item">
+                <div class="indicator-label">💱 원/달러 환율</div>
+                <div class="indicator-value">1,305원</div>
+                <div class="indicator-change indicator-up">↑ 5원</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 통계 섹션 -->
+    <div class="category-stats">
+        <div class="stat-card">
+            <div class="stat-value">25</div>
+            <div class="stat-label">경제 분석 기사</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">금리</div>
+            <div class="stat-label">핵심 키워드</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">부동산</div>
+            <div class="stat-label">인기 주제</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">매일</div>
+            <div class="stat-label">시장 브리핑</div>
+        </div>
+    </div>
+
+    <!-- 서브카테고리 -->
+    <div class="subcategories">
+        <a href="#all" class="subcategory-pill active">전체보기</a>
+        <a href="#interest" class="subcategory-pill">💰 금리/통화</a>
+        <a href="#realestate" class="subcategory-pill">🏠 부동산</a>
+        <a href="#global" class="subcategory-pill">🌍 글로벌</a>
+        <a href="#korea" class="subcategory-pill">🇰🇷 한국경제</a>
+        <a href="#policy" class="subcategory-pill">📋 정책</a>
+    </div>
+
+    <!-- 경제 초보자 가이드 -->
+    <section class="content-section">
+        <h2 class="section-title">🎯 경제 초보자 가이드</h2>
+        <div class="guide-cards">
+            <div class="guide-card">
+                <h3>📚 경제지표 읽기</h3>
+                <p>GDP, CPI, PPI가 뭐야? 경제 뉴스에 나오는 지표들을 쉽게 이해하는 방법을 알려드립니다.</p>
+                <a href="#indicators">경제지표 배우기 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>🏦 금리와 나의 관계</h3>
+                <p>기준금리가 오르면 왜 대출이 비싸져? 금리가 내 지갑에 미치는 영향을 파헤칩니다.</p>
+                <a href="#interest">금리 이해하기 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>💵 환율 변동 이해</h3>
+                <p>원화 약세, 달러 강세가 뭐야? 환율이 해외여행과 투자에 미치는 영향을 설명합니다.</p>
+                <a href="#exchange">환율 기초 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인기 경제 기사 -->
+    <section class="content-section">
+        <h2 class="section-title">🔥 인기 경제 기사</h2>
+        <div class="blog-grid" id="economyArticles">
+            <!-- 경제 관련 기사들이 동적으로 로드됩니다 -->
+        </div>
+    </section>
+
+    <!-- 경제 트렌드 분석 -->
+    <section class="content-section">
+        <h2 class="section-title">📈 2025 경제 트렌드</h2>
+        <div class="guide-cards">
+            <div class="guide-card">
+                <h3>🎯 연준 금리 인하 사이클</h3>
+                <p>2025년 연준의 금리 인하 전망과 그것이 글로벌 시장에 미치는 영향을 분석합니다.</p>
+                <a href="#fed">연준 정책 분석 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>🏗️ 중국 경제 회복</h3>
+                <p>중국 부동산 위기와 디플레이션, 그리고 정부의 경기부양책이 가져올 변화.</p>
+                <a href="#china">중국 경제 전망 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>🏠 한국 부동산 시장</h3>
+                <p>서울 아파트값은 계속 오를까? 금리 인하와 부동산 정책이 시장에 미치는 영향.</p>
+                <a href="#krestate">부동산 전망 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 경제 용어 사전 프리뷰 -->
+    <div class="content-section">
+        <div style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%); padding: 2rem; border-radius: 16px; border: 2px solid rgba(79, 172, 254, 0.3);">
+            <h3 style="margin-bottom: 1.5rem; color: #333;">📖 오늘의 경제 용어</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div>
+                    <h4 style="color: #4facfe; margin-bottom: 0.5rem;">양적긴축 (QT)</h4>
+                    <p style="color: #666; font-size: 0.95rem;">중앙은행이 시중 통화량을 줄이기 위해 보유 자산을 매각하는 정책</p>
+                </div>
+                <div>
+                    <h4 style="color: #4facfe; margin-bottom: 0.5rem;">리세션 (Recession)</h4>
+                    <p style="color: #666; font-size: 0.95rem;">경제성장률이 2분기 연속 마이너스를 기록하는 경기침체 상태</p>
+                </div>
+                <div>
+                    <h4 style="color: #4facfe; margin-bottom: 0.5rem;">테이퍼링 (Tapering)</h4>
+                    <p style="color: #666; font-size: 0.95rem;">양적완화 정책의 규모를 점진적으로 축소하는 출구전략</p>
+                </div>
+            </div>
+            <a href="#dictionary" style="display: inline-block; margin-top: 1.5rem; color: #4facfe; font-weight: 600; text-decoration: none;">
+                전체 경제 용어 사전 보기 →
+            </a>
+        </div>
+    </div>
+
+    <!-- 광고 공간 -->
+    <div class="blog-container">
+        <div class="ad-space">
+            <p>구글 애드센스 광고 영역</p>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <span style="font-size: 1.5rem;">💸</span>
+                <span style="font-size: 2rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">FinFlix</span>
+                <span style="font-size: 1.5rem;">💜</span>
+            </div>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 1rem;">
+                돈 이야기, 쉽고 재밌게! MZ를 위한 금융 플레이그라운드 🚀
+            </p>
+            
+            <div class="footer-links">
+                <a href="/privacy.html">개인정보처리방침</a>
+                <a href="/terms.html">이용약관</a>
+                <a href="/about.html">소개</a>
+                <a href="/contact.html">문의</a>
+            </div>
+            
+            <p class="copyright" style="margin-top: 1rem;">
+                © 2025 FinFlix | Made with 💜 in Seoul
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 경제 관련 기사 데이터
+        const economyArticles = [
+            {
+                title: "🏦 잭슨홀 쇼크! '파월 금리인하 전면 재검토'",
+                excerpt: "8월 22일 잭슨홀 미팅 파월 마지막 연설! 트럼프 빅컷 압박 vs 연준 독립성",
+                url: "/jackson-hole-powell-rate-cut.html",
+                date: "2025.07.20"
+            },
+            {
+                title: "🏠 서울 아파트 15억 돌파! '강남 30억 시대 개막'",
+                excerpt: "서울 평균 15억원 돌파, 강남 3.3㎡당 1억 원 임박. 금리 인하 기대감에 거래 급증",
+                url: "/seoul-apartment-15-billion.html",
+                date: "2025.07.25"
+            },
+            {
+                title: "🇨🇳 중국 디플레이션 공포! '부동산 -25% 추가 하락'",
+                excerpt: "중국 경제성장률 4.4% 목표 미달! 부동산 18조 달러 증발, 공실 8천만채",
+                url: "/china-deflation-real-estate.html",
+                date: "2025.07.21"
+            },
+            {
+                title: "🛢️ 유가 60달러 붕괴! '사우디-러시아 치킨게임'",
+                excerpt: "WTI 60달러 깨질까? OPEC+ 감산 포기, 미국 셰일 증산. 휘발유 1,500원 시대",
+                url: "/oil-price-60-collapse.html",
+                date: "2025.07.26"
+            },
+            {
+                title: "🏢 미국 상업용 부동산 폭탄! '1.5조 달러 대출 만기'",
+                excerpt: "2025년 상업용 부동산 대출 1.5조 달러 만기. 재융자 실패 시 금융위기 재현 우려",
+                url: "/us-commercial-real-estate.html",
+                date: "2025.07.28"
+            }
+        ];
+
+        // 기사 렌더링
+        function renderEconomyArticles() {
+            const container = document.getElementById('economyArticles');
+            if (!container) return;
+            
+            container.innerHTML = economyArticles.map(article => `
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <div class="blog-header">
+                            <span class="blog-category" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">경제</span>
+                            <span class="blog-date">${article.date}</span>
+                        </div>
+                        <h3 class="blog-title">${article.title}</h3>
+                        <p class="blog-excerpt">${article.excerpt}</p>
+                        <a href="${article.url}" class="blog-link">
+                            자세히 보기 →
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // 페이지 로드 시 실행
+        document.addEventListener('DOMContentLoaded', function() {
+            renderEconomyArticles();
+            
+            // Google Analytics 이벤트
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: '경제 카테고리',
+                    page_location: window.location.href,
+                    content_group1: '카테고리'
+                });
+            }
+        });
+
+        // 서브카테고리 클릭 이벤트
+        document.querySelectorAll('.subcategory-pill').forEach(pill => {
+            pill.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.subcategory-pill').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 여기에 필터링 로직 추가 가능
+                const category = this.getAttribute('href').substring(1);
+                console.log('Selected subcategory:', category);
+            });
+        });
+    </script>
+</body>
+</html>

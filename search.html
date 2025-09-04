@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>검색 | FinFlix - 금융 콘텐츠 검색</title>
+    <meta name="description" content="FinFlix의 모든 금융 콘텐츠를 검색하세요. 주식, 암호화폐, 경제 관련 기사를 쉽게 찾을 수 있습니다.">
+    <meta name="keywords" content="검색, 금융검색, 주식검색, 암호화폐검색, 경제뉴스검색">
+    <meta name="author" content="FinFlix">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://finflix.org/search.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="검색 | FinFlix">
+    <meta property="og:description" content="FinFlix의 모든 금융 콘텐츠를 검색하세요">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finflix.org/search.html">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVC19M0KJY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QVC19M0KJY');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8922945057527557"
+     crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .search-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .search-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .search-box {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 1.2rem 3rem 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.2);
+        }
+        
+        .search-button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .search-button:hover {
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .search-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.6rem 1.5rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .search-results {
+            margin-top: 3rem;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .results-count {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .sort-options {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .sort-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .sort-btn.active {
+            background: #f3f4f6;
+            border-color: #667eea;
+            color: #667eea;
+        }
+        
+        .result-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .result-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .result-category {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+        
+        .result-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .result-title:hover {
+            color: #667eea;
+        }
+        
+        .result-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .result-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        .highlighted {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .no-results h2 {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .no-results p {
+            color: #999;
+            margin-bottom: 2rem;
+        }
+        
+        .suggestions {
+            background: #f9fafb;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        
+        .suggestions h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .suggestion-tags {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+        
+        .suggestion-tag {
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #666;
+        }
+        
+        .suggestion-tag:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .search-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .search-input {
+                font-size: 1rem;
+                padding: 1rem 3rem 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 배경 장식 -->
+    <div class="bg-decoration one"></div>
+    <div class="bg-decoration two"></div>
+    <div class="bg-decoration three"></div>
+
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <a href="/" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/category-stock.html">주식</a></li>
+                <li><a href="/category-crypto.html">암호화폐</a></li>
+                <li><a href="/category-economy.html">경제</a></li>
+                <li><a href="/about.html">소개</a></li>
+                <li><a href="/contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 검색 히어로 섹션 -->
+    <section class="search-hero">
+        <h1>🔍 무엇을 찾고 계신가요?</h1>
+        <p>주식, 암호화폐, 경제 관련 모든 콘텐츠를 검색하세요</p>
+    </section>
+
+    <!-- 검색 컨테이너 -->
+    <div class="search-container">
+        <!-- 검색 박스 -->
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" placeholder="검색어를 입력하세요... (예: 비트코인, 애플, 금리)" autofocus>
+            <button class="search-button" onclick="performSearch()">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- 검색 필터 -->
+        <div class="search-filters">
+            <button class="filter-btn active" data-filter="all">전체</button>
+            <button class="filter-btn" data-filter="stock">📈 주식</button>
+            <button class="filter-btn" data-filter="crypto">🪙 암호화폐</button>
+            <button class="filter-btn" data-filter="economy">🌏 경제</button>
+            <button class="filter-btn" data-filter="hot">🔥 핫이슈</button>
+        </div>
+
+        <!-- 검색 결과 -->
+        <div class="search-results" id="searchResults">
+            <!-- 검색 전 기본 화면 -->
+            <div class="suggestions">
+                <h3>🔥 인기 검색어</h3>
+                <div class="suggestion-tags">
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('비트코인')">비트코인</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('애플')">애플</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('테슬라')">테슬라</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('금리')">금리</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('이더리움')">이더리움</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('엔비디아')">엔비디아</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('부동산')">부동산</a>
+                    <a href="#" class="suggestion-tag" onclick="searchKeyword('인플레이션')">인플레이션</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 광고 공간 -->
+    <div class="blog-container">
+        <div class="ad-space">
+            <p>구글 애드센스 광고 영역</p>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <span style="font-size: 1.5rem;">💸</span>
+                <span style="font-size: 2rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">FinFlix</span>
+                <span style="font-size: 1.5rem;">💜</span>
+            </div>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 1rem;">
+                돈 이야기, 쉽고 재밌게! MZ를 위한 금융 플레이그라운드 🚀
+            </p>
+            
+            <div class="footer-links">
+                <a href="/privacy.html">개인정보처리방침</a>
+                <a href="/terms.html">이용약관</a>
+                <a href="/about.html">소개</a>
+                <a href="/contact.html">문의</a>
+            </div>
+            
+            <p class="copyright" style="margin-top: 1rem;">
+                © 2025 FinFlix | Made with 💜 in Seoul
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 전체 기사 데이터
+        const articles = [
+            // 주식 기사
+            { title: "💳 비자 카드 주가 350달러! '결제 독점 지위 굳건'", category: "stock", excerpt: "전세계 결제의 60% 처리! 핀테크 위협? 오히려 파트너십으로 성장", url: "/visa-350-dollars.html", date: "2025.08.01", keywords: ["비자", "주식", "결제", "핀테크"] },
+            { title: "🍎 애플 주가 250달러? 'AI폰 출시로 슈퍼사이클 온다'", category: "stock", excerpt: "아이폰 17 AI 기능 대폭 강화. 온디바이스 AI로 프라이버시 차별화!", url: "/apple-250-ai-phone.html", date: "2025.08.07", keywords: ["애플", "아이폰", "AI", "주식"] },
+            { title: "🤖 엔비디아 블랙웰 칩 출시! 'AI 시장 독주 가속'", category: "stock", excerpt: "차세대 AI칩 블랙웰 대량 생산. 성능 5배 향상, 전력 소비 70% 감소", url: "/nvidia-blackwell-chip.html", date: "2025.07.25", keywords: ["엔비디아", "AI", "반도체", "블랙웰"] },
+            { title: "🚀 팔란티어 주가 폭등! 'AI 국방주 1위'", category: "stock", excerpt: "미국 정부 AI 독점 계약, 민간 시장 확장. 2025년 매출 50% 성장", url: "/palantir-ai-defense.html", date: "2025.08.05", keywords: ["팔란티어", "AI", "국방", "주식"] },
+            { title: "🎬 디즈니 주가 반등! '스트리밍 흑자 전환 성공'", category: "stock", excerpt: "디즈니+ 흑자 전환, 파크 매출 신기록. 넷플릭스 추월 가시권", url: "/disney-streaming-profit.html", date: "2025.08.02", keywords: ["디즈니", "스트리밍", "넷플릭스", "OTT"] },
+            
+            // 암호화폐 기사
+            { title: "🚀 리플 XRP 10달러 간다! 'SEC 소송 종결 임박'", category: "crypto", excerpt: "게리 겐슬러 SEC 의장 사임, 트럼프 친화적 규제 전환", url: "/ripple-xrp-10-dollars.html", date: "2025.07.22", keywords: ["리플", "XRP", "SEC", "암호화폐"] },
+            { title: "💰 이더리움 1만 달러 간다! '트럼프 이더 전략 준비금'", category: "crypto", excerpt: "트럼프 미국 전략 준비금에 이더리움 포함 검토", url: "/ethereum-10k-trump.html", date: "2025.07.23", keywords: ["이더리움", "트럼프", "암호화폐", "비트코인"] },
+            { title: "🐸 PEPE 밈코인 3위 등극! '시바·도지 추월 노린다'", category: "crypto", excerpt: "PEPE 시총 3위 밈코인 등극! 2025년 말 $0.000011 목표", url: "/pepe-memecoin-top3.html", date: "2025.07.24", keywords: ["PEPE", "밈코인", "도지코인", "시바이누"] },
+            { title: "🐕 도지코인 1달러 돌파! '머스크 트위터 결제 통합'", category: "crypto", excerpt: "일론 머스크 X(트위터)에 DOGE 결제 통합 발표!", url: "/dogecoin-1-dollar-musk.html", date: "2025.07.26", keywords: ["도지코인", "머스크", "트위터", "X"] },
+            { title: "☀️ 솔라나 298달러 신고가! 'ETF 승인 초읽기'", category: "crypto", excerpt: "솔라나 ETF 1월 승인 유력. TVL 80억 달러 돌파", url: "/solana-298-dollars.html", date: "2025.07.27", keywords: ["솔라나", "ETF", "암호화폐", "디파이"] },
+            
+            // 경제 기사
+            { title: "🏦 잭슨홀 쇼크! '파월 금리인하 전면 재검토'", category: "economy", excerpt: "8월 22일 잭슨홀 미팅 파월 마지막 연설!", url: "/jackson-hole-powell-rate-cut.html", date: "2025.07.20", keywords: ["잭슨홀", "파월", "금리", "연준"] },
+            { title: "🏠 서울 아파트 15억 돌파! '강남 30억 시대 개막'", category: "economy", excerpt: "서울 평균 15억원 돌파, 강남 3.3㎡당 1억 원 임박", url: "/seoul-apartment-15-billion.html", date: "2025.07.25", keywords: ["부동산", "서울", "아파트", "강남"] },
+            { title: "🇨🇳 중국 디플레이션 공포! '부동산 -25% 추가 하락'", category: "economy", excerpt: "중국 경제성장률 4.4% 목표 미달! 부동산 위기", url: "/china-deflation-real-estate.html", date: "2025.07.21", keywords: ["중국", "디플레이션", "부동산", "경제"] },
+            { title: "🛢️ 유가 60달러 붕괴! '사우디-러시아 치킨게임'", category: "economy", excerpt: "WTI 60달러 깨질까? OPEC+ 감산 포기", url: "/oil-price-60-collapse.html", date: "2025.07.26", keywords: ["유가", "원유", "OPEC", "사우디"] },
+            { title: "🏢 미국 상업용 부동산 폭탄! '1.5조 달러 대출 만기'", category: "economy", excerpt: "2025년 상업용 부동산 대출 1.5조 달러 만기", url: "/us-commercial-real-estate.html", date: "2025.07.28", keywords: ["미국", "부동산", "상업용", "금융위기"] }
+        ];
+
+        let currentFilter = 'all';
+        let currentSort = 'relevance';
+
+        // 검색 실행 함수
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+            
+            if (!searchTerm) {
+                showSuggestions();
+                return;
+            }
+
+            const filteredArticles = articles.filter(article => {
+                // 카테고리 필터
+                if (currentFilter !== 'all' && article.category !== currentFilter) {
+                    return false;
+                }
+                
+                // 검색어 매칭
+                return article.title.toLowerCase().includes(searchTerm) ||
+                       article.excerpt.toLowerCase().includes(searchTerm) ||
+                       article.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm));
+            });
+
+            displayResults(filteredArticles, searchTerm);
+        }
+
+        // 검색 결과 표시
+        function displayResults(results, searchTerm) {
+            const resultsContainer = document.getElementById('searchResults');
+            
+            if (results.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
+                        <h2>😔 검색 결과가 없습니다</h2>
+                        <p>"${searchTerm}"에 대한 결과를 찾을 수 없습니다.</p>
+                        <div class="suggestions">
+                            <h3>다른 검색어를 시도해보세요:</h3>
+                            <div class="suggestion-tags">
+                                <a href="#" class="suggestion-tag" onclick="searchKeyword('비트코인')">비트코인</a>
+                                <a href="#" class="suggestion-tag" onclick="searchKeyword('애플')">애플</a>
+                                <a href="#" class="suggestion-tag" onclick="searchKeyword('금리')">금리</a>
+                                <a href="#" class="suggestion-tag" onclick="searchKeyword('부동산')">부동산</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // 검색 결과 헤더
+            let html = `
+                <div class="results-header">
+                    <div class="results-count">검색 결과 ${results.length}개</div>
+                    <div class="sort-options">
+                        <button class="sort-btn active" onclick="sortResults('relevance')">관련도순</button>
+                        <button class="sort-btn" onclick="sortResults('date')">최신순</button>
+                    </div>
+                </div>
+            `;
+
+            // 검색 결과 목록
+            results.forEach(article => {
+                const highlightedTitle = highlightText(article.title, searchTerm);
+                const highlightedExcerpt = highlightText(article.excerpt, searchTerm);
+                const categoryLabel = getCategoryLabel(article.category);
+                
+                html += `
+                    <div class="result-item">
+                        <span class="result-category">${categoryLabel}</span>
+                        <a href="${article.url}" class="result-title">${highlightedTitle}</a>
+                        <p class="result-excerpt">${highlightedExcerpt}</p>
+                        <div class="result-meta">
+                            <span>📅 ${article.date}</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            resultsContainer.innerHTML = html;
+        }
+
+        // 텍스트 하이라이트
+        function highlightText(text, searchTerm) {
+            if (!searchTerm) return text;
+            
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            return text.replace(regex, '<span class="highlighted">$1</span>');
+        }
+
+        // 카테고리 라벨 가져오기
+        function getCategoryLabel(category) {
+            const labels = {
+                stock: '📈 주식',
+                crypto: '🪙 암호화폐',
+                economy: '🌏 경제',
+                hot: '🔥 핫이슈'
+            };
+            return labels[category] || category;
+        }
+
+        // 추천 검색어로 검색
+        function searchKeyword(keyword) {
+            document.getElementById('searchInput').value = keyword;
+            performSearch();
+            return false;
+        }
+
+        // 기본 추천 화면 표시
+        function showSuggestions() {
+            document.getElementById('searchResults').innerHTML = `
+                <div class="suggestions">
+                    <h3>🔥 인기 검색어</h3>
+                    <div class="suggestion-tags">
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('비트코인')">비트코인</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('애플')">애플</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('테슬라')">테슬라</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('금리')">금리</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('이더리움')">이더리움</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('엔비디아')">엔비디아</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('부동산')">부동산</a>
+                        <a href="#" class="suggestion-tag" onclick="searchKeyword('인플레이션')">인플레이션</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 필터 버튼 이벤트
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                performSearch();
+            });
+        });
+
+        // 엔터키 검색
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // URL 파라미터 처리
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get('q');
+        if (searchQuery) {
+            document.getElementById('searchInput').value = searchQuery;
+            performSearch();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 색인 요청 도구 - FinFlix</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .url-list {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .url-item {
+            background: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #5a67d8;
+        }
+        .success {
+            color: #10b981;
+            font-weight: bold;
+        }
+        .pending {
+            color: #f59e0b;
+        }
+        .instruction {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 FinFlix Google 색인 요청 도구</h1>
+        
+        <div class="instruction">
+            <strong>⚠️ 사용 방법:</strong>
+            <ol>
+                <li>각 URL 옆의 "검사" 버튼을 클릭하면 Google Search Console URL 검사 페이지로 이동</li>
+                <li>자동으로 URL이 입력되면 Enter 키 누르기</li>
+                <li>검사 완료 후 "색인 생성 요청" 클릭</li>
+                <li>하루 최대 10개 URL만 요청 가능</li>
+            </ol>
+        </div>
+
+        <h2>📌 우선순위 높은 페이지 (최근 업데이트)</h2>
+        <div class="url-list">
+            <div class="url-item">
+                <span>🏠 홈페이지</span>
+                <a href="https://search.google.com/search-console/inspect?resource_id=https://finflix.org/&hl=ko" 
+                   target="_blank" class="btn">검사</a>
+            </div>
+            <div class="url-item">
+                <span>💰 리플 XRP $10 예측</span>
+                <a href="https://search.google.com/search-console/inspect?resource_id=https://finflix.org/ripple-xrp-10-dollars.html&hl=ko" 
+                   target="_blank" class="btn">검사</a>
+            </div>
+            <div class="url-item">
+                <span>💬 카카오 7만5천원 목표</span>
+                <a href="https://search.google.com/search-console/inspect?resource_id=https://finflix.org/kakao-50k-hyperclova.html&hl=ko" 
+                   target="_blank" class="btn">검사</a>
+            </div>
+            <div class="url-item">
+                <span>🍎 애플 AI폰 $270</span>
+                <a href="https://search.google.com/search-console/inspect?resource_id=https://finflix.org/apple-250-ai-phone.html&hl=ko" 
+                   target="_blank" class="btn">검사</a>
+            </div>
+            <div class="url-item">
+                <span>📺 넷플릭스 $1400</span>
+                <a href="https://search.google.com/search-console/inspect?resource_id=https://finflix.org/netflix-1000-dollars.html&hl=ko" 
+                   target="_blank" class="btn">검사</a>
+            </div>
+            <div class="url-item">
+                <span>🎮 로블록스 메타버스</span>
+                <a href="https://search.google.com/search-console/inspect?resource_id=https://finflix.org/roblox-metaverse-crash.html&hl=ko" 
+                   target="_blank" class="btn">검사</a>
+            </div>
+        </div>
+
+        <h2>📄 Sitemap 제출</h2>
+        <div class="url-list">
+            <div class="url-item">
+                <span>sitemap.xml</span>
+                <a href="https://search.google.com/search-console/sitemaps?resource_id=https://finflix.org/&hl=ko" 
+                   target="_blank" class="btn">Sitemap 제출</a>
+            </div>
+        </div>
+
+        <h2>🔍 색인 상태 확인</h2>
+        <div class="url-list">
+            <div class="url-item">
+                <span>전체 색인 현황</span>
+                <a href="https://search.google.com/search-console/index?resource_id=https://finflix.org/&hl=ko" 
+                   target="_blank" class="btn">상태 확인</a>
+            </div>
+            <div class="url-item">
+                <span>색인 문제 페이지</span>
+                <a href="https://search.google.com/search-console/page-indexing?resource_id=https://finflix.org/&hl=ko" 
+                   target="_blank" class="btn">문제 확인</a>
+            </div>
+        </div>
+
+        <h2>✅ 체크리스트</h2>
+        <div class="instruction" style="background: #f0fdf4; border-color: #10b981;">
+            <ul style="margin: 0;">
+                <li>☑️ sitemap.xml 제출 완료</li>
+                <li>☑️ robots.txt 확인 완료</li>
+                <li>☑️ canonical 태그 통일 완료</li>
+                <li>☑️ www → non-www 리다이렉트 설정</li>
+                <li>☐ 주요 페이지 색인 요청 (하루 10개 제한)</li>
+                <li>☐ 24시간 후 색인 상태 재확인</li>
+            </ul>
+        </div>
+
+        <h2>💡 Pro Tips</h2>
+        <div class="instruction" style="background: #fef3c7; border-color: #f59e0b;">
+            <ul style="margin: 0;">
+                <li><strong>빠른 색인:</strong> 새 콘텐츠 공유 시 SNS에 링크 게시</li>
+                <li><strong>우선순위:</strong> 트래픽이 많은 페이지부터 요청</li>
+                <li><strong>재제출:</strong> 콘텐츠 대폭 수정 후 재요청 가능</li>
+                <li><strong>모니터링:</strong> Search Console 주 2-3회 확인</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #666;">
+            <p>© 2025 FinFlix | Google 색인 요청 도구</p>
+            <p><small>이 도구는 Google Search Console 바로가기를 제공합니다</small></p>
+        </div>
+    </div>
+
+    <script>
+        // 페이지 로드 시 현재 시간 표시
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            console.log('도구 사용 시작:', now.toLocaleString('ko-KR'));
+        });
+    </script>
+</body>
+</html>

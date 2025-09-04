@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>주식 투자 정보 | FinFlix - MZ세대를 위한 주식 투자 가이드</title>
+    <meta name="description" content="애플, 엔비디아, 테슬라 등 주요 기업 주식 분석. MZ세대를 위한 쉽고 재밌는 주식 투자 정보와 전략을 제공합니다.">
+    <meta name="keywords" content="주식, 주식투자, 미국주식, 한국주식, 주식분석, 테슬라, 엔비디아, 애플, 삼성전자, 주식초보">
+    <meta name="author" content="FinFlix">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://finflix.org/category-stock.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="주식 투자 정보 | FinFlix">
+    <meta property="og:description" content="MZ세대를 위한 주식 투자 정보. 기업 분석부터 투자 전략까지 쉽게 풀어드립니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finflix.org/category-stock.html">
+    <meta property="og:image" content="https://finflix.org/images/stock-category.jpg">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="주식 투자 정보 | FinFlix">
+    <meta name="twitter:description" content="MZ세대를 위한 주식 투자 정보와 분석">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVC19M0KJY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QVC19M0KJY');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8922945057527557"
+     crossorigin="anonymous"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "주식 투자 정보",
+      "description": "FinFlix 주식 카테고리 - 주식 투자 관련 모든 기사",
+      "url": "https://finflix.org/category-stock.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "FinFlix",
+        "url": "https://finflix.org"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://finflix.org"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "주식",
+            "item": "https://finflix.org/category-stock.html"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .category-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .category-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .category-hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .category-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #667eea;
+        }
+        
+        .stat-card .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
+        
+        .subcategory-pill {
+            padding: 0.6rem 1.5rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 25px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .subcategory-pill:hover,
+        .subcategory-pill.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .guide-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .guide-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .guide-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .guide-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .guide-card a {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .guide-card a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .category-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .category-hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 배경 장식 -->
+    <div class="bg-decoration one"></div>
+    <div class="bg-decoration two"></div>
+    <div class="bg-decoration three"></div>
+
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <a href="/" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/category-stock.html" class="active">주식</a></li>
+                <li><a href="/category-crypto.html">암호화폐</a></li>
+                <li><a href="/category-economy.html">경제</a></li>
+                <li><a href="/about.html">소개</a></li>
+                <li><a href="/contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 카테고리 히어로 섹션 -->
+    <section class="category-hero">
+        <h1>📈 주식 투자의 모든 것</h1>
+        <p>복잡한 차트는 그만! MZ세대를 위한 쉽고 재밌는 주식 이야기</p>
+    </section>
+
+    <!-- 통계 섹션 -->
+    <div class="category-stats">
+        <div class="stat-card">
+            <div class="stat-value">15</div>
+            <div class="stat-label">주식 관련 기사</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">7</div>
+            <div class="stat-label">기업 분석</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">5</div>
+            <div class="stat-label">투자 전략</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">매주</div>
+            <div class="stat-label">업데이트</div>
+        </div>
+    </div>
+
+    <!-- 서브카테고리 -->
+    <div class="subcategories">
+        <a href="#all" class="subcategory-pill active">전체보기</a>
+        <a href="#us-stock" class="subcategory-pill">🇺🇸 미국주식</a>
+        <a href="#kr-stock" class="subcategory-pill">🇰🇷 한국주식</a>
+        <a href="#tech" class="subcategory-pill">💻 테크주</a>
+        <a href="#dividend" class="subcategory-pill">💰 배당주</a>
+        <a href="#growth" class="subcategory-pill">🚀 성장주</a>
+    </div>
+
+    <!-- 초보자 가이드 섹션 -->
+    <section class="content-section">
+        <h2 class="section-title">🎯 주식 초보자 가이드</h2>
+        <div class="guide-cards">
+            <div class="guide-card">
+                <h3>📚 주식 투자 기초</h3>
+                <p>주식이란 무엇인가? 기업의 일부를 소유하는 것부터 시작합니다. PER, PBR, ROE 등 기본 지표를 쉽게 설명합니다.</p>
+                <a href="#basics">자세히 보기 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>💡 계좌 개설 방법</h3>
+                <p>국내 주식부터 해외 주식까지, 증권사 선택부터 계좌 개설까지 step-by-step 가이드를 제공합니다.</p>
+                <a href="#account">자세히 보기 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>📊 차트 읽는 법</h3>
+                <p>이동평균선, 볼린저밴드, RSI? 복잡해 보이는 차트를 MZ 스타일로 쉽게 해석하는 방법을 알려드립니다.</p>
+                <a href="#chart">자세히 보기 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인기 주식 기사 -->
+    <section class="content-section">
+        <h2 class="section-title">🔥 인기 주식 기사</h2>
+        <div class="blog-grid" id="stockArticles">
+            <!-- 주식 관련 기사들이 동적으로 로드됩니다 -->
+        </div>
+    </section>
+
+    <!-- 주식 투자 전략 -->
+    <section class="content-section">
+        <h2 class="section-title">💎 투자 전략 & 팁</h2>
+        <div class="guide-cards">
+            <div class="guide-card">
+                <h3>🎯 가치투자 vs 성장투자</h3>
+                <p>워런 버핏의 가치투자? 캐시우드의 성장투자? 당신에게 맞는 투자 스타일을 찾아보세요.</p>
+                <a href="#strategy">전략 비교 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>📅 적립식 투자 전략</h3>
+                <p>월급날마다 조금씩, 꾸준히 투자하는 Dollar Cost Averaging 전략의 모든 것.</p>
+                <a href="#dca">DCA 가이드 →</a>
+            </div>
+            <div class="guide-card">
+                <h3>⚠️ 리스크 관리</h3>
+                <p>손절? 익절? 포트폴리오 분산? 투자 리스크를 관리하는 현실적인 방법들.</p>
+                <a href="#risk">리스크 관리 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 광고 공간 -->
+    <div class="blog-container">
+        <div class="ad-space">
+            <p>구글 애드센스 광고 영역</p>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <span style="font-size: 1.5rem;">💸</span>
+                <span style="font-size: 2rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">FinFlix</span>
+                <span style="font-size: 1.5rem;">💜</span>
+            </div>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 1rem;">
+                돈 이야기, 쉽고 재밌게! MZ를 위한 금융 플레이그라운드 🚀
+            </p>
+            
+            <div class="footer-links">
+                <a href="/privacy.html">개인정보처리방침</a>
+                <a href="/terms.html">이용약관</a>
+                <a href="/about.html">소개</a>
+                <a href="/contact.html">문의</a>
+            </div>
+            
+            <p class="copyright" style="margin-top: 1rem;">
+                © 2025 FinFlix | Made with 💜 in Seoul
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 주식 관련 기사 데이터
+        const stockArticles = [
+            {
+                title: "💳 비자 카드 주가 350달러! '결제 독점 지위 굳건'",
+                excerpt: "전세계 결제의 60% 처리! 핀테크 위협? 오히려 파트너십으로 성장",
+                url: "/visa-350-dollars.html",
+                date: "2025.08.01"
+            },
+            {
+                title: "🎬 디즈니 주가 반등! '스트리밍 흑자 전환 성공'",
+                excerpt: "디즈니+ 흑자 전환, 파크 매출 신기록. 넷플릭스 추월 가시권",
+                url: "/disney-streaming-profit.html",
+                date: "2025.08.02"
+            },
+            {
+                title: "🏠 리얼티인컴 9% 배당! '월배당 끝판왕 부동산 리츠'",
+                excerpt: "30년 연속 배당, 매월 지급! 금리 인하 시 주가 30% 상승 전망",
+                url: "/realty-income-dividend.html",
+                date: "2025.08.03"
+            },
+            {
+                title: "🚀 팔란티어 주가 폭등! 'AI 국방주 1위'",
+                excerpt: "미국 정부 AI 독점 계약, 민간 시장 확장. 2025년 매출 50% 성장",
+                url: "/palantir-ai-defense.html",
+                date: "2025.08.05"
+            },
+            {
+                title: "🤖 엔비디아 블랙웰 칩 출시! 'AI 시장 독주 가속'",
+                excerpt: "차세대 AI칩 블랙웰 대량 생산. 성능 5배 향상, 전력 소비 70% 감소",
+                url: "/nvidia-blackwell-chip.html",
+                date: "2025.07.25"
+            }
+        ];
+
+        // 기사 렌더링
+        function renderStockArticles() {
+            const container = document.getElementById('stockArticles');
+            if (!container) return;
+            
+            container.innerHTML = stockArticles.map(article => `
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <div class="blog-header">
+                            <span class="blog-category">주식</span>
+                            <span class="blog-date">${article.date}</span>
+                        </div>
+                        <h3 class="blog-title">${article.title}</h3>
+                        <p class="blog-excerpt">${article.excerpt}</p>
+                        <a href="${article.url}" class="blog-link">
+                            자세히 보기 →
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // 페이지 로드 시 실행
+        document.addEventListener('DOMContentLoaded', function() {
+            renderStockArticles();
+            
+            // Google Analytics 이벤트
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: '주식 카테고리',
+                    page_location: window.location.href,
+                    content_group1: '카테고리'
+                });
+            }
+        });
+
+        // 서브카테고리 클릭 이벤트
+        document.querySelectorAll('.subcategory-pill').forEach(pill => {
+            pill.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.subcategory-pill').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 여기에 필터링 로직 추가 가능
+                const category = this.getAttribute('href').substring(1);
+                console.log('Selected subcategory:', category);
+            });
+        });
+    </script>
+</body>
+</html>

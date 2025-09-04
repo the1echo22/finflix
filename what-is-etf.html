@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF란 무엇인가? 분산투자의 가장 쉬운 방법 | FinFlix</title>
+    <meta name="description" content="ETF(상장지수펀드)의 개념과 장단점, 종류별 특징을 초보자도 이해하기 쉽게 설명합니다. ETF 투자를 시작하기 전 꼭 알아야 할 모든 것.">
+    <meta name="keywords" content="ETF, 상장지수펀드, 인덱스펀드, 분산투자, 패시브투자, KODEX, TIGER, 금융교육">
+    <meta name="author" content="FinFlix">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://finflix.org/what-is-etf.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ETF란 무엇인가? 분산투자의 가장 쉬운 방법">
+    <meta property="og:description" content="ETF의 개념과 장단점, 종류별 특징을 초보자도 이해하기 쉽게 설명합니다.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://finflix.org/what-is-etf.html">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVC19M0KJY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QVC19M0KJY');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8922945057527557"
+     crossorigin="anonymous"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalArticle",
+      "headline": "ETF란 무엇인가? 분산투자의 가장 쉬운 방법",
+      "description": "ETF의 개념과 장단점, 종류별 특징을 초보자도 이해하기 쉽게 설명합니다.",
+      "educationalLevel": "beginner",
+      "educationalUse": "self-study",
+      "learningResourceType": "article",
+      "teaches": "ETF 투자의 기초",
+      "timeRequired": "PT18M",
+      "datePublished": "2025-09-04",
+      "dateModified": "2025-09-04",
+      "author": {
+        "@type": "Organization",
+        "name": "FinFlix"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .article-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .article-category {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            color: #333;
+        }
+        
+        .article-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.8rem 0;
+            color: #555;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, rgba(240, 147, 251, 0.1) 0%, rgba(245, 87, 108, 0.1) 100%);
+            border-left: 4px solid #f093fb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .info-box h4 {
+            color: #f093fb;
+            margin-bottom: 0.8rem;
+        }
+        
+        .example-box {
+            background: #fdf4ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 1px solid #f9c7ff;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .comparison-table tr:hover {
+            background: #fdf4ff;
+        }
+        
+        .etf-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .etf-type-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border-top: 3px solid #f093fb;
+        }
+        
+        .etf-type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .etf-type-card h4 {
+            color: #f093fb;
+            margin-bottom: 0.8rem;
+        }
+        
+        .fee-comparison {
+            background: #f9fafb;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pros-box {
+            background: #f0fdf4;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #10b981;
+        }
+        
+        .cons-box {
+            background: #fef2f2;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #ef4444;
+        }
+        
+        .pros-box h4 {
+            color: #10b981;
+            margin-bottom: 1rem;
+        }
+        
+        .cons-box h4 {
+            color: #ef4444;
+            margin-bottom: 1rem;
+        }
+        
+        .warning-box {
+            background: #fff7ed;
+            border-left: 4px solid #f97316;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .warning-box h4 {
+            color: #ea580c;
+            margin-bottom: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <a href="/" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about.html">소개</a></li>
+                <li><a href="/disclaimer.html">면책조항</a></li>
+                <li><a href="/editorial-policy.html">편집 정책</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 기사 컨테이너 -->
+    <main class="article-container">
+        <header class="article-header">
+            <div class="article-category">💹 투자 기초 교육</div>
+            <h1 class="article-title">ETF란 무엇인가?<br>분산투자의 가장 쉬운 방법</h1>
+            <div class="article-meta" style="display: flex; justify-content: center; gap: 2rem; color: #666; font-size: 0.9rem;">
+                <span>📅 2025.09.04</span>
+                <span>⏱️ 18분 읽기</span>
+                <span>📖 입문자 레벨</span>
+            </div>
+        </header>
+
+        <article class="article-content">
+            
+            <div class="info-box">
+                <h4>📌 이 글을 읽고 나면 알게 되는 것들</h4>
+                <ul>
+                    <li>ETF의 정확한 개념과 작동 원리</li>
+                    <li>ETF와 일반 펀드, 주식의 차이점</li>
+                    <li>다양한 ETF 종류와 특징</li>
+                    <li>ETF 투자의 장단점</li>
+                    <li>ETF 선택 방법과 투자 전략</li>
+                </ul>
+            </div>
+
+            <h2>1. ETF의 기본 개념</h2>
+            
+            <p>
+                <strong>ETF(Exchange Traded Fund, 상장지수펀드)</strong>는 특정 지수의 수익률을 추종하는 펀드를 거래소에 상장시켜 
+                주식처럼 실시간으로 매매할 수 있도록 만든 금융상품입니다.
+            </p>
+
+            <div class="example-box">
+                <h4>🧺 쉬운 비유로 이해하기</h4>
+                <p>
+                    ETF는 '과일 바구니'와 같습니다. 사과, 배, 포도를 각각 사는 대신 
+                    이미 다양한 과일이 담긴 바구니를 사는 것입니다. 
+                    KODEX 200 ETF를 산다면, 삼성전자, SK하이닉스, 네이버 등 
+                    한국 대표 기업 200개를 한 번에 조금씩 사는 것과 같습니다.
+                </p>
+            </div>
+
+            <h3>1.1 ETF의 탄생 배경</h3>
+            
+            <p>
+                1993년 미국에서 처음 출시된 ETF는 개인투자자들이 쉽고 저렴하게 
+                분산투자를 할 수 있도록 만들어졌습니다. 한국에서는 2002년 
+                'KODEX 200'이 최초로 상장되었고, 현재 500개가 넘는 ETF가 거래되고 있습니다.
+            </p>
+
+            <h2>2. ETF vs 주식 vs 펀드 비교</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>개별 주식</th>
+                        <th>일반 펀드</th>
+                        <th>ETF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>거래 방식</strong></td>
+                        <td>실시간 매매</td>
+                        <td>1일 1회 (15:30)</td>
+                        <td>실시간 매매</td>
+                    </tr>
+                    <tr>
+                        <td><strong>최소 투자금액</strong></td>
+                        <td>1주 가격</td>
+                        <td>보통 100만원</td>
+                        <td>1주 가격 (보통 5천원~)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>분산투자</strong></td>
+                        <td>불가능</td>
+                        <td>자동</td>
+                        <td>자동</td>
+                    </tr>
+                    <tr>
+                        <td><strong>운용보수</strong></td>
+                        <td>없음</td>
+                        <td>연 1.5~2.5%</td>
+                        <td>연 0.1~0.5%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>투명성</strong></td>
+                        <td>높음</td>
+                        <td>분기별 공시</td>
+                        <td>매일 공시</td>
+                    </tr>
+                    <tr>
+                        <td><strong>환금성</strong></td>
+                        <td>즉시</td>
+                        <td>2~3일</td>
+                        <td>즉시</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. ETF의 종류</h2>
+
+            <div class="etf-types-grid">
+                <div class="etf-type-card">
+                    <h4>📊 주식형 ETF</h4>
+                    <p><strong>특정 주가지수를 추종</strong></p>
+                    <ul>
+                        <li>KODEX 200 (코스피 200)</li>
+                        <li>TIGER 나스닥100</li>
+                        <li>KODEX 미국S&P500</li>
+                    </ul>
+                    <p><small>장점: 시장 평균 수익률<br>단점: 개별종목 선택 불가</small></p>
+                </div>
+                
+                <div class="etf-type-card">
+                    <h4>💰 채권형 ETF</h4>
+                    <p><strong>국채, 회사채 등에 투자</strong></p>
+                    <ul>
+                        <li>KODEX 국고채3년</li>
+                        <li>TIGER 단기채권</li>
+                        <li>KBSTAR 회사채AA-이상</li>
+                    </ul>
+                    <p><small>장점: 안정적 수익<br>단점: 낮은 수익률</small></p>
+                </div>
+                
+                <div class="etf-type-card">
+                    <h4>🏭 원자재 ETF</h4>
+                    <p><strong>금, 은, 원유 등 원자재</strong></p>
+                    <ul>
+                        <li>KODEX 골드선물(H)</li>
+                        <li>TIGER 은선물</li>
+                        <li>KODEX WTI원유선물(H)</li>
+                    </ul>
+                    <p><small>장점: 인플레이션 헤지<br>단점: 높은 변동성</small></p>
+                </div>
+                
+                <div class="etf-type-card">
+                    <h4>🌍 해외 ETF</h4>
+                    <p><strong>해외 시장에 투자</strong></p>
+                    <ul>
+                        <li>TIGER 중국전기차SOLACTIVE</li>
+                        <li>KODEX 일본TOPIX100</li>
+                        <li>KODEX 인도Nifty50</li>
+                    </ul>
+                    <p><small>장점: 글로벌 분산투자<br>단점: 환율 리스크</small></p>
+                </div>
+                
+                <div class="etf-type-card">
+                    <h4>🎯 섹터 ETF</h4>
+                    <p><strong>특정 산업에 집중 투자</strong></p>
+                    <ul>
+                        <li>TIGER 2차전지테마</li>
+                        <li>KODEX 반도체</li>
+                        <li>TIGER 헬스케어</li>
+                    </ul>
+                    <p><small>장점: 테마 투자 가능<br>단점: 섹터 리스크 집중</small></p>
+                </div>
+                
+                <div class="etf-type-card">
+                    <h4>⚡ 레버리지/인버스 ETF</h4>
+                    <p><strong>지수의 2배 또는 반대 추종</strong></p>
+                    <ul>
+                        <li>KODEX 레버리지 (2배)</li>
+                        <li>KODEX 인버스 (-1배)</li>
+                        <li>TIGER 200선물인버스2X (-2배)</li>
+                    </ul>
+                    <p><small>장점: 단기 고수익 가능<br>단점: 극도로 높은 리스크</small></p>
+                </div>
+            </div>
+
+            <h2>4. ETF의 작동 원리</h2>
+
+            <h3>4.1 추종지수와 추적오차</h3>
+            
+            <p>
+                ETF는 특정 지수를 따라가도록 설계됩니다. 
+                예를 들어, KODEX 200은 코스피 200 지수를 추종합니다. 
+                하지만 완벽하게 일치하지는 않으며, 이 차이를 <strong>추적오차(Tracking Error)</strong>라고 합니다.
+            </p>
+
+            <div class="info-box">
+                <h4>📈 추적오차가 발생하는 이유</h4>
+                <ul>
+                    <li>운용보수 및 거래비용</li>
+                    <li>배당금 재투자 시차</li>
+                    <li>지수 구성종목 변경 시 매매 시차</li>
+                    <li>현물과 선물의 차이 (선물 ETF의 경우)</li>
+                </ul>
+                <p><strong>Tip:</strong> 추적오차가 0.5% 이내인 ETF를 선택하는 것이 좋습니다.</p>
+            </div>
+
+            <h3>4.2 NAV와 시장가격</h3>
+            
+            <p>
+                <strong>NAV(Net Asset Value, 순자산가치)</strong>는 ETF가 보유한 자산의 실제 가치이고, 
+                <strong>시장가격</strong>은 거래소에서 실제 거래되는 가격입니다. 
+                이 둘은 대체로 비슷하지만 약간의 차이(괴리)가 발생할 수 있습니다.
+            </p>
+
+            <h2>5. ETF 투자의 장단점</h2>
+
+            <div class="pros-cons-grid">
+                <div class="pros-box">
+                    <h4>✅ 장점</h4>
+                    <ul>
+                        <li><strong>분산투자:</strong> 한 번에 여러 종목 투자</li>
+                        <li><strong>낮은 비용:</strong> 운용보수 연 0.1~0.5%</li>
+                        <li><strong>높은 유동성:</strong> 실시간 매매 가능</li>
+                        <li><strong>투명성:</strong> 구성종목 매일 공개</li>
+                        <li><strong>소액투자:</strong> 적은 돈으로 시작 가능</li>
+                        <li><strong>다양성:</strong> 전세계 모든 자산에 투자</li>
+                        <li><strong>세금 혜택:</strong> 국내 주식형 ETF 매매차익 비과세</li>
+                    </ul>
+                </div>
+                
+                <div class="cons-box">
+                    <h4>❌ 단점</h4>
+                    <ul>
+                        <li><strong>시장 수익률:</strong> 초과 수익 불가능</li>
+                        <li><strong>추적오차:</strong> 지수와 완벽히 일치하지 않음</li>
+                        <li><strong>운용보수:</strong> 적지만 계속 발생</li>
+                        <li><strong>거래비용:</strong> 증권사 수수료 발생</li>
+                        <li><strong>선택의 어려움:</strong> 너무 많은 종류</li>
+                        <li><strong>레버리지 위험:</strong> 레버리지 ETF는 손실도 배수</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>6. ETF 선택 방법</h2>
+
+            <h3>6.1 체크리스트</h3>
+
+            <div class="info-box">
+                <h4>✔️ ETF 선택 시 확인사항</h4>
+                <ol>
+                    <li><strong>운용자산(AUM):</strong> 100억원 이상</li>
+                    <li><strong>일 거래량:</strong> 1,000주 이상</li>
+                    <li><strong>운용보수:</strong> 0.5% 이하</li>
+                    <li><strong>추적오차:</strong> 0.5% 이내</li>
+                    <li><strong>상장일:</strong> 6개월 이상 경과</li>
+                    <li><strong>NAV 괴리율:</strong> ±1% 이내</li>
+                    <li><strong>운용사:</strong> 신뢰할 수 있는 대형사</li>
+                </ol>
+            </div>
+
+            <h3>6.2 인기 ETF TOP 10 (2025년 기준)</h3>
+
+            <div class="fee-comparison">
+                <h4>📊 한국 거래소 거래량 TOP ETF</h4>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr style="background: #f3f4f6;">
+                            <th style="padding: 0.8rem;">ETF명</th>
+                            <th style="padding: 0.8rem;">추종지수</th>
+                            <th style="padding: 0.8rem;">운용보수</th>
+                            <th style="padding: 0.8rem;">특징</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.8rem;">KODEX 200</td>
+                            <td style="padding: 0.8rem;">코스피 200</td>
+                            <td style="padding: 0.8rem;">0.15%</td>
+                            <td style="padding: 0.8rem;">국내 대표 ETF</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;">KODEX 레버리지</td>
+                            <td style="padding: 0.8rem;">코스피200 2배</td>
+                            <td style="padding: 0.8rem;">0.49%</td>
+                            <td style="padding: 0.8rem;">고위험 고수익</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;">TIGER 나스닥100</td>
+                            <td style="padding: 0.8rem;">나스닥 100</td>
+                            <td style="padding: 0.8rem;">0.07%</td>
+                            <td style="padding: 0.8rem;">미국 기술주</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;">KODEX 미국S&P500</td>
+                            <td style="padding: 0.8rem;">S&P 500</td>
+                            <td style="padding: 0.8rem;">0.07%</td>
+                            <td style="padding: 0.8rem;">미국 대형주</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;">TIGER 2차전지테마</td>
+                            <td style="padding: 0.8rem;">2차전지 기업</td>
+                            <td style="padding: 0.8rem;">0.39%</td>
+                            <td style="padding: 0.8rem;">배터리 섹터</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>7. ETF 투자 전략</h2>
+
+            <h3>7.1 자산배분 전략</h3>
+
+            <div class="example-box">
+                <h4>💼 연령대별 포트폴리오 예시</h4>
+                <p><strong>20-30대 (공격적)</strong></p>
+                <ul>
+                    <li>국내 주식 ETF: 30%</li>
+                    <li>미국 주식 ETF: 40%</li>
+                    <li>신흥국 ETF: 20%</li>
+                    <li>채권 ETF: 10%</li>
+                </ul>
+                
+                <p><strong>40-50대 (균형)</strong></p>
+                <ul>
+                    <li>국내 주식 ETF: 25%</li>
+                    <li>선진국 주식 ETF: 25%</li>
+                    <li>채권 ETF: 30%</li>
+                    <li>원자재 ETF: 10%</li>
+                    <li>리츠 ETF: 10%</li>
+                </ul>
+                
+                <p><strong>60대 이상 (보수적)</strong></p>
+                <ul>
+                    <li>국내 채권 ETF: 40%</li>
+                    <li>배당주 ETF: 30%</li>
+                    <li>국내 주식 ETF: 20%</li>
+                    <li>현금: 10%</li>
+                </ul>
+            </div>
+
+            <h3>7.2 적립식 투자</h3>
+            
+            <p>
+                ETF는 소액으로도 투자가 가능하므로 매월 일정 금액을 꾸준히 투자하는 
+                <strong>적립식 투자(Dollar Cost Averaging)</strong>가 효과적입니다.
+            </p>
+
+            <div class="info-box">
+                <h4>📅 적립식 투자 시뮬레이션</h4>
+                <p>매월 100만원씩 KODEX 200에 10년간 투자했다면:</p>
+                <ul>
+                    <li>총 투자금액: 1억 2,000만원</li>
+                    <li>평균 수익률: 연 7% 가정</li>
+                    <li>10년 후 평가금액: 약 1억 7,300만원</li>
+                    <li>수익금: 약 5,300만원 (44% 수익)</li>
+                </ul>
+                <p><small>* 과거 수익률이 미래 수익을 보장하지 않습니다</small></p>
+            </div>
+
+            <h2>8. ETF 투자 시 주의사항</h2>
+
+            <div class="warning-box">
+                <h4>⚠️ 특별히 주의해야 할 ETF</h4>
+                <ul>
+                    <li><strong>레버리지 ETF:</strong> 장기 보유 시 복리 효과로 손실 확대</li>
+                    <li><strong>인버스 ETF:</strong> 시장 하락에 베팅, 타이밍 실패 시 큰 손실</li>
+                    <li><strong>원자재 ETF:</strong> 롤오버 비용으로 장기 수익률 저하</li>
+                    <li><strong>신생 ETF:</strong> 유동성 부족으로 매매 어려움</li>
+                    <li><strong>합성 ETF:</strong> 실물이 아닌 파생상품 투자로 리스크 증가</li>
+                </ul>
+            </div>
+
+            <h2>9. ETF 세금</h2>
+
+            <div class="fee-comparison">
+                <h4>💰 ETF 관련 세금 정리</h4>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr style="background: #f3f4f6;">
+                            <th style="padding: 0.8rem;">구분</th>
+                            <th style="padding: 0.8rem;">매매차익</th>
+                            <th style="padding: 0.8rem;">배당소득</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.8rem;"><strong>국내 주식형 ETF</strong></td>
+                            <td style="padding: 0.8rem;">비과세</td>
+                            <td style="padding: 0.8rem;">15.4%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;"><strong>해외 주식형 ETF</strong></td>
+                            <td style="padding: 0.8rem;">22% (양도소득세)</td>
+                            <td style="padding: 0.8rem;">15.4%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;"><strong>채권 ETF</strong></td>
+                            <td style="padding: 0.8rem;">15.4%</td>
+                            <td style="padding: 0.8rem;">15.4%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem;"><strong>원자재 ETF</strong></td>
+                            <td style="padding: 0.8rem;">22%</td>
+                            <td style="padding: 0.8rem;">배당 없음</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><small>* 2025년 기준, 세법 개정에 따라 변경될 수 있음</small></p>
+            </div>
+
+            <h2>10. ETF vs 인덱스펀드</h2>
+
+            <p>
+                많은 사람들이 ETF와 인덱스펀드를 혼동합니다. 
+                둘 다 지수를 추종한다는 점은 같지만, 거래 방식과 특징에서 차이가 있습니다.
+            </p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>ETF</th>
+                        <th>인덱스펀드</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>거래시간</strong></td>
+                        <td>장중 실시간</td>
+                        <td>1일 1회</td>
+                    </tr>
+                    <tr>
+                        <td><strong>최소 투자금액</strong></td>
+                        <td>1주 (보통 5천원~)</td>
+                        <td>1만원~100만원</td>
+                    </tr>
+                    <tr>
+                        <td><strong>수수료</strong></td>
+                        <td>매매수수료 + 운용보수</td>
+                        <td>운용보수만</td>
+                    </tr>
+                    <tr>
+                        <td><strong>적립식 투자</strong></td>
+                        <td>수동 설정 필요</td>
+                        <td>자동 적립 가능</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>맺음말</h2>
+
+            <p>
+                ETF는 초보자부터 전문 투자자까지 모두에게 유용한 투자 도구입니다. 
+                적은 비용으로 분산투자가 가능하고, 투명하며, 유동성이 높다는 장점이 있습니다. 
+                하지만 모든 투자가 그렇듯 리스크가 있으므로, 자신의 투자 목표와 
+                위험 감수 능력을 고려하여 신중히 선택해야 합니다.
+            </p>
+
+            <div class="info-box" style="margin-top: 3rem;">
+                <h4>💡 ETF 투자 핵심 정리</h4>
+                <ol>
+                    <li>ETF는 '주식처럼 거래되는 펀드'입니다</li>
+                    <li>분산투자를 쉽고 저렴하게 할 수 있습니다</li>
+                    <li>장기 적립식 투자에 적합합니다</li>
+                    <li>레버리지/인버스 ETF는 초보자에게 위험합니다</li>
+                    <li>운용자산과 거래량이 충분한 ETF를 선택하세요</li>
+                </ol>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ 투자 유의사항</h4>
+                <p>
+                    본 콘텐츠는 교육 목적으로 작성되었으며, 투자 권유가 아닙니다. 
+                    모든 투자 결정은 본인의 판단과 책임 하에 이루어져야 하며, 
+                    투자 전 반드시 충분한 조사와 전문가 상담을 받으시기 바랍니다.
+                </p>
+            </div>
+
+            <div style="background: #f9fafb; padding: 2rem; border-radius: 12px; margin-top: 3rem;">
+                <h3>📚 참고 자료</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>📖 한국거래소 - ETF 투자 가이드북</li>
+                    <li>📖 금융투자협회 - ETF의 이해</li>
+                    <li>📖 John C. Bogle - 「The Little Book of Common Sense Investing」</li>
+                    <li>📖 Burton Malkiel - 「A Random Walk Down Wall Street」</li>
+                    <li>📖 각 운용사 ETF 투자설명서</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- 관련 콘텐츠 -->
+        <div style="margin-top: 3rem; padding: 2rem; background: #fdf4ff; border-radius: 12px;">
+            <h3 style="margin-bottom: 1.5rem;">🎓 다음에 읽으면 좋은 글</h3>
+            <div style="display: grid; gap: 1rem;">
+                <a href="/what-is-stock.html" style="display: block; padding: 1rem; background: white; border-radius: 8px; text-decoration: none; color: #333;">
+                    📈 주식이란 무엇인가? - 주식 투자의 기초
+                </a>
+                <a href="/understanding-bonds.html" style="display: block; padding: 1rem; background: white; border-radius: 8px; text-decoration: none; color: #333;">
+                    💰 채권 투자의 이해 - 안정적인 수익 추구
+                </a>
+                <a href="/portfolio-theory.html" style="display: block; padding: 1rem; background: white; border-radius: 8px; text-decoration: none; color: #333;">
+                    🎯 포트폴리오 이론 - 자산배분의 기초
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">
+                © 2025 FinFlix | 금융 교육 플랫폼<br>
+                <small>올바른 금융 지식을 전달합니다</small>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -191,6 +191,8 @@
             <ul class="nav-links">
                 <li><a href="/">홈</a></li>
                 <li><a href="about.html">소개</a></li>
+                <li><a href="author.html">저자</a></li>
+                <li><a href="disclaimer.html">면책조항</a></li>
                 <li><a href="contact.html">문의</a></li>
                 <li><a href="#" class="admin-btn" onclick="toggleAdmin()">관리자</a></li>
             </ul>
@@ -205,6 +207,23 @@
             <span>쉽고 재밌게 풀어보자</span>
         </h1>
         <p>복잡한 금융 용어는 그만! 누구나 이해할 수 있는 투자 이야기</p>
+        
+        <!-- 검색 바 추가 -->
+        <div style="max-width: 600px; margin: 2rem auto 0;">
+            <form action="/search.html" method="GET" style="position: relative;">
+                <input type="text" name="q" placeholder="검색어를 입력하세요... (예: 비트코인, 애플, 금리)" 
+                       style="width: 100%; padding: 1rem 3.5rem 1rem 1.5rem; font-size: 1rem; 
+                              border: none; border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <button type="submit" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); 
+                                             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                                             color: white; border: none; border-radius: 50%; width: 40px; height: 40px; 
+                                             display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </form>
+        </div>
     </section>
 
     <!-- 카테고리 -->

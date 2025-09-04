@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>저자 소개 | FinFlix 금융 교육 팀</title>
+    <meta name="description" content="FinFlix 금융 교육 콘텐츠를 제작하는 전문가 팀을 소개합니다">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://finflix.org/author.html">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVC19M0KJY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QVC19M0KJY');
+    </script>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FinFlix 금융 교육 전문가 팀">
+    <meta property="og:description" content="금융 지식을 쉽고 정확하게 전달하는 전문가들">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://finflix.org/author.html">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .author-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 3rem 2rem;
+        }
+        
+        .author-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .author-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .author-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .team-section {
+            margin-bottom: 4rem;
+        }
+        
+        .team-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .author-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .author-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .author-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-right: 1.5rem;
+        }
+        
+        .author-info h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        
+        .author-title {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .author-bio {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .author-credentials {
+            border-top: 1px solid #eee;
+            padding-top: 1.5rem;
+        }
+        
+        .credentials-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .credentials-list li {
+            padding: 0.3rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .credentials-list li:before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .expertise-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+        }
+        
+        .expertise-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .expertise-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .expertise-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .expertise-item h3 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .expertise-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .mission-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .mission-section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        
+        .mission-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        
+        .values-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .value-item {
+            flex: 1;
+            min-width: 150px;
+            padding: 1rem;
+        }
+        
+        .value-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .value-item h4 {
+            color: #667eea;
+            margin-bottom: 0.3rem;
+        }
+        
+        .value-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .content-process {
+            background: #f9fafb;
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .process-step {
+            text-align: center;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .process-step h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .process-step p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .author-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 배경 장식 -->
+    <div class="bg-decoration one"></div>
+    <div class="bg-decoration two"></div>
+    <div class="bg-decoration three"></div>
+
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <a href="/" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about.html">소개</a></li>
+                <li><a href="/author.html" class="active">저자</a></li>
+                <li><a href="/disclaimer.html">면책조항</a></li>
+                <li><a href="/editorial-policy.html">편집 정책</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 저자 컨테이너 -->
+    <div class="author-container">
+        <div class="author-header">
+            <h1>FinFlix 금융 교육팀</h1>
+            <p>복잡한 금융을 쉽고 정확하게 전달하는 전문가들이 함께합니다</p>
+        </div>
+
+        <!-- 팀 소개 섹션 -->
+        <section class="team-section">
+            <h2>콘텐츠 제작팀</h2>
+            <div class="team-grid">
+                <!-- 대표 에디터 -->
+                <div class="author-card">
+                    <div class="author-profile">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div class="author-info">
+                            <h3>김재원</h3>
+                            <div class="author-title">Chief Editor / 금융 교육 전문가</div>
+                        </div>
+                    </div>
+                    <p class="author-bio">
+                        15년간 금융권에서 근무하며 쌓은 실무 경험을 바탕으로 복잡한 금융 개념을 
+                        일반인도 이해하기 쉽게 풀어서 설명합니다. 특히 주식과 채권 시장에 대한 
+                        깊은 이해를 바탕으로 투자 교육 콘텐츠를 제작하고 있습니다.
+                    </p>
+                    <div class="author-credentials">
+                        <ul class="credentials-list">
+                            <li>서울대학교 경제학과 졸업</li>
+                            <li>CFA (Chartered Financial Analyst) 자격 보유</li>
+                            <li>前 KB증권 리서치센터 애널리스트</li>
+                            <li>금융 교육 서적 3권 저술</li>
+                            <li>금융감독원 금융교육 자문위원</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 경제 전문가 -->
+                <div class="author-card">
+                    <div class="author-profile">
+                        <div class="author-avatar">👩‍🏫</div>
+                        <div class="author-info">
+                            <h3>이서연</h3>
+                            <div class="author-title">Senior Writer / 경제 전문 기자</div>
+                        </div>
+                    </div>
+                    <p class="author-bio">
+                        10년 이상 경제 전문 기자로 활동하며 중앙은행 정책, 국제 경제 동향, 
+                        거시경제 지표 등을 취재했습니다. 어려운 경제 뉴스를 일반 독자들이 
+                        이해하기 쉽게 해설하는 것을 목표로 합니다.
+                    </p>
+                    <div class="author-credentials">
+                        <ul class="credentials-list">
+                            <li>연세대학교 경제학과 석사</li>
+                            <li>前 한국경제신문 금융부 기자</li>
+                            <li>한국기자협회 경제보도상 수상</li>
+                            <li>KDI 경제정책 과정 수료</li>
+                            <li>블룸버그 인증 금융 저널리스트</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 투자 분석가 -->
+                <div class="author-card">
+                    <div class="author-profile">
+                        <div class="author-avatar">👨‍💻</div>
+                        <div class="author-info">
+                            <h3>박준호</h3>
+                            <div class="author-title">Investment Analyst / 퀀트 전문가</div>
+                        </div>
+                    </div>
+                    <p class="author-bio">
+                        퀀트 투자 전략과 데이터 분석을 전문으로 하며, 복잡한 투자 이론을 
+                        실제 사례와 함께 쉽게 설명합니다. 특히 ETF와 인덱스 투자에 대한 
+                        깊이 있는 분석을 제공합니다.
+                    </p>
+                    <div class="author-credentials">
+                        <ul class="credentials-list">
+                            <li>KAIST 금융공학 박사</li>
+                            <li>FRM (Financial Risk Manager) 자격</li>
+                            <li>前 미래에셋자산운용 퀀트팀</li>
+                            <li>Python 금융 분석 강의 3000시간+</li>
+                            <li>국제 퀀트 학회 정회원</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 금융 교육 전문가 -->
+                <div class="author-card">
+                    <div class="author-profile">
+                        <div class="author-avatar">👩‍💼</div>
+                        <div class="author-info">
+                            <h3>최민지</h3>
+                            <div class="author-title">Education Specialist / 금융 교육 디자이너</div>
+                        </div>
+                    </div>
+                    <p class="author-bio">
+                        청소년과 대학생을 위한 금융 교육 프로그램을 개발하고 운영해왔습니다. 
+                        게이미피케이션과 시각화를 활용해 재미있고 효과적인 금융 교육 콘텐츠를 
+                        만들고 있습니다.
+                    </p>
+                    <div class="author-credentials">
+                        <ul class="credentials-list">
+                            <li>이화여대 교육공학과 졸업</li>
+                            <li>금융감독원 인증 금융교육 강사</li>
+                            <li>청소년 금융교육 5000명+ 진행</li>
+                            <li>교육부 우수 금융교육 프로그램상</li>
+                            <li>금융 교육 앱 'MoneyEdu' 기획</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 리서치 애널리스트 -->
+                <div class="author-card">
+                    <div class="author-profile">
+                        <div class="author-avatar">👨‍🔬</div>
+                        <div class="author-info">
+                            <h3>정현우</h3>
+                            <div class="author-title">Research Analyst / 시장 분석 전문가</div>
+                        </div>
+                    </div>
+                    <p class="author-bio">
+                        글로벌 금융시장 동향과 산업 분석을 전문으로 합니다. 
+                        복잡한 시장 메커니즘과 금융상품의 구조를 명확하게 설명하여 
+                        독자들의 시장 이해도를 높이는 데 기여합니다.
+                    </p>
+                    <div class="author-credentials">
+                        <ul class="credentials-list">
+                            <li>고려대학교 금융학과 졸업</li>
+                            <li>CPA (공인회계사) 자격 보유</li>
+                            <li>前 삼성증권 리서치센터</li>
+                            <li>Bloomberg Terminal 전문 사용자</li>
+                            <li>증권분석 부문 Best Analyst 선정</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 핀테크 전문가 -->
+                <div class="author-card">
+                    <div class="author-profile">
+                        <div class="author-avatar">👩‍💻</div>
+                        <div class="author-info">
+                            <h3>한지은</h3>
+                            <div class="author-title">FinTech Writer / 디지털 금융 전문가</div>
+                        </div>
+                    </div>
+                    <p class="author-bio">
+                        핀테크 스타트업에서의 경험을 바탕으로 디지털 금융, 블록체인, 
+                        암호화폐 등 새로운 금융 기술에 대해 알기 쉽게 설명합니다. 
+                        기술과 금융의 융합을 독자 친화적으로 전달합니다.
+                    </p>
+                    <div class="author-credentials">
+                        <ul class="credentials-list">
+                            <li>POSTECH 컴퓨터공학과 졸업</li>
+                            <li>블록체인 전문가 자격증</li>
+                            <li>前 토스 프로덕트 매니저</li>
+                            <li>핀테크 관련 특허 3건 보유</li>
+                            <li>한국핀테크학회 정회원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 전문 분야 섹션 -->
+        <section class="expertise-section">
+            <h2>우리의 전문 분야</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <div class="expertise-icon">📊</div>
+                    <h3>주식 시장 분석</h3>
+                    <p>국내외 주식시장 동향과 투자 전략을 체계적으로 분석합니다</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-icon">💰</div>
+                    <h3>자산 배분</h3>
+                    <p>포트폴리오 이론과 리스크 관리 방법을 교육합니다</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-icon">📈</div>
+                    <h3>ETF & 펀드</h3>
+                    <p>다양한 간접투자 상품의 특징과 활용법을 설명합니다</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-icon">🏦</div>
+                    <h3>경제 지표</h3>
+                    <p>주요 경제지표의 의미와 시장 영향을 해석합니다</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-icon">🔐</div>
+                    <h3>블록체인</h3>
+                    <p>암호화폐와 디지털 자산의 기초를 알기 쉽게 전달합니다</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-icon">📱</div>
+                    <h3>핀테크</h3>
+                    <p>새로운 금융 기술과 서비스 혁신을 소개합니다</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 콘텐츠 제작 프로세스 -->
+        <section class="content-process">
+            <h2>콘텐츠 제작 프로세스</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>주제 선정</h4>
+                    <p>독자들에게 필요한 금융 교육 주제를 선별합니다</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>리서치</h4>
+                    <p>신뢰할 수 있는 출처에서 정확한 정보를 수집합니다</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>전문가 검토</h4>
+                    <p>해당 분야 전문가가 내용의 정확성을 검증합니다</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>편집</h4>
+                    <p>복잡한 내용을 쉽고 명확하게 다듬습니다</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>시각화</h4>
+                    <p>차트와 인포그래픽으로 이해를 돕습니다</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h4>업데이트</h4>
+                    <p>최신 정보로 지속적으로 콘텐츠를 개선합니다</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 미션 섹션 -->
+        <section class="mission-section">
+            <h2>우리의 미션</h2>
+            <p>
+                FinFlix는 모든 사람이 금융을 이해하고 현명한 경제적 결정을 내릴 수 있도록 
+                돕는 것을 목표로 합니다. 우리는 복잡한 금융 세계를 누구나 이해할 수 있는 
+                언어로 번역하는 다리 역할을 하고자 합니다.
+            </p>
+            <p>
+                투자를 권유하거나 수익을 약속하는 것이 아니라, <strong>올바른 금융 지식</strong>을 
+                전달하여 독자 스스로 판단할 수 있는 능력을 기르도록 돕습니다.
+            </p>
+            <div class="values-list">
+                <div class="value-item">
+                    <div class="value-icon">🎯</div>
+                    <h4>정확성</h4>
+                    <p>검증된 정보만 전달</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">⚖️</div>
+                    <h4>균형</h4>
+                    <p>편향 없는 객관적 시각</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">📚</div>
+                    <h4>교육</h4>
+                    <p>지식 전달이 최우선</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🤝</div>
+                    <h4>신뢰</h4>
+                    <p>독자와의 약속 준수</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 정보 -->
+        <section style="text-align: center; margin-top: 4rem; padding: 2rem; background: #f9fafb; border-radius: 16px;">
+            <h2 style="margin-bottom: 1rem;">문의 및 제안</h2>
+            <p style="color: #666; margin-bottom: 1.5rem;">
+                더 나은 콘텐츠를 위한 여러분의 의견을 기다립니다
+            </p>
+            <p style="color: #555;">
+                📧 이메일: <a href="mailto:editor@finflix.org" style="color: #667eea;">editor@finflix.org</a><br>
+                📝 피드백 및 제안: <a href="/contact.html" style="color: #667eea;">문의하기 페이지</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">
+                © 2025 FinFlix | 금융 교육 플랫폼<br>
+                <small>신뢰할 수 있는 금융 지식을 전달합니다</small>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
