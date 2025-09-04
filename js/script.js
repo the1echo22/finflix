@@ -322,7 +322,7 @@ function renderPosts() {
             <div class="card-gradient-border"></div>
             ${post.image ? `
                 <div class="blog-image">
-                    <img src="${post.image}" alt="${post.title}" loading="lazy">
+                    <img src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzY2NjZmMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkZpbkZsaXg8L3RleHQ+PC9zdmc+';">
                     <div class="image-overlay">
                         <span class="blog-category-badge ${post.category}">${getCategoryLabel(post.category)}</span>
                     </div>
