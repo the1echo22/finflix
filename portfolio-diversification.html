@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO Meta Tags -->
+    <title>🎯 포트폴리오 분산투자: 계란을 한 바구니에 담지 마라 | FinFlix</title>
+    <meta name="description" content="노벨상 수상 이론인 현대 포트폴리오 이론(MPT)을 쉽게 풀어서 설명. 리스크를 줄이면서 수익을 극대화하는 자산배분 전략을 실제 사례와 함께 알아봅니다.">
+    <meta name="keywords" content="포트폴리오, 분산투자, 자산배분, 리스크관리, MPT, 투자전략">
+    <meta name="author" content="FinFlix">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="🎯 포트폴리오 분산투자: 계란을 한 바구니에 담지 마라">
+    <meta property="og:description" content="리스크는 줄이고 수익은 높이는 분산투자의 과학적 접근법">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .portfolio-visual {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            color: white;
+        }
+        
+        .asset-allocation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .asset-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .asset-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .risk-meter {
+            background: linear-gradient(to right, #10b981, #f59e0b, #ef4444);
+            height: 20px;
+            border-radius: 10px;
+            position: relative;
+            margin: 1rem 0;
+        }
+        
+        .risk-pointer {
+            position: absolute;
+            top: -5px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border: 3px solid #1f2937;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-container">
+        <header class="article-header">
+            <div class="article-category">교육</div>
+            <h1 class="article-title">🎯 포트폴리오 분산투자: 계란을 한 바구니에 담지 마라</h1>
+            <div class="article-meta">
+                <span>📅 2025.01.05</span>
+                <span>⏱️ 18분 읽기</span>
+            </div>
+        </header>
+
+        <article class="article-content">
+            <div class="highlight-box">
+                <p>🏆 <strong>"분산투자는 무지에 대한 보호장치다. 자신이 무엇을 하는지 아는 사람에게는 별 의미가 없다"</strong> - 워런 버핏</p>
+                <p>하지만 우리 대부분은 워런 버핏이 아니죠. 그래서 분산투자가 필요합니다!</p>
+            </div>
+
+            <h2>📚 분산투자란 무엇인가?</h2>
+            
+            <p>분산투자(Diversification)는 <strong>여러 자산에 투자하여 리스크를 줄이는 전략</strong>입니다. 한 자산이 손실을 봐도 다른 자산의 수익으로 보완할 수 있죠.</p>
+
+            <div class="portfolio-visual">
+                <h3>🎨 분산투자의 효과</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h4>❌ 집중투자 (1개 종목)</h4>
+                        <ul>
+                            <li>수익률 변동: -50% ~ +100%</li>
+                            <li>리스크: 매우 높음</li>
+                            <li>스트레스: 극심함</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>✅ 분산투자 (10개 종목)</h4>
+                        <ul>
+                            <li>수익률 변동: -20% ~ +40%</li>
+                            <li>리스크: 관리 가능</li>
+                            <li>스트레스: 적당함</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>🌍 자산 클래스별 특징</h2>
+
+            <div class="asset-allocation">
+                <div class="asset-card">
+                    <h3>📈 주식 (Stocks)</h3>
+                    <p><strong>특징:</strong> 높은 수익률, 높은 변동성</p>
+                    <p><strong>연평균 수익:</strong> 7-10%</p>
+                    <p><strong>적합한 사람:</strong> 장기 투자자</p>
+                    <div class="risk-meter">
+                        <div class="risk-pointer" style="left: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <h3>📊 채권 (Bonds)</h3>
+                    <p><strong>특징:</strong> 안정적 수익, 낮은 변동성</p>
+                    <p><strong>연평균 수익:</strong> 3-5%</p>
+                    <p><strong>적합한 사람:</strong> 안정 추구형</p>
+                    <div class="risk-meter">
+                        <div class="risk-pointer" style="left: 30%;"></div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <h3>🏘️ 부동산 (Real Estate)</h3>
+                    <p><strong>특징:</strong> 인플레이션 헤지, 임대수익</p>
+                    <p><strong>연평균 수익:</strong> 5-8%</p>
+                    <p><strong>적합한 사람:</strong> 실물 자산 선호</p>
+                    <div class="risk-meter">
+                        <div class="risk-pointer" style="left: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <h3>🥇 원자재 (Commodities)</h3>
+                    <p><strong>특징:</strong> 인플레이션 보호, 높은 변동성</p>
+                    <p><strong>연평균 수익:</strong> 변동 심함</p>
+                    <p><strong>적합한 사람:</strong> 리스크 감수형</p>
+                    <div class="risk-meter">
+                        <div class="risk-pointer" style="left: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <h3>💵 현금 (Cash)</h3>
+                    <p><strong>특징:</strong> 유동성 최고, 수익률 최저</p>
+                    <p><strong>연평균 수익:</strong> 1-2%</p>
+                    <p><strong>적합한 사람:</strong> 단기 자금 보관</p>
+                    <div class="risk-meter">
+                        <div class="risk-pointer" style="left: 10%;"></div>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <h3>🪙 암호화폐 (Crypto)</h3>
+                    <p><strong>특징:</strong> 초고수익 가능, 초고위험</p>
+                    <p><strong>연평균 수익:</strong> -90% ~ +1000%</p>
+                    <p><strong>적합한 사람:</strong> 리스크 애호가</p>
+                    <div class="risk-meter">
+                        <div class="risk-pointer" style="left: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>📊 나이별 추천 포트폴리오</h2>
+
+            <div class="highlight-box" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                <h3>🎯 100 - 나이 = 주식 비중 법칙</h3>
+                <ul>
+                    <li><strong>20대 (나이 25):</strong> 주식 75% + 채권 25%</li>
+                    <li><strong>30대 (나이 35):</strong> 주식 65% + 채권 35%</li>
+                    <li><strong>40대 (나이 45):</strong> 주식 55% + 채권 45%</li>
+                    <li><strong>50대 (나이 55):</strong> 주식 45% + 채권 55%</li>
+                    <li><strong>60대 (나이 65):</strong> 주식 35% + 채권 65%</li>
+                </ul>
+            </div>
+
+            <h2>🎨 포트폴리오 구성 전략</h2>
+
+            <h3>1. 코어-위성 전략 (Core-Satellite)</h3>
+            <div class="result-box">
+                <p><strong>코어 (70-80%):</strong> 안정적인 인덱스 펀드, 블루칩 주식</p>
+                <p><strong>위성 (20-30%):</strong> 성장주, 섹터 펀드, 개별 종목</p>
+                <p>✅ 안정성과 수익성의 균형</p>
+            </div>
+
+            <h3>2. 올웨더 포트폴리오 (All Weather)</h3>
+            <div class="result-box">
+                <ul>
+                    <li>주식 30%</li>
+                    <li>장기 채권 40%</li>
+                    <li>단기 채권 15%</li>
+                    <li>금 7.5%</li>
+                    <li>원자재 7.5%</li>
+                </ul>
+                <p>✅ 어떤 경제 상황에서도 안정적 수익</p>
+            </div>
+
+            <h3>3. 3-펀드 포트폴리오 (Simple)</h3>
+            <div class="result-box">
+                <ul>
+                    <li>국내 주식 ETF 40%</li>
+                    <li>해외 주식 ETF 30%</li>
+                    <li>채권 ETF 30%</li>
+                </ul>
+                <p>✅ 간단하면서도 효과적</p>
+            </div>
+
+            <h2>🌐 지역별 분산투자</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>지역</th>
+                        <th>특징</th>
+                        <th>리스크</th>
+                        <th>추천 비중</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🇰🇷 한국</td>
+                        <td>홈바이어스, 높은 이해도</td>
+                        <td>중간</td>
+                        <td>30-40%</td>
+                    </tr>
+                    <tr>
+                        <td>🇺🇸 미국</td>
+                        <td>세계 최대 시장, 혁신 기업</td>
+                        <td>낮음</td>
+                        <td>30-40%</td>
+                    </tr>
+                    <tr>
+                        <td>🇪🇺 유럽</td>
+                        <td>안정적, 배당 중심</td>
+                        <td>낮음</td>
+                        <td>10-15%</td>
+                    </tr>
+                    <tr>
+                        <td>🇨🇳 중국/신흥국</td>
+                        <td>고성장, 높은 변동성</td>
+                        <td>높음</td>
+                        <td>10-20%</td>
+                    </tr>
+                    <tr>
+                        <td>🇯🇵 일본</td>
+                        <td>선진국, 엔화 리스크</td>
+                        <td>중간</td>
+                        <td>5-10%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>⚖️ 리밸런싱: 포트폴리오 관리의 핵심</h2>
+
+            <div class="highlight-box" style="background: linear-gradient(135deg, #10b981, #059669);">
+                <h3>🔄 리밸런싱이란?</h3>
+                <p>시간이 지나면서 변한 자산 비중을 원래 목표 비중으로 되돌리는 작업</p>
+                
+                <h4>예시: 주식 60% + 채권 40% 목표</h4>
+                <ul>
+                    <li>📈 1년 후: 주식 75% + 채권 25% (주식 상승)</li>
+                    <li>🔄 리밸런싱: 주식 일부 매도, 채권 매수</li>
+                    <li>✅ 결과: 주식 60% + 채권 40% 복원</li>
+                </ul>
+                
+                <p><strong>효과:</strong> 고점에서 팔고 저점에서 사는 자동 시스템!</p>
+            </div>
+
+            <h2>🚫 분산투자의 함정</h2>
+
+            <h3>❌ 과도한 분산 (Diworsification)</h3>
+            <ul>
+                <li>종목이 너무 많으면 관리 불가능</li>
+                <li>수수료만 늘고 수익률은 평균 수준</li>
+                <li><strong>적정 수준:</strong> 개별 주식 15-30종목</li>
+            </ul>
+
+            <h3>❌ 상관관계 무시</h3>
+            <ul>
+                <li>삼성전자, SK하이닉스만 10종목 = 분산 효과 없음</li>
+                <li>서로 다른 산업, 지역으로 분산 필요</li>
+            </ul>
+
+            <h3>❌ 리밸런싱 과다</h3>
+            <ul>
+                <li>너무 자주하면 수수료와 세금 부담</li>
+                <li><strong>적정 주기:</strong> 분기 또는 반기</li>
+            </ul>
+
+            <h2>🛠️ 실전! 나만의 포트폴리오 만들기</h2>
+
+            <div class="calculator-box">
+                <h3>Step 1: 투자 목표 설정</h3>
+                <ul>
+                    <li>은퇴 자금? 주택 구입? 자녀 교육?</li>
+                    <li>투자 기간은 얼마나?</li>
+                    <li>목표 수익률은?</li>
+                </ul>
+
+                <h3>Step 2: 리스크 성향 파악</h3>
+                <ul>
+                    <li>-30% 손실을 견딜 수 있는가?</li>
+                    <li>변동성에 대한 스트레스는?</li>
+                    <li>투자 경험은 얼마나?</li>
+                </ul>
+
+                <h3>Step 3: 자산 배분 결정</h3>
+                <ul>
+                    <li>주식 vs 채권 비중</li>
+                    <li>국내 vs 해외 비중</li>
+                    <li>대안 자산 포함 여부</li>
+                </ul>
+
+                <h3>Step 4: 구체적 상품 선택</h3>
+                <ul>
+                    <li>ETF: KODEX200, TIGER미국S&P500</li>
+                    <li>펀드: 인덱스펀드 우선</li>
+                    <li>개별종목: 신중하게 선택</li>
+                </ul>
+
+                <h3>Step 5: 정기적 점검</h3>
+                <ul>
+                    <li>분기별 성과 체크</li>
+                    <li>반기별 리밸런싱 검토</li>
+                    <li>연간 목표 재설정</li>
+                </ul>
+            </div>
+
+            <h2>📈 분산투자 성공 사례</h2>
+
+            <div class="result-box">
+                <h3>예일대학 기금 (David Swensen)</h3>
+                <ul>
+                    <li>주식 23%</li>
+                    <li>절대수익 추구 26%</li>
+                    <li>사모펀드 18%</li>
+                    <li>부동산 10%</li>
+                    <li>천연자원 8%</li>
+                    <li>채권 7%</li>
+                    <li>현금 8%</li>
+                </ul>
+                <p><strong>결과:</strong> 30년간 연평균 12.4% 수익률!</p>
+            </div>
+
+            <div class="educational-framework" style="margin-top: 3rem; padding: 2rem; background: #f9fafb; border-radius: 16px;">
+                <div class="risk-disclaimer" style="background: #fee2e2; border: 2px solid #ef4444; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+                    <h3 style="color: #dc2626; margin-top: 0;">⚠️ 중요 공지사항</h3>
+                    <p style="margin: 0.5rem 0;"><strong>이 콘텐츠는 교육 목적으로만 제공됩니다.</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>투자 권유나 매매 추천이 아닙니다</li>
+                        <li>모든 투자는 원금 손실 위험이 있습니다</li>
+                        <li>개인의 상황에 맞는 전략이 필요합니다</li>
+                        <li>투자 결정 전 반드시 전문가와 상담하세요</li>
+                    </ul>
+                </div>
+
+                <div class="key-takeaway" style="background: #dbeafe; padding: 1.5rem; border-radius: 12px;">
+                    <h3 style="color: #1e40af;">🎯 핵심 요약</h3>
+                    <ol style="line-height: 2;">
+                        <li>분산투자는 리스크 관리의 기본 - 한 바구니에 담지 말 것</li>
+                        <li>자산 클래스별로 분산 - 주식, 채권, 부동산, 원자재</li>
+                        <li>지역별로 분산 - 한국, 미국, 유럽, 신흥국</li>
+                        <li>정기적인 리밸런싱 - 목표 비중 유지가 핵심</li>
+                        <li>나이와 목표에 맞는 배분 - 젊을수록 공격적으로</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 FinFlix | 교육 목적으로 제작된 콘텐츠입니다</p>
+        </div>
+    </footer>
+</body>
+</html>

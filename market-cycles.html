@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO Meta Tags -->
+    <title>🔄 시장 사이클의 이해: 경기 순환과 투자 타이밍 | FinFlix</title>
+    <meta name="description" content="주식 시장의 4계절을 이해하고 각 국면별 최적 투자 전략을 배웁니다. 역사적 데이터와 함께 시장 사이클의 패턴을 분석합니다.">
+    <meta name="keywords" content="시장사이클, 경기순환, 불마켓, 베어마켓, 투자타이밍, 시장국면">
+    <meta name="author" content="FinFlix">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="🔄 시장 사이클의 이해: 경기 순환과 투자 타이밍">
+    <meta property="og:description" content="시장의 4계절을 이해하고 현명하게 투자하는 방법">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1535320903710-d993d3d77d29">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .cycle-diagram {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            position: relative;
+            min-height: 300px;
+        }
+        
+        .phase-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .phase-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .bull-phase { border-left: 6px solid #10b981; }
+        .bear-phase { border-left: 6px solid #ef4444; }
+        .recovery-phase { border-left: 6px solid #f59e0b; }
+        .expansion-phase { border-left: 6px solid #3b82f6; }
+        
+        .indicator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .indicator-box {
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .timeline-container {
+            position: relative;
+            padding: 2rem 0;
+            margin: 2rem 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #6366f1;
+            margin-right: 2rem;
+            z-index: 2;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sentiment-meter {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(90deg, #ef4444 0%, #f59e0b 25%, #eab308 50%, #84cc16 75%, #10b981 100%);
+            border-radius: 20px;
+            position: relative;
+            margin: 2rem 0;
+        }
+        
+        .sentiment-needle {
+            position: absolute;
+            top: -10px;
+            width: 4px;
+            height: 60px;
+            background: #1f2937;
+            transition: left 0.5s ease;
+        }
+        
+        .strategy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .strategy-table th {
+            background: #4f46e5;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+        }
+        
+        .strategy-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-container">
+        <header class="article-header">
+            <div class="article-category">교육</div>
+            <h1 class="article-title">🔄 시장 사이클의 이해: 경기 순환과 투자 타이밍</h1>
+            <div class="article-meta">
+                <span>📅 2025.01.05</span>
+                <span>⏱️ 18분 읽기</span>
+            </div>
+        </header>
+
+        <article class="article-content">
+            <div class="highlight-box">
+                <p>💡 <strong>"역사는 반복되지 않지만, 운율을 맞춘다"</strong> - 마크 트웨인. 시장도 완전히 같은 패턴은 없지만, 유사한 사이클을 반복합니다.</p>
+            </div>
+
+            <h2>📊 시장 사이클이란?</h2>
+            
+            <p>시장 사이클은 <strong>경제와 금융시장이 확장과 수축을 반복하는 주기적 패턴</strong>입니다. 평균적으로 4-10년 주기로 반복되며, 각 국면마다 특징적인 투자 기회와 위험이 존재합니다.</p>
+
+            <div class="cycle-diagram">
+                <h3 style="text-align: center;">📈 시장 사이클의 4단계 📉</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                        <h4>1️⃣ 회복기 (Recovery)</h4>
+                        <p>바닥 확인 → 신뢰 회복</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                        <h4>2️⃣ 확장기 (Expansion)</h4>
+                        <p>성장 가속 → 낙관론 확산</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                        <h4>3️⃣ 과열기 (Peak)</h4>
+                        <p>과도한 낙관 → 버블 형성</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                        <h4>4️⃣ 수축기 (Contraction)</h4>
+                        <p>공포 확산 → 매도 압력</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>🎯 각 사이클 단계별 특징</h2>
+
+            <div class="phase-card recovery-phase">
+                <h3>🌅 1단계: 회복기 (Recovery Phase)</h3>
+                <p><strong>기간:</strong> 6개월 ~ 1년</p>
+                <h4>경제 지표</h4>
+                <ul>
+                    <li>GDP 성장률 바닥 확인 후 반등</li>
+                    <li>실업률 정점 도달 후 하락 시작</li>
+                    <li>기업 실적 개선 조짐</li>
+                    <li>중앙은행 완화 정책 지속</li>
+                </ul>
+                <h4>시장 특징</h4>
+                <ul>
+                    <li>주가 바닥권에서 횡보</li>
+                    <li>거래량 점진적 증가</li>
+                    <li>가치주가 성장주를 아웃퍼폼</li>
+                    <li>투자 심리는 여전히 비관적</li>
+                </ul>
+                <h4>📌 투자 전략</h4>
+                <p style="background: #f0fdf4; padding: 1rem; border-radius: 8px;">
+                    <strong>적극 매수 시작!</strong> 우량주 중심으로 포트폴리오 구축. 
+                    경기민감주(금융, 산업재)에 주목.
+                </p>
+            </div>
+
+            <div class="phase-card expansion-phase">
+                <h3>📈 2단계: 확장기 (Expansion Phase)</h3>
+                <p><strong>기간:</strong> 2년 ~ 4년</p>
+                <h4>경제 지표</h4>
+                <ul>
+                    <li>GDP 안정적 성장 (2-4%)</li>
+                    <li>기업 이익 지속 증가</li>
+                    <li>고용 시장 개선</li>
+                    <li>적정 인플레이션 (2-3%)</li>
+                </ul>
+                <h4>시장 특징</h4>
+                <ul>
+                    <li>주가 꾸준한 상승세</li>
+                    <li>변동성 감소</li>
+                    <li>IPO 활발</li>
+                    <li>M&A 증가</li>
+                </ul>
+                <h4>📌 투자 전략</h4>
+                <p style="background: #dbeafe; padding: 1rem; border-radius: 8px;">
+                    <strong>포지션 유지 및 조정!</strong> 성장주 비중 확대, 
+                    섹터 로테이션 활용, 레버리지 적절히 사용.
+                </p>
+            </div>
+
+            <div class="phase-card bull-phase">
+                <h3>🔥 3단계: 과열기 (Peak/Euphoria)</h3>
+                <p><strong>기간:</strong> 6개월 ~ 1년</p>
+                <h4>경제 지표</h4>
+                <ul>
+                    <li>GDP 성장률 정점</li>
+                    <li>인플레이션 압력 상승</li>
+                    <li>금리 인상 시작/가속</li>
+                    <li>기업 마진 압박</li>
+                </ul>
+                <h4>시장 특징</h4>
+                <ul>
+                    <li>밸류에이션 역사적 고점</li>
+                    <li>과도한 낙관론 ("이번엔 다르다")</li>
+                    <li>투기적 거래 급증</li>
+                    <li>개인 투자자 대거 유입</li>
+                </ul>
+                <h4>📌 투자 전략</h4>
+                <p style="background: #fef3c7; padding: 1rem; border-radius: 8px;">
+                    <strong>점진적 이익 실현!</strong> 현금 비중 확대, 
+                    방어주 전환, 헤징 포지션 구축.
+                </p>
+            </div>
+
+            <div class="phase-card bear-phase">
+                <h3>📉 4단계: 수축기 (Contraction/Recession)</h3>
+                <p><strong>기간:</strong> 1년 ~ 2년</p>
+                <h4>경제 지표</h4>
+                <ul>
+                    <li>GDP 마이너스 성장</li>
+                    <li>실업률 급증</li>
+                    <li>기업 실적 악화</li>
+                    <li>디플레이션 우려</li>
+                </ul>
+                <h4>시장 특징</h4>
+                <ul>
+                    <li>주가 20% 이상 하락 (베어마켓)</li>
+                    <li>극심한 변동성</li>
+                    <li>공포 지수(VIX) 급등</li>
+                    <li>유동성 경색</li>
+                </ul>
+                <h4>📌 투자 전략</h4>
+                <p style="background: #fee2e2; padding: 1rem; border-radius: 8px;">
+                    <strong>방어 및 기회 포착!</strong> 채권/금 보유, 
+                    단계적 저가 매수, 우량 배당주 관심.
+                </p>
+            </div>
+
+            <h2>📊 시장 사이클 판단 지표</h2>
+
+            <div class="indicator-grid">
+                <div class="indicator-box">
+                    <h4>🏭 선행 지표</h4>
+                    <ul style="text-align: left;">
+                        <li>수익률 곡선</li>
+                        <li>주택 착공</li>
+                        <li>소비자 신뢰지수</li>
+                        <li>PMI 지수</li>
+                    </ul>
+                </div>
+                <div class="indicator-box">
+                    <h4>📈 동행 지표</h4>
+                    <ul style="text-align: left;">
+                        <li>GDP 성장률</li>
+                        <li>실업률</li>
+                        <li>산업 생산</li>
+                        <li>소매 판매</li>
+                    </ul>
+                </div>
+                <div class="indicator-box">
+                    <h4>📉 후행 지표</h4>
+                    <ul style="text-align: left;">
+                        <li>기업 이익</li>
+                        <li>실업 급여</li>
+                        <li>은행 대출</li>
+                        <li>CPI 인플레이션</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>🕐 역사적 시장 사이클 분석</h2>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: #ef4444;"></div>
+                    <div class="timeline-content">
+                        <h4>2000-2002: 닷컴 버블 붕괴</h4>
+                        <p>나스닥 -78% 하락, 기술주 폭락, 3년간 베어마켓</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: #10b981;"></div>
+                    <div class="timeline-content">
+                        <h4>2003-2007: 부동산 호황기</h4>
+                        <p>저금리 정책, 신용 확대, 원자재 슈퍼사이클</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: #ef4444;"></div>
+                    <div class="timeline-content">
+                        <h4>2008-2009: 글로벌 금융위기</h4>
+                        <p>S&P 500 -57% 하락, 리먼 브라더스 파산, 대침체</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: #10b981;"></div>
+                    <div class="timeline-content">
+                        <h4>2009-2020: 역사상 최장 강세장</h4>
+                        <p>11년 불마켓, 양적완화, 기술주 주도 성장</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: #f59e0b;"></div>
+                    <div class="timeline-content">
+                        <h4>2020-현재: 팬데믹과 회복</h4>
+                        <p>V자 반등, 인플레이션 재등장, 금리 정상화</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>🎭 투자 심리 사이클</h2>
+
+            <div class="highlight-box" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+                <h3>감정의 롤러코스터</h3>
+                <ol>
+                    <li>😐 <strong>무관심:</strong> "주식은 위험해"</li>
+                    <li>🤔 <strong>희망:</strong> "오르기 시작하네?"</li>
+                    <li>😊 <strong>낙관:</strong> "역시 내 선택이 맞았어"</li>
+                    <li>🤩 <strong>흥분:</strong> "난 투자 천재야!"</li>
+                    <li>😍 <strong>도취:</strong> "이번엔 다르다!"</li>
+                    <li>😰 <strong>불안:</strong> "일시적 조정이겠지?"</li>
+                    <li>😱 <strong>공포:</strong> "빨리 팔아야 해!"</li>
+                    <li>😭 <strong>절망:</strong> "다시는 주식 안 해"</li>
+                    <li>😔 <strong>체념:</strong> "그냥 놔둬야지"</li>
+                    <li>😐 <strong>무관심:</strong> (사이클 반복)</li>
+                </ol>
+            </div>
+
+            <h2>📈 사이클별 최적 자산 배분</h2>
+
+            <table class="strategy-table">
+                <thead>
+                    <tr>
+                        <th>사이클 단계</th>
+                        <th>주식</th>
+                        <th>채권</th>
+                        <th>원자재</th>
+                        <th>현금</th>
+                        <th>추천 섹터</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>회복기</strong></td>
+                        <td>60%</td>
+                        <td>20%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td>금융, 산업재, 소비재</td>
+                    </tr>
+                    <tr>
+                        <td><strong>확장기</strong></td>
+                        <td>70%</td>
+                        <td>15%</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>기술, 헬스케어, 통신</td>
+                    </tr>
+                    <tr>
+                        <td><strong>과열기</strong></td>
+                        <td>40%</td>
+                        <td>30%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>필수소비재, 유틸리티</td>
+                    </tr>
+                    <tr>
+                        <td><strong>수축기</strong></td>
+                        <td>30%</td>
+                        <td>40%</td>
+                        <td>10%</td>
+                        <td>20%</td>
+                        <td>채권, 금, 방어주</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>🔍 현재 사이클 위치 진단법</h2>
+
+            <div class="sentiment-meter">
+                <div class="sentiment-needle" style="left: 60%;"></div>
+            </div>
+            <p style="text-align: center; color: #6b7280;">
+                공포 ← ← ← 중립 → → → 탐욕
+            </p>
+
+            <div class="indicator-box" style="background: linear-gradient(135deg, #c7d2fe, #a5b4fc);">
+                <h3>🎯 체크리스트: 현재 우리는 어디에?</h3>
+                <div style="text-align: left; margin-top: 1rem;">
+                    <label><input type="checkbox"> 금리가 상승 중인가?</label><br>
+                    <label><input type="checkbox"> 인플레이션이 목표치를 초과하는가?</label><br>
+                    <label><input type="checkbox"> 실업률이 역사적 저점인가?</label><br>
+                    <label><input type="checkbox"> 주가 밸류에이션이 역사적 평균 이상인가?</label><br>
+                    <label><input type="checkbox"> IPO와 M&A가 활발한가?</label><br>
+                    <label><input type="checkbox"> 개인투자자 참여가 급증했는가?</label><br>
+                    <label><input type="checkbox"> 언론이 낙관적인가?</label><br>
+                    <p style="margin-top: 1rem; font-weight: bold;">
+                        5개 이상 체크 → 과열기 가능성 높음<br>
+                        2-4개 체크 → 확장기 진행 중<br>
+                        0-1개 체크 → 회복기 또는 수축기
+                    </p>
+                </div>
+            </div>
+
+            <h2>⚠️ 시장 사이클 투자의 함정</h2>
+
+            <h3>🔴 타이밍 예측의 어려움</h3>
+            <p>"시장은 당신이 버틸 수 있는 것보다 더 오래 비합리적일 수 있다" - 존 메이너드 케인즈</p>
+
+            <h3>🔴 감정적 의사결정</h3>
+            <p>공포와 탐욕에 휘둘려 고점 매수, 저점 매도하는 실수를 반복합니다.</p>
+
+            <h3>🔴 과도한 매매</h3>
+            <p>사이클을 예측하려다 오버트레이딩으로 수수료와 세금만 늘어납니다.</p>
+
+            <h2>🎓 프로의 사이클 활용법</h2>
+
+            <div class="strategy-card">
+                <h3>1. 역발상 투자 (Contrarian)</h3>
+                <p>대중이 공포에 떨 때 매수, 탐욕에 빠졌을 때 매도</p>
+                <ul>
+                    <li>Fear & Greed Index 20 이하: 매수 검토</li>
+                    <li>Fear & Greed Index 80 이상: 매도 검토</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>2. 섹터 로테이션</h3>
+                <p>사이클 단계에 따라 유망 섹터로 자금 이동</p>
+                <ul>
+                    <li>회복기: 금융, 산업재</li>
+                    <li>확장기: 기술, 임의소비재</li>
+                    <li>과열기: 필수소비재, 헬스케어</li>
+                    <li>수축기: 유틸리티, 채권</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>3. 코어-위성 전략</h3>
+                <p>코어(70%): 장기 보유 / 위성(30%): 사이클 트레이딩</p>
+                <ul>
+                    <li>코어: 인덱스 펀드, 우량 배당주</li>
+                    <li>위성: 섹터 ETF, 개별 종목</li>
+                </ul>
+            </div>
+
+            <div class="educational-framework" style="margin-top: 3rem; padding: 2rem; background: #f9fafb; border-radius: 16px;">
+                <div class="risk-disclaimer" style="background: #fee2e2; border: 2px solid #ef4444; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+                    <h3 style="color: #dc2626; margin-top: 0;">⚠️ 중요 공지사항</h3>
+                    <p style="margin: 0.5rem 0;"><strong>이 콘텐츠는 교육 목적으로만 제공됩니다.</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>시장 예측은 불가능하며 항상 틀릴 수 있습니다</li>
+                        <li>과거 패턴이 미래를 보장하지 않습니다</li>
+                        <li>모든 투자는 원금 손실 위험이 있습니다</li>
+                        <li>투자 결정 전 반드시 전문가와 상담하세요</li>
+                    </ul>
+                </div>
+
+                <div class="learning-checkpoint" style="background: #ede9fe; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+                    <h3 style="color: #7c3aed;">📚 학습 체크포인트</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div>
+                            <input type="checkbox" id="cycle1">
+                            <label for="cycle1">4가지 사이클 단계 이해</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cycle2">
+                            <label for="cycle2">각 단계별 특징 파악</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cycle3">
+                            <label for="cycle3">경제 지표 해석 방법</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cycle4">
+                            <label for="cycle4">투자 심리 사이클 인지</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-takeaway" style="background: #dbeafe; padding: 1.5rem; border-radius: 12px;">
+                    <h3 style="color: #1e40af;">💎 핵심 요약</h3>
+                    <ol style="line-height: 2;">
+                        <li>시장은 주기적으로 팽창과 수축을 반복한다</li>
+                        <li>각 사이클 단계마다 최적 전략이 다르다</li>
+                        <li>경제 지표와 시장 심리를 종합적으로 판단하라</li>
+                        <li>완벽한 타이밍은 불가능, 점진적 조정이 현실적</li>
+                        <li>장기 투자와 분산이 사이클 리스크를 줄인다</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 FinFlix | 교육 목적으로 제작된 콘텐츠입니다</p>
+        </div>
+    </footer>
+</body>
+</html>

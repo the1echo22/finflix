@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO Meta Tags -->
+    <title>🛡️ 투자 리스크 관리: 자산을 지키는 7가지 전략 | FinFlix</title>
+    <meta name="description" content="성공적인 투자의 핵심은 수익이 아닌 리스크 관리입니다. 포트폴리오를 보호하고 장기 성과를 높이는 체계적인 리스크 관리 방법을 알아봅니다.">
+    <meta name="keywords" content="리스크관리, 위험관리, 손절매, 헤징, 분산투자, 자산배분, 투자전략">
+    <meta name="author" content="FinFlix">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="🛡️ 투자 리스크 관리: 자산을 지키는 7가지 전략">
+    <meta property="og:description" content="수익보다 중요한 리스크 관리의 모든 것">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1450101499163-c8848c66ca85">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .risk-matrix {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-radius: 16px;
+        }
+        
+        .risk-level {
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .risk-low { background: #86efac; color: #166534; }
+        .risk-medium { background: #fde047; color: #713f12; }
+        .risk-high { background: #fca5a5; color: #991b1b; }
+        
+        .strategy-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .strategy-card:hover {
+            transform: translateX(8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-color: #6366f1;
+        }
+        
+        .formula-box {
+            background: linear-gradient(135deg, #818cf8, #6366f1);
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .risk-calculator {
+            background: #f0f9ff;
+            border: 2px solid #3b82f6;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .protection-level {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .protection-bar {
+            flex: 1;
+            height: 20px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .protection-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #059669);
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">FinFlix</a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-container">
+        <header class="article-header">
+            <div class="article-category">교육</div>
+            <h1 class="article-title">🛡️ 투자 리스크 관리: 자산을 지키는 7가지 전략</h1>
+            <div class="article-meta">
+                <span>📅 2025.01.05</span>
+                <span>⏱️ 15분 읽기</span>
+            </div>
+        </header>
+
+        <article class="article-content">
+            <div class="highlight-box">
+                <p>💡 <strong>"Rule No.1: 돈을 잃지 마라. Rule No.2: Rule No.1을 절대 잊지 마라"</strong> - 워런 버핏</p>
+            </div>
+
+            <h2>📊 리스크란 무엇인가?</h2>
+            
+            <p>투자에서 리스크는 <strong>예상과 다른 결과가 발생할 가능성</strong>을 의미합니다. 단순히 손실만이 아닌, 변동성과 불확실성을 모두 포함하는 개념입니다.</p>
+
+            <div class="risk-matrix">
+                <div class="risk-level risk-low">
+                    <h4>낮은 리스크</h4>
+                    <p>예금, 국채</p>
+                    <p>수익: 2-3%</p>
+                </div>
+                <div class="risk-level risk-medium">
+                    <h4>중간 리스크</h4>
+                    <p>우량주, 회사채</p>
+                    <p>수익: 5-10%</p>
+                </div>
+                <div class="risk-level risk-high">
+                    <h4>높은 리스크</h4>
+                    <p>성장주, 암호화폐</p>
+                    <p>수익: 15%+</p>
+                </div>
+            </div>
+
+            <h2>🎯 리스크의 5가지 유형</h2>
+
+            <div class="strategy-card">
+                <h3>1. 📉 시장 리스크 (Market Risk)</h3>
+                <p>전체 시장의 하락으로 인한 손실 위험입니다.</p>
+                <ul>
+                    <li><strong>예시:</strong> 2008년 금융위기, 2020년 코로나 팬데믹</li>
+                    <li><strong>대응:</strong> 자산 배분, 헤징 전략</li>
+                    <li><strong>측정:</strong> 베타(β) 계수, VaR</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>2. 🏢 신용 리스크 (Credit Risk)</h3>
+                <p>채무자가 원리금을 상환하지 못할 위험입니다.</p>
+                <ul>
+                    <li><strong>예시:</strong> 회사채 부도, P2P 대출 연체</li>
+                    <li><strong>대응:</strong> 신용등급 확인, 분산 투자</li>
+                    <li><strong>측정:</strong> 신용등급, 부도율</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>3. 💧 유동성 리스크 (Liquidity Risk)</h3>
+                <p>자산을 원하는 시점에 적정 가격으로 매도하지 못할 위험입니다.</p>
+                <ul>
+                    <li><strong>예시:</strong> 비상장주식, 부동산, 미술품</li>
+                    <li><strong>대응:</strong> 현금 비중 유지, 유동성 높은 자산 보유</li>
+                    <li><strong>측정:</strong> 거래량, 호가 스프레드</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>4. 💱 환율 리스크 (Currency Risk)</h3>
+                <p>환율 변동으로 인한 자산 가치 변화 위험입니다.</p>
+                <ul>
+                    <li><strong>예시:</strong> 해외 주식, 달러 채권</li>
+                    <li><strong>대응:</strong> 환헤지, 통화 다변화</li>
+                    <li><strong>측정:</strong> 환율 변동성</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>5. 📈 인플레이션 리스크 (Inflation Risk)</h3>
+                <p>물가 상승으로 인한 실질 구매력 하락 위험입니다.</p>
+                <ul>
+                    <li><strong>예시:</strong> 장기 채권, 현금 보유</li>
+                    <li><strong>대응:</strong> 물가연동채권, 실물자산</li>
+                    <li><strong>측정:</strong> CPI, PCE 지표</li>
+                </ul>
+            </div>
+
+            <h2>🛡️ 7가지 핵심 리스크 관리 전략</h2>
+
+            <h3>전략 1: 포지션 사이징 (Position Sizing)</h3>
+            
+            <div class="formula-box">
+                <h4>켈리 공식 (Kelly Criterion)</h4>
+                <p>최적 베팅 사이즈 = (승률 × 수익률 - 패률) / 수익률</p>
+                <p>예: 승률 60%, 수익률 1:1 → 최적 비중 = 20%</p>
+            </div>
+
+            <div class="risk-calculator">
+                <h4>포지션 사이징 계산기</h4>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>총 자산</td>
+                        <td>1억원</td>
+                    </tr>
+                    <tr>
+                        <td>리스크 허용도</td>
+                        <td>2% (200만원)</td>
+                    </tr>
+                    <tr>
+                        <td>손절선</td>
+                        <td>-10%</td>
+                    </tr>
+                    <tr style="background: #dbeafe; font-weight: bold;">
+                        <td>최대 포지션</td>
+                        <td>2,000만원</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>전략 2: 손절매 설정 (Stop Loss)</h3>
+
+            <div class="protection-level">
+                <span>📊 손실 -5%</span>
+                <div class="protection-bar">
+                    <div class="protection-fill" style="width: 30%;"></div>
+                </div>
+                <span>관찰</span>
+            </div>
+            
+            <div class="protection-level">
+                <span>⚠️ 손실 -7%</span>
+                <div class="protection-bar">
+                    <div class="protection-fill" style="width: 60%; background: linear-gradient(90deg, #f59e0b, #dc2626);"></div>
+                </div>
+                <span>경고</span>
+            </div>
+            
+            <div class="protection-level">
+                <span>🔴 손실 -10%</span>
+                <div class="protection-bar">
+                    <div class="protection-fill" style="width: 100%; background: #dc2626;"></div>
+                </div>
+                <span>손절</span>
+            </div>
+
+            <h3>전략 3: 분산 투자 (Diversification)</h3>
+
+            <div class="highlight-box" style="background: linear-gradient(135deg, #c7d2fe, #a5b4fc);">
+                <h4>효과적인 분산 투자 구성</h4>
+                <ul>
+                    <li>📈 <strong>자산군 분산:</strong> 주식 40% + 채권 30% + 원자재 20% + 현금 10%</li>
+                    <li>🌍 <strong>지역 분산:</strong> 국내 50% + 선진국 30% + 신흥국 20%</li>
+                    <li>🏢 <strong>섹터 분산:</strong> 최대 10개 업종, 각 10% 이하</li>
+                    <li>⏱️ <strong>시간 분산:</strong> DCA를 통한 진입 시점 분산</li>
+                </ul>
+            </div>
+
+            <h3>전략 4: 헤징 (Hedging)</h3>
+
+            <table class="calculation-table" style="width: 100%; margin: 1.5rem 0;">
+                <thead>
+                    <tr style="background: #4f46e5; color: white;">
+                        <th>헤징 도구</th>
+                        <th>보호 대상</th>
+                        <th>비용</th>
+                        <th>효과</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>풋옵션</td>
+                        <td>주식 하락</td>
+                        <td>프리미엄 2-5%</td>
+                        <td>하방 보호</td>
+                    </tr>
+                    <tr>
+                        <td>인버스 ETF</td>
+                        <td>지수 하락</td>
+                        <td>운용보수 0.5-1%</td>
+                        <td>반대 수익</td>
+                    </tr>
+                    <tr>
+                        <td>금/달러</td>
+                        <td>시장 충격</td>
+                        <td>기회비용</td>
+                        <td>안전자산</td>
+                    </tr>
+                    <tr>
+                        <td>선물 매도</td>
+                        <td>포트폴리오</td>
+                        <td>증거금</td>
+                        <td>완전 헤지</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>전략 5: 리밸런싱 (Rebalancing)</h3>
+
+            <div class="formula-box" style="background: linear-gradient(135deg, #10b981, #059669);">
+                <h4>리밸런싱 시점</h4>
+                <p>📅 <strong>정기적:</strong> 분기/반기/연간</p>
+                <p>📊 <strong>한계점:</strong> 목표 비중 ±5% 이탈 시</p>
+                <p>💰 <strong>기회적:</strong> 시장 급변동 시</p>
+            </div>
+
+            <h3>전략 6: 리스크 패리티 (Risk Parity)</h3>
+
+            <p>각 자산의 리스크 기여도를 동일하게 맞추는 전략입니다.</p>
+
+            <div class="risk-calculator">
+                <h4>리스크 패리티 포트폴리오 예시</h4>
+                <ul>
+                    <li>주식 (변동성 20%): 25% 배분</li>
+                    <li>채권 (변동성 5%): 50% 배분</li>
+                    <li>원자재 (변동성 15%): 25% 배분</li>
+                </ul>
+                <p><strong>결과:</strong> 각 자산이 전체 포트폴리오 리스크에 33.3%씩 기여</p>
+            </div>
+
+            <h3>전략 7: 스트레스 테스트 (Stress Testing)</h3>
+
+            <div class="highlight-box" style="background: #fee2e2; border: 2px solid #ef4444;">
+                <h4>🔍 시나리오별 포트폴리오 영향 분석</h4>
+                <table style="width: 100%; margin-top: 1rem;">
+                    <tr>
+                        <th>시나리오</th>
+                        <th>주식</th>
+                        <th>채권</th>
+                        <th>금</th>
+                        <th>포트폴리오</th>
+                    </tr>
+                    <tr>
+                        <td>금융위기</td>
+                        <td style="color: #dc2626;">-40%</td>
+                        <td style="color: #059669;">+10%</td>
+                        <td style="color: #059669;">+25%</td>
+                        <td style="color: #dc2626;">-15%</td>
+                    </tr>
+                    <tr>
+                        <td>인플레이션</td>
+                        <td style="color: #dc2626;">-10%</td>
+                        <td style="color: #dc2626;">-15%</td>
+                        <td style="color: #059669;">+30%</td>
+                        <td style="color: #dc2626;">-5%</td>
+                    </tr>
+                    <tr>
+                        <td>경기침체</td>
+                        <td style="color: #dc2626;">-25%</td>
+                        <td style="color: #059669;">+5%</td>
+                        <td style="color: #059669;">+10%</td>
+                        <td style="color: #dc2626;">-8%</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>📊 리스크 지표 이해하기</h2>
+
+            <div class="strategy-card">
+                <h3>표준편차 (Standard Deviation)</h3>
+                <p>수익률의 변동성을 측정하는 가장 기본적인 지표</p>
+                <ul>
+                    <li>10% 미만: 저변동성</li>
+                    <li>10-20%: 중간 변동성</li>
+                    <li>20% 이상: 고변동성</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>샤프 비율 (Sharpe Ratio)</h3>
+                <p>위험 대비 초과 수익률 = (수익률 - 무위험수익률) / 표준편차</p>
+                <ul>
+                    <li>1.0 이상: 우수</li>
+                    <li>2.0 이상: 매우 우수</li>
+                    <li>3.0 이상: 탁월</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3>최대 낙폭 (Maximum Drawdown)</h3>
+                <p>최고점 대비 최대 하락률</p>
+                <ul>
+                    <li>-10% 이내: 안정적</li>
+                    <li>-20% 이내: 보통</li>
+                    <li>-30% 이상: 위험</li>
+                </ul>
+            </div>
+
+            <h2>🎯 투자자 유형별 리스크 관리</h2>
+
+            <div class="risk-matrix">
+                <div style="background: #dbeafe; padding: 1.5rem; border-radius: 12px;">
+                    <h4>보수적 투자자</h4>
+                    <ul style="text-align: left;">
+                        <li>손실 한도: -5%</li>
+                        <li>주식 비중: 20-30%</li>
+                        <li>목표 수익: 5-7%</li>
+                    </ul>
+                </div>
+                <div style="background: #fef3c7; padding: 1.5rem; border-radius: 12px;">
+                    <h4>중립적 투자자</h4>
+                    <ul style="text-align: left;">
+                        <li>손실 한도: -15%</li>
+                        <li>주식 비중: 50-60%</li>
+                        <li>목표 수익: 8-12%</li>
+                    </ul>
+                </div>
+                <div style="background: #fee2e2; padding: 1.5rem; border-radius: 12px;">
+                    <h4>공격적 투자자</h4>
+                    <ul style="text-align: left;">
+                        <li>손실 한도: -25%</li>
+                        <li>주식 비중: 70-80%</li>
+                        <li>목표 수익: 15%+</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>⚠️ 리스크 관리의 함정</h2>
+
+            <h3>🔴 과도한 분산</h3>
+            <p>지나친 분산은 수익률을 희석시키고 관리를 어렵게 만듭니다. 15-20개 종목이 적정선입니다.</p>
+
+            <h3>🔴 손절 회피</h3>
+            <p>손실 회피 심리로 손절을 미루면 더 큰 손실로 이어집니다. 규칙을 정하고 기계적으로 실행하세요.</p>
+
+            <h3>🔴 과신의 오류</h3>
+            <p>과거 성공 경험이 과도한 리스크 테이킹으로 이어질 수 있습니다. 겸손한 자세를 유지하세요.</p>
+
+            <div class="educational-framework" style="margin-top: 3rem; padding: 2rem; background: #f9fafb; border-radius: 16px;">
+                <div class="risk-disclaimer" style="background: #fee2e2; border: 2px solid #ef4444; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+                    <h3 style="color: #dc2626; margin-top: 0;">⚠️ 중요 공지사항</h3>
+                    <p style="margin: 0.5rem 0;"><strong>이 콘텐츠는 교육 목적으로만 제공됩니다.</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>투자 권유나 매매 추천이 아닙니다</li>
+                        <li>모든 투자는 원금 손실 위험이 있습니다</li>
+                        <li>리스크 관리도 완벽한 보호를 보장하지 않습니다</li>
+                        <li>투자 결정 전 반드시 전문가와 상담하세요</li>
+                    </ul>
+                </div>
+
+                <div class="learning-checkpoint" style="background: #ede9fe; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+                    <h3 style="color: #7c3aed;">📚 학습 체크포인트</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div>
+                            <input type="checkbox" id="risk1">
+                            <label for="risk1">5가지 리스크 유형 이해</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="risk2">
+                            <label for="risk2">포지션 사이징 계산법</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="risk3">
+                            <label for="risk3">손절매 설정 방법</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="risk4">
+                            <label for="risk4">헤징 전략 활용법</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-takeaway" style="background: #dbeafe; padding: 1.5rem; border-radius: 12px;">
+                    <h3 style="color: #1e40af;">💎 핵심 요약</h3>
+                    <ol style="line-height: 2;">
+                        <li>리스크 관리는 수익 추구보다 중요하다</li>
+                        <li>포지션 사이징과 손절매는 필수다</li>
+                        <li>분산 투자로 개별 리스크를 줄인다</li>
+                        <li>정기적인 리밸런싱이 성과를 높인다</li>
+                        <li>자신의 리스크 허용도를 정확히 파악하라</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 FinFlix | 교육 목적으로 제작된 콘텐츠입니다</p>
+        </div>
+    </footer>
+</body>
+</html>

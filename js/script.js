@@ -88,6 +88,61 @@ function loadPosts() {
             readTime: 18,
             image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&h=400&fit=crop'
         },
+        {
+            id: 'compound-interest-magic',
+            title: '💎 복리의 마법: 월 10만원이 10년 후 2억이 되는 비밀',
+            category: 'education',
+            emoji: '💎',
+            excerpt: '아인슈타인이 인류 최대의 발명이라 부른 복리. 월 10만원 적금이 어떻게 10년 후 2억이 되는지, 복리 투자의 놀라운 힘을 실제 계산과 함께 알아봅니다.',
+            url: 'compound-interest-magic.html',
+            date: '2025.01.05',
+            readTime: 15,
+            image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'portfolio-diversification',
+            title: '🎯 분산투자의 정석: 달걀을 한 바구니에 담지 마라',
+            category: 'education',
+            emoji: '🎯',
+            excerpt: '포트폴리오 이론의 핵심인 분산투자. 리스크를 줄이면서 수익을 극대화하는 자산배분 전략과 실전 가이드를 제공합니다.',
+            url: 'portfolio-diversification.html',
+            date: '2025.01.05',
+            readTime: 13,
+            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'dollar-cost-averaging',
+            title: '📈 적립식 투자의 힘: 달러 코스트 애버리징(DCA) 완벽 가이드',
+            category: 'education',
+            emoji: '📈',
+            excerpt: '시장 타이밍을 맞출 필요 없는 투자 전략 DCA. 매달 10만원이 어떻게 안정적인 수익을 만드는지, 실제 데이터와 함께 알아봅니다.',
+            url: 'dollar-cost-averaging.html',
+            date: '2025.01.05',
+            readTime: 12,
+            image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'risk-management',
+            title: '🛡️ 투자 리스크 관리: 자산을 지키는 7가지 전략',
+            category: 'education',
+            emoji: '🛡️',
+            excerpt: '성공적인 투자의 핵심은 수익이 아닌 리스크 관리입니다. 포트폴리오를 보호하고 장기 성과를 높이는 체계적인 리스크 관리 방법을 알아봅니다.',
+            url: 'risk-management.html',
+            date: '2025.01.05',
+            readTime: 15,
+            image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'market-cycles',
+            title: '🔄 시장 사이클의 이해: 경기 순환과 투자 타이밍',
+            category: 'education',
+            emoji: '🔄',
+            excerpt: '주식 시장의 4계절을 이해하고 각 국면별 최적 투자 전략을 배웁니다. 역사적 데이터와 함께 시장 사이클의 패턴을 분석합니다.',
+            url: 'market-cycles.html',
+            date: '2025.01.05',
+            readTime: 18,
+            image: 'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=800&h=400&fit=crop'
+        },
         // 실제 기사들
         {
             id: 'jackson-hole',
