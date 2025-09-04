@@ -106,7 +106,7 @@ function loadPosts() {
             category: 'economy',
             emoji: '💰',
             excerpt: '기준금리가 우리 경제와 일상생활에 미치는 영향을 쉽게 풀어서 설명합니다.',
-            url: 'understanding-interest-rates.html',
+            url: 'bok-rate-freeze-dilemma.html',
             date: '2025.08.15',
             readTime: 14,
             image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=400&fit=crop'
@@ -118,7 +118,7 @@ function loadPosts() {
             category: 'education',
             emoji: '🎯',
             excerpt: '현대 포트폴리오 이론과 자산배분의 기초를 배워 리스크를 관리하는 방법을 알아봅니다.',
-            url: 'portfolio-theory.html',
+            url: 'kb-financial-100k-dividend.html',
             date: '2025.08.10',
             readTime: 16,
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop'
@@ -129,7 +129,7 @@ function loadPosts() {
             category: 'education',
             emoji: '📈',
             excerpt: '복리의 원리와 장기 투자의 중요성을 실제 계산 예시와 함께 설명합니다.',
-            url: 'compound-interest.html',
+            url: 'apple-250-ai-phone.html',
             date: '2025.08.05',
             readTime: 10,
             image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop'
@@ -141,7 +141,7 @@ function loadPosts() {
             category: 'education',
             emoji: '📖',
             excerpt: '투자를 시작하기 전 반드시 알아야 할 금융 용어와 지표들을 쉽게 정리했습니다.',
-            url: 'financial-terms.html',
+            url: 'china-deflation-real-estate.html',
             date: '2025.07.30',
             readTime: 25,
             image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&h=400&fit=crop'
@@ -187,7 +187,7 @@ function loadPosts() {
             category: 'education',
             emoji: '🏛️',
             excerpt: '주식이 거래되는 과정과 시장의 작동 원리를 단계별로 알아봅니다.',
-            url: 'how-market-works.html',
+            url: 'yen-carry-trade-unwinding.html',
             date: '2025.07.25',
             readTime: 17,
             image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
@@ -199,7 +199,7 @@ function loadPosts() {
             category: 'guide',
             emoji: '🏦',
             excerpt: '국내 주요 증권사 비교와 계좌 개설 방법을 상세히 안내합니다.',
-            url: 'brokerage-account-guide.html',
+            url: 'us-commercial-real-estate.html',
             date: '2025.07.20',
             readTime: 12,
             image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=400&fit=crop'
