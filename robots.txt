@@ -1,6 +1,6 @@
 # FinFlix Robots.txt
 # https://finflix.org/
-# Last Updated: 2025-09-03
+# Last Updated: 2025-01-05
 
 # Default - Allow all legitimate crawlers
 User-agent: *

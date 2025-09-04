@@ -6,9 +6,41 @@
   <!-- Homepage (both versions for clarity) -->
   <url>
     <loc>https://finflix.org/</loc>
-    <lastmod>2025-09-03</lastmod>
+    <lastmod>2025-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  <!-- New Educational Content (High Priority) -->
+  <url>
+    <loc>https://finflix.org/compound-interest-magic.html</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/portfolio-diversification.html</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/dollar-cost-averaging.html</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/risk-management.html</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://finflix.org/market-cycles.html</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- Main Pages -->
