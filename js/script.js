@@ -61,7 +61,7 @@ function loadPosts() {
             category: 'education',
             emoji: '📚',
             excerpt: '주식의 개념부터 작동 원리까지 초보자를 위한 완벽한 주식 입문 가이드. 주식 투자를 시작하기 전 꼭 알아야 할 기초 지식.',
-            url: '/what-is-stock.html',
+            url: 'what-is-stock.html',
             date: '2025.09.04',
             readTime: 15,
             image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
@@ -72,7 +72,7 @@ function loadPosts() {
             category: 'economy',
             emoji: '🌏',
             excerpt: '인플레이션의 개념과 원인, 그리고 우리 일상생활에 미치는 영향을 쉽게 설명합니다.',
-            url: '/understanding-inflation.html',
+            url: 'understanding-inflation.html',
             date: '2025.09.04',
             readTime: 20,
             image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&h=400&fit=crop'
@@ -83,7 +83,7 @@ function loadPosts() {
             category: 'education',
             emoji: '💹',
             excerpt: 'ETF(상장지수펀드)의 개념과 장단점, 종류별 특징을 초보자도 이해하기 쉽게 설명합니다.',
-            url: '/what-is-etf.html',
+            url: 'what-is-etf.html',
             date: '2025.09.04',
             readTime: 18,
             image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&h=400&fit=crop'
@@ -95,7 +95,7 @@ function loadPosts() {
             category: 'economy',
             emoji: '🏦',
             excerpt: '매년 8월 와이오밍에서 열리는 잭슨홀 경제 심포지엄의 역사와 중요성을 알아봅니다.',
-            url: '/jackson-hole-powell-rate-cut.html',
+            url: 'jackson-hole-powell-rate-cut.html',
             date: '2025.08.20',
             readTime: 12,
             image: 'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=800&h=400&fit=crop'
@@ -106,7 +106,7 @@ function loadPosts() {
             category: 'economy',
             emoji: '💰',
             excerpt: '기준금리가 우리 경제와 일상생활에 미치는 영향을 쉽게 풀어서 설명합니다.',
-            url: '/understanding-interest-rates.html',
+            url: 'understanding-interest-rates.html',
             date: '2025.08.15',
             readTime: 14,
             image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=400&fit=crop'
@@ -118,7 +118,7 @@ function loadPosts() {
             category: 'education',
             emoji: '🎯',
             excerpt: '현대 포트폴리오 이론과 자산배분의 기초를 배워 리스크를 관리하는 방법을 알아봅니다.',
-            url: '/portfolio-theory.html',
+            url: 'portfolio-theory.html',
             date: '2025.08.10',
             readTime: 16,
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop'
@@ -129,7 +129,7 @@ function loadPosts() {
             category: 'education',
             emoji: '📈',
             excerpt: '복리의 원리와 장기 투자의 중요성을 실제 계산 예시와 함께 설명합니다.',
-            url: '/compound-interest.html',
+            url: 'compound-interest.html',
             date: '2025.08.05',
             readTime: 10,
             image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop'
@@ -141,7 +141,7 @@ function loadPosts() {
             category: 'education',
             emoji: '📖',
             excerpt: '투자를 시작하기 전 반드시 알아야 할 금융 용어와 지표들을 쉽게 정리했습니다.',
-            url: '/financial-terms.html',
+            url: 'financial-terms.html',
             date: '2025.07.30',
             readTime: 25,
             image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&h=400&fit=crop'
@@ -153,7 +153,7 @@ function loadPosts() {
             category: 'coin',
             emoji: '🪙',
             excerpt: '비트코인 가격 변동성의 원인과 시장 메커니즘을 분석합니다. 암호화폐 투자의 리스크와 변동성 관리 방법.',
-            url: '/bitcoin-120k-crash-30k.html',
+            url: 'bitcoin-120k-crash-30k.html',
             date: '2025.08.18',
             readTime: 15,
             image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop'
@@ -164,7 +164,7 @@ function loadPosts() {
             category: 'coin',
             emoji: '🔷',
             excerpt: '이더리움 네트워크의 기술적 특징과 DeFi 생태계를 분석합니다. 스마트 컨트렉트 플랫폼의 이해.',
-            url: '/ethereum-10k-trump.html',
+            url: 'ethereum-10k-trump.html',
             date: '2025.08.17',
             readTime: 12,
             image: 'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=400&fit=crop'
@@ -175,7 +175,7 @@ function loadPosts() {
             category: 'coin',
             emoji: '🌐',
             excerpt: '주요 알트코인들의 기술적 특징과 사용 사례를 비교 분석합니다. 각 코인의 장단점과 투자 리스크.',
-            url: '/dogecoin-1-dollar-musk.html',
+            url: 'dogecoin-1-dollar-musk.html',
             date: '2025.08.16',
             readTime: 10,
             image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop'
@@ -187,7 +187,7 @@ function loadPosts() {
             category: 'education',
             emoji: '🏛️',
             excerpt: '주식이 거래되는 과정과 시장의 작동 원리를 단계별로 알아봅니다.',
-            url: '/how-market-works.html',
+            url: 'how-market-works.html',
             date: '2025.07.25',
             readTime: 17,
             image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop'
@@ -199,7 +199,7 @@ function loadPosts() {
             category: 'guide',
             emoji: '🏦',
             excerpt: '국내 주요 증권사 비교와 계좌 개설 방법을 상세히 안내합니다.',
-            url: '/brokerage-account-guide.html',
+            url: 'brokerage-account-guide.html',
             date: '2025.07.20',
             readTime: 12,
             image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=400&fit=crop'
@@ -211,7 +211,7 @@ function loadPosts() {
             category: 'stock',
             emoji: '🚗',
             excerpt: '테슬라의 비즈니스 모델과 전기차 시장 전망을 분석합니다.',
-            url: '/tesla-714-target.html',
+            url: 'tesla-714-target.html',
             date: '2025.08.15',
             readTime: 15,
             image: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&h=400&fit=crop'
@@ -222,7 +222,7 @@ function loadPosts() {
             category: 'stock',
             emoji: '💻',
             excerpt: 'AI 시대 엔비디아의 기술 경쟁력과 시장 지배력을 분석합니다.',
-            url: '/nvidia-blackwell-chip.html',
+            url: 'nvidia-blackwell-chip.html',
             date: '2025.08.14',
             readTime: 12,
             image: 'https://images.unsplash.com/photo-1591238372408-0c6a303c1e3b?w=800&h=400&fit=crop'
@@ -234,7 +234,7 @@ function loadPosts() {
             category: 'economy',
             emoji: '🏘️',
             excerpt: '서울 부동산 시장의 현황과 정부 정책이 가격에 미치는 영향을 분석합니다.',
-            url: '/seoul-apartment-15-billion.html',
+            url: 'seoul-apartment-15-billion.html',
             date: '2025.08.12',
             readTime: 14,
             image: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&h=400&fit=crop'
@@ -246,7 +246,7 @@ function loadPosts() {
             category: 'economy',
             emoji: '🌟',
             excerpt: '금 가격에 영향을 미치는 요인과 투자 방법을 알아봅니다.',
-            url: '/gold-3000-dollars.html',
+            url: 'gold-3000-dollars.html',
             date: '2025.08.08',
             readTime: 10,
             image: 'https://images.unsplash.com/photo-1593380090147-a2192b72f9ae?w=800&h=400&fit=crop'
