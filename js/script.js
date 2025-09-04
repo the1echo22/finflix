@@ -146,6 +146,40 @@ function loadPosts() {
             readTime: 25,
             image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&h=400&fit=crop'
         },
+        // 암호화폐 시장 분석
+        {
+            id: 'bitcoin-volatility-analysis',
+            title: '비트코인 가격 변동성 이해하기: 시장 분석과 리스크 관리',
+            category: 'coin',
+            emoji: '🪙',
+            excerpt: '비트코인 가격 변동성의 원인과 시장 메커니즘을 분석합니다. 암호화폐 투자의 리스크와 변동성 관리 방법.',
+            url: '/bitcoin-120k-crash-30k.html',
+            date: '2025.08.18',
+            readTime: 15,
+            image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'ethereum-market-analysis',
+            title: '이더리움 시장 분석: 스마트 컨트렉트와 DeFi 생태계',
+            category: 'coin',
+            emoji: '🔷',
+            excerpt: '이더리움 네트워크의 기술적 특징과 DeFi 생태계를 분석합니다. 스마트 컨트렉트 플랫폼의 이해.',
+            url: '/ethereum-10k-trump.html',
+            date: '2025.08.17',
+            readTime: 12,
+            image: 'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'altcoin-ecosystem',
+            title: '알트코인 생태계 이해: 도지코인, 솔라나, 리플의 기술적 차이',
+            category: 'coin',
+            emoji: '🌐',
+            excerpt: '주요 알트코인들의 기술적 특징과 사용 사례를 비교 분석합니다. 각 코인의 장단점과 투자 리스크.',
+            url: '/dogecoin-1-dollar-musk.html',
+            date: '2025.08.16',
+            readTime: 10,
+            image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop'
+        },
         // 시장 이해
         {
             id: 'how-stock-market-works',
