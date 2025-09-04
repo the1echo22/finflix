@@ -203,6 +203,53 @@ function loadPosts() {
             date: '2025.07.20',
             readTime: 12,
             image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=400&fit=crop'
+        },
+        // 기업 분석
+        {
+            id: 'tesla-analysis',
+            title: '테슬라 주가 분석: 전기차 시장과 자율주행 기술의 미래',
+            category: 'stock',
+            emoji: '🚗',
+            excerpt: '테슬라의 비즈니스 모델과 전기차 시장 전망을 분석합니다.',
+            url: '/tesla-714-target.html',
+            date: '2025.08.15',
+            readTime: 15,
+            image: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&h=400&fit=crop'
+        },
+        {
+            id: 'nvidia-chips',
+            title: '엔비디아 AI 칩 시장 분석: GPU 기술과 경쟁 전망',
+            category: 'stock',
+            emoji: '💻',
+            excerpt: 'AI 시대 엔비디아의 기술 경쟁력과 시장 지배력을 분석합니다.',
+            url: '/nvidia-blackwell-chip.html',
+            date: '2025.08.14',
+            readTime: 12,
+            image: 'https://images.unsplash.com/photo-1591238372408-0c6a303c1e3b?w=800&h=400&fit=crop'
+        },
+        // 부동산 시장
+        {
+            id: 'real-estate-seoul',
+            title: '서울 아파트 시장 분석: 가격 동향과 정책 영향',
+            category: 'economy',
+            emoji: '🏘️',
+            excerpt: '서울 부동산 시장의 현황과 정부 정책이 가격에 미치는 영향을 분석합니다.',
+            url: '/seoul-apartment-15-billion.html',
+            date: '2025.08.12',
+            readTime: 14,
+            image: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&h=400&fit=crop'
+        },
+        // 원자재 시장
+        {
+            id: 'gold-market',
+            title: '금 시장 분석: 안전자산으로서의 금의 가치',
+            category: 'economy',
+            emoji: '🌟',
+            excerpt: '금 가격에 영향을 미치는 요인과 투자 방법을 알아봅니다.',
+            url: '/gold-3000-dollars.html',
+            date: '2025.08.08',
+            readTime: 10,
+            image: 'https://images.unsplash.com/photo-1593380090147-a2192b72f9ae?w=800&h=400&fit=crop'
         }
     ];
 }
@@ -257,7 +304,7 @@ function getCategoryLabel(category) {
         'economy': '🌏 경제 이해',
         'guide': '📋 실용 가이드',
         'stock': '📈 주식',
-        'coin': '🪙 암호화폐',
+        'coin': '🪙 코인',
         'hot': '🔥 핫이슈'
     };
     return labels[category] || category;
