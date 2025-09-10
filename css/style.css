@@ -269,6 +269,7 @@ nav {
     gap: 2rem;
     margin-bottom: 4rem;
     min-height: 400px;
+    justify-content: center;
 }
 
 .blog-card {
@@ -747,30 +748,6 @@ nav {
     margin-top: 0.3rem;
 }
 
-/* 광고 영역 */
-.ad-space {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    border-radius: 20px;
-    padding: 3rem;
-    text-align: center;
-    margin: 3rem auto;
-    max-width: 1200px;
-    position: relative;
-    overflow: hidden;
-}
-
-.ad-space::before {
-    content: "AD";
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--orange);
-}
 
 /* 페이지 컨테이너 (about, privacy, terms 페이지용) */
 .page-container {
@@ -1089,9 +1066,20 @@ footer {
         font-size: 2.2rem;
     }
     
+    .blog-container {
+        padding: 0 1rem;
+    }
+    
     .blog-grid {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        padding: 0;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    
+    .blog-card {
+        max-width: 400px;
+        width: 100%;
     }
     
     .categories {
@@ -1104,5 +1092,22 @@ footer {
     
     .page-title {
         font-size: 2rem;
+    }
+}
+
+/* 더 작은 모바일 기기용 */
+@media (max-width: 480px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    
+    .blog-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .blog-container {
+        padding: 0 0.5rem;
     }
 }
