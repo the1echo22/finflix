@@ -265,8 +265,8 @@ nav {
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
     margin-bottom: 4rem;
     min-height: 400px;
     justify-content: center;
@@ -1052,6 +1052,14 @@ footer {
     opacity: 1;
 }
 
+/* 태블릿 및 작은 노트북 */
+@media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
 /* 모바일 반응형 */
 @media (max-width: 768px) {
     .nav-links {
@@ -1059,27 +1067,42 @@ footer {
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .hero h1 span {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     
     .blog-container {
-        padding: 0 1rem;
+        padding: 0 0.8rem;
     }
     
     .blog-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         padding: 0;
-        gap: 1.5rem;
-        justify-items: center;
+        gap: 1rem;
     }
     
     .blog-card {
-        max-width: 400px;
         width: 100%;
+    }
+    
+    .card-visual {
+        height: 140px;
+    }
+    
+    .card-content {
+        padding: 1rem;
+    }
+    
+    .card-content h3 {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    
+    .card-meta {
+        font-size: 0.75rem;
     }
     
     .categories {
@@ -1095,19 +1118,48 @@ footer {
     }
 }
 
-/* 더 작은 모바일 기기용 */
+/* 작은 모바일 기기용 */
 @media (max-width: 480px) {
     .blog-grid {
-        grid-template-columns: 1fr;
-        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
     }
     
     .blog-card {
-        max-width: 100%;
-        margin: 0 auto;
+        width: 100%;
     }
     
     .blog-container {
         padding: 0 0.5rem;
+    }
+    
+    .card-visual {
+        height: 120px;
+    }
+    
+    .card-visual .emoji-overlay {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .card-content h3 {
+        font-size: 0.85rem;
+    }
+}
+
+/* 아주 작은 화면 (iPhone SE 등) */
+@media (max-width: 375px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .card-visual {
+        height: 150px;
+    }
+    
+    .card-content h3 {
+        font-size: 1rem;
     }
 }
